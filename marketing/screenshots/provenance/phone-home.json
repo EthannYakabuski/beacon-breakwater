@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "key": "phone-home",
+  "file": "phone-home.png",
+  "sha256": "8444c8901e059128a464b7e972dbb7f7c84c5640984fffca3d489e56ae43bf50",
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "actual_operator_visual_approved": true,
+  "physical_device_test": false,
+  "physical_tablet_test": false,
+  "source_apk_sha256": "82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1",
+  "scope": "Public image identity/review metadata; machine, SDK and private runtime records omitted."
+}

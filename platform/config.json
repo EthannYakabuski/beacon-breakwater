@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "admob": {
+    "test_mode": true,
+    "app_id": "ca-app-pub-3940256099942544~3347511713",
+    "banner_unit_id": "ca-app-pub-3940256099942544/6300978111",
+    "interstitial_unit_id": "ca-app-pub-3940256099942544/1033173712",
+    "rewarded_unit_id": "ca-app-pub-3940256099942544/5224354917",
+    "tag_for_under_age_of_consent": false
+  },
+  "play_games": {
+    "enabled": false,
+    "game_id": "",
+    "achievements": {
+      "first_rescue": "",
+      "rescue25": "",
+      "rescue100": "",
+      "rescue500": "",
+      "watch1": "",
+      "watch10": "",
+      "perfect1": "",
+      "perfect10": "",
+      "coast1": "",
+      "coast2": "",
+      "coast3": "",
+      "coast4": "",
+      "coast5": "",
+      "coast6": "",
+      "keeper3": "",
+      "keeper6": "",
+      "keeper12": "",
+      "upgrade1": "",
+      "upgrade8": "",
+      "daily3": ""
+    },
+    "leaderboards": {
+      "best_endless": "",
+      "total_rescued": "",
+      "keeper_level": "",
+      "perfect_watches": ""
+    }
+  }
+}

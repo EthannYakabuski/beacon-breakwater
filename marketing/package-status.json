@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "capture_manifest": "screenshots/capture-manifest.json",
+  "capture_count": 9,
+  "capture_apk_sha256": "82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1",
+  "physical_device_test": false,
+  "physical_tablet_test": false,
+  "scope": "Local store assets/captures packaged; no publication or physical-device acceptance claimed."
+}

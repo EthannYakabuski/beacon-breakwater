@@ -1,0 +1,54 @@
+TITLE
+Beacon Breakwater
+
+SHORT DESCRIPTION (under80characters)
+Sweep a lighthouse beam. Guide a fleet home through tide, fog and storm.
+
+CATEGORY
+Games / Arcade
+Tags: Casual; Single player; Offline; Portrait; Rescue; Strategy
+
+LONG DESCRIPTION
+A small lighthouse. A coast worth keeping.
+
+The first boat is a quiet shape on the horizon. Sweep your light onto its sail,
+hold the beam steady, and watch its guidance ring fill. A green ring means a safe
+route home. Then another boat appears, a current turns, and an emergency cutter
+needs your light first. Every watch is a little story about bringing people home.
+
+ONE LIGHT, CLEAR CHOICES
+Drag anywhere across the water to aim your beam. Prioritize quick skiffs, patient
+cargo sailers and urgent rescue vessels. The free foghorn slows danger when the
+water gets busy, and recharges as you play. You can pause whenever you need.
+
+SIX COASTS TO KEEP
+Follow thirty curated watches from welcoming Lantern Bay to stormy Northlight
+Cape. Learn the beam in two opening watches, then read new traffic patterns,
+shoals, cross-currents and weather. Clear a watch, improve its stars or settle
+into an endless score chase. A daily watch offers a fresh reason to return.
+
+BUILD A BETTER BEACON
+Rescues earn coins and keeper experience. Widen the lens, sharpen the focus and
+buy boats more guidance time. First clears, perfect watches, daily goals and a
+seven-day login gift make progress visible. Level-ups pay a clear coin bonus.
+Track twenty achievements and four leaderboard metrics with optional Play Games
+support when configured. Your personal records and harbor save work offline.
+
+OPTIONAL HELP, HONEST RULES
+Android advertising supports the game. The harbor has a reserved menu banner,
+and an interstitial may appear between every two naturally finished watches.
+An optional earned rescue flare guides the boats currently on the water once
+per watch. It marks that watch assisted so your unassisted endless best stays
+meaningful. Ads require availability; ordinary play never requires an ad.
+Web and offline play do not simulate advertising rewards.
+
+Designed for portrait play and a single sweeping finger. No purchases or paid
+progression are implemented. Local progress is saved on this device. Production
+service configuration and final store disclosures remain owner release work.
+
+CONTENT/PUBLICATION NOTES
+No graphic violence or weapon combat. Boats lost on a watch disappear with an
+abstract signal; no people or injury are shown. This description is a release
+draft, not a completed age rating or Data safety declaration. Use actual approved
+native captures for listing screenshots, never development fixtures or this
+package's illustrated feature graphic.

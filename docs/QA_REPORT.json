@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "game": "Beacon Breakwater",
+  "scope": "Historical original source-package checks; later UI revisions and native work are summarized separately.",
+  "original_source_manifest": "SOURCE-MANIFEST.json",
+  "historical_counts": {
+    "model_checks": 145,
+    "model_failures": 0,
+    "baseline_watches_won": 30,
+    "baseline_watches_total": 30,
+    "ui_checks": 37,
+    "ui_failures": 0,
+    "achievement_count": 20,
+    "leaderboard_count": 4,
+    "banked_saved_groups": 18
+  },
+  "current_main_sha256": "1543ECFB3E982CBD38785DB5FB911B8E8CE50382CA9E07E3768BC2B5FD744454",
+  "later_revision_scope": "Bounded toast layout and deferred retiring UI controls; no simulation, accounting, save-format or Services change.",
+  "current_native_summary": "See NATIVE_QA.json; source-model checks alone establish no native/production/physical-device acceptance.",
+  "limits": [
+    "Physical devices and physical tablets were not tested; phone and logical-tablet layouts used one Android emulator.",
+    "Audible output was not tested; the emulator audio output was disabled.",
+    "Interactive Web, Web audio/WebGL, production services, signing/consent and human gameplay balance were not verified.",
+    "Daily-specific watch victory/once-day bonus and current-build unearned SDK dismissal were not verified. Historical gift/quest/upgrade and unearned-ad observations are separately qualified.",
+    "Godot 4.5.1 Compatibility exports used minimum API24/target API35; this does not establish current Google Play eligibility."
+  ]
+}

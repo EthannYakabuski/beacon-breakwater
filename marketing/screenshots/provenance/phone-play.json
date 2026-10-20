@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "key": "phone-play",
+  "file": "phone-play.png",
+  "sha256": "2f7481f7944a3fc96ff4497733d2b46205edba883733ab81b021ba1e6d2be317",
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "actual_operator_visual_approved": true,
+  "physical_device_test": false,
+  "physical_tablet_test": false,
+  "source_apk_sha256": "82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1",
+  "scope": "Public image identity/review metadata; machine, SDK and private runtime records omitted."
+}

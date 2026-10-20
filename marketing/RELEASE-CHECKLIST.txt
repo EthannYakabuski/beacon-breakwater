@@ -1,0 +1,24 @@
+OWNER RELEASE CONFIGURATION / NO PLAY PUBLICATION PERFORMED
+1. Supply real Play Games game/OAuth/signing settings and20achievement/4board IDs.
+2. Supply real AdMob app/unit IDs, consent-message setup, target-audience settings
+   and final SDK/backend checks. Test ads are first-pass configuration only.
+3. Create release signing/version/package setup outside version control. Verify
+   current Play target-API eligibility; Godot4.5.1 local export uses min24/target35.
+4. Provide support contact and a public privacy-policy URL, verify data handling
+   for AdMob/Play Games/consent SDKs and complete Data safety/ads/content rating.
+   Do not claim no data collection merely because saves are local.
+5. Complete physical phone/tablet, audible-sound, long-session and human balancing
+   tests. Check low-end touch latency, safe areas and actual production consent.
+6. Supply actual approved phone plus logical7/10 screenshot sets with truthful
+   emulator/physical scope. Current illustrated assets are not screenshots.
+7. Keep LICENSES with exported artifacts and original third-party notices intact.
+8. Owner performs final Google Play submission/publication. No paid service,
+   self-hosted runner, real-ID request or production publishing is assumed.
+
+PRIVACY DRAFT FOR OWNER REVIEW
+Harbor progress and settings are stored locally. Optional Android AdMob, consent
+and Play Games SDKs may process information under their providers' policies when
+enabled and available. Final data categories, retention, sharing, audience and
+contact details depend on owner configuration and must be reviewed before release.
+Advertising privacy options are exposed through the native SDK. This is developer
+release guidance, not a finished public privacy policy or legal assessment.

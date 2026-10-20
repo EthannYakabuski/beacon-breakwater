@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "game": "Beacon Breakwater",
+  "source_apk_sha256": "82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1",
+  "source_apk_bytes": 183692140,
+  "capture_count": 9,
+  "captures": [
+    {
+      "key": "phone-home",
+      "file": "phone-home.png",
+      "sha256": "8444c8901e059128a464b7e972dbb7f7c84c5640984fffca3d489e56ae43bf50",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "actual_operator_visual_approved": true,
+      "physical_device_test": false,
+      "physical_tablet_test": false
+    },
+    {
+      "key": "phone-play",
+      "file": "phone-play.png",
+      "sha256": "2f7481f7944a3fc96ff4497733d2b46205edba883733ab81b021ba1e6d2be317",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "actual_operator_visual_approved": true,
+      "physical_device_test": false,
+      "physical_tablet_test": false
+    },
+    {
+      "key": "phone-collection",
+      "file": "phone-collection.png",
+      "sha256": "ec8c77fd181e846685497abac76a77b8513f20d1462ab4f5900195415a976ff4",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "actual_operator_visual_approved": true,
+      "physical_device_test": false,
+      "physical_tablet_test": false
+    },
+    {
+      "key": "tablet-7-home",
+      "file": "tablet-7-home.png",
+      "sha256": "09056dc6419bc964064a8aa1a1e12d22c4a5394de191f18a49a3f7aad9eb0294",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "actual_operator_visual_approved": true,
+      "physical_device_test": false,
+      "physical_tablet_test": false
+    },
+    {
+      "key": "tablet-7-play",
+      "file": "tablet-7-play.png",
+      "sha256": "de89285fb3a9c8c3bf8381402d970336e021a55f52fd1724f376f9abc4cbd7ef",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "actual_operator_visual_approved": true,
+      "physical_device_test": false,
+      "physical_tablet_test": false
+    },
+    {
+      "key": "tablet-7-collection",
+      "file": "tablet-7-collection.png",
+      "sha256": "afd76881df69668edd80bdff2da2316ec22fb66a37e8f8d8617a24b45ecb8870",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "actual_operator_visual_approved": true,
+      "physical_device_test": false,
+      "physical_tablet_test": false
+    },
+    {
+      "key": "tablet-10-home",
+      "file": "tablet-10-home.png",
+      "sha256": "bf5e2415bbd6b6bf98051ed6a1af87f1f744748709578e277ccbf7c8fac43d73",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "actual_operator_visual_approved": true,
+      "physical_device_test": false,
+      "physical_tablet_test": false
+    },
+    {
+      "key": "tablet-10-play",
+      "file": "tablet-10-play.png",
+      "sha256": "496d71a33d55f5eee47c2da1741db3dccf7f88a311d31dc3bd38b822790ecf12",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "actual_operator_visual_approved": true,
+      "physical_device_test": false,
+      "physical_tablet_test": false
+    },
+    {
+      "key": "tablet-10-collection",
+      "file": "tablet-10-collection.png",
+      "sha256": "5459c83ec1c23383ef2f465c1139f21a04135aadd790634da6a16b17ec80b17d",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "actual_operator_visual_approved": true,
+      "physical_device_test": false,
+      "physical_tablet_test": false
+    }
+  ],
+  "method": "Unmodified guest screenshot pixels from ordinary Android emulator play; no fixture, crop, resize or rotation.",
+  "logical_tablet_limitation": "Logical7/10 display overrides on one emulator; no physical-tablet testing.",
+  "private_records_distributed": false
+}

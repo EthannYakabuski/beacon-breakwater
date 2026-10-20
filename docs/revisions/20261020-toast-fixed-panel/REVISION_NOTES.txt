@@ -1,0 +1,6 @@
+HISTORICAL TOAST-PANEL SOURCE REVISION
+This earlier revision constrained notice layout to a bounded panel. The adjacent
+main.before.gd and main.diff preserve its source comparison. Recorded focused checks:
+90 headless,37 existing UI and94 GPU assertions passed. Later UI-retirement changes
+and actual current-build native testing are summarized in docs/NATIVE_QA.json.
+This historical revision alone confers no current native or production acceptance.

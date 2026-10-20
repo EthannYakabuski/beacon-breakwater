@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "game": "Beacon Breakwater",
+  "revision": "Bounded toast panel",
+  "scope": "Historical source revision, before current UI-retirement revision. The before-source and diff files remain alongside this summary.",
+  "changed_runtime_inputs": [
+    "game/main.gd"
+  ],
+  "problem": "A long notice could force the prior toast panel to excessive height.",
+  "change": "Use a fixed-height bounded toast panel with readable message layout.",
+  "recorded_focused_assertions": 90,
+  "failures": 0,
+  "native_acceptance_conferred_by_this_historical_packet": false
+}

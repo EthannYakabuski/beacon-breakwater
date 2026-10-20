@@ -1,0 +1,15 @@
+BEACON BREAKWATER - REDISTRIBUTION NOTICES
+
+Project/LICENSE: Apache License2.0 for original project work.
+Project/NOTICE: original project attribution and mixed-license notice.
+Assets/ASSET-NOTICES.txt: exact selected Kenney packs and original code art/audio.
+Assets/kenney_pirate-pack-CC0.txt: supplied Pirate Pack license.
+Assets/kenney_ui-audio-CC0.txt: supplied UI SFX Set license.
+ThirdParty/POING-ADMOB-MIT.txt and PLAY-GAMES-MIT.txt: native plugin licenses.
+ThirdParty/GODOT-4.5.1-LICENSE.txt, COPYRIGHT.txt and AUTHORS.md: engine and bundled notices.
+ThirdParty/NOTO-CJK-OFL-1.1.txt and NOTO-CJK-SC-NOTICE.txt: preserved engine-font notices.
+
+Keep this complete directory alongside redistributed source, APK and Web files.
+Original work licensing does not relicense assets/plugins or remove their terms.
+The preserved engine/plugin/asset notice bundle may contain additional unused
+component notices. No Creature Mixer content is used in Beacon Breakwater.

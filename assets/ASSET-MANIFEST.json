@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "copied_assets": [
+    {
+      "source": "kenney_pirate-pack/PNG/Retina/Ships/dinghySmall1.png",
+      "destination": "assets/ships/skiff.png",
+      "sha256": "fae036d43a4f7e9d6f2e5d0137b05db38d3727bf4a95395ab66b4d4acdcf3e50",
+      "license": "CC0-1.0"
+    },
+    {
+      "source": "kenney_pirate-pack/PNG/Retina/Ships/ship (1).png",
+      "destination": "assets/ships/sailor.png",
+      "sha256": "f5e6cb18934ab8dc58b132515bca250a7735258edff095f499ba1d6485df2530",
+      "license": "CC0-1.0"
+    },
+    {
+      "source": "kenney_pirate-pack/PNG/Retina/Ships/ship (13).png",
+      "destination": "assets/ships/cargo.png",
+      "sha256": "3f7b4a75a4cf53e4e1694957560801d8758ff5b8141a6844dd672ec624dbb94a",
+      "license": "CC0-1.0"
+    },
+    {
+      "source": "kenney_pirate-pack/PNG/Retina/Ships/ship (9).png",
+      "destination": "assets/ships/rescue.png",
+      "sha256": "9d83edc03021bf0ab1730a0f831da9efe5145dc97d947c0b2f398fe26d807035",
+      "license": "CC0-1.0"
+    },
+    {
+      "source": "kenney_pirate-pack/PNG/Retina/Ships/dinghyLarge2.png",
+      "destination": "assets/ships/cutter.png",
+      "sha256": "476ccf934be548361e49ceb051bb966ca539a28a88d5d54a934068dda9d88de2",
+      "license": "CC0-1.0"
+    },
+    {
+      "source": "kenney_pirate-pack/PNG/Retina/Ships/ship (19).png",
+      "destination": "assets/ships/barge.png",
+      "sha256": "71cb19e65f2c630b457e03ff3bea367a67b4d0f1ac26477e34e97b92a1b09d16",
+      "license": "CC0-1.0"
+    },
+    {
+      "source": "kenney_ui-audio/Audio/click2.ogg",
+      "destination": "assets/audio/click.ogg",
+      "sha256": "c394b46bc6737f7f7edfbfa3031ce621b7a43d498d456d6198364eee9cd3e306",
+      "license": "CC0-1.0"
+    },
+    {
+      "source": "kenney_ui-audio/Audio/rollover1.ogg",
+      "destination": "assets/audio/rescue.ogg",
+      "sha256": "4eb47e2e1540c44847b47a89825e21335c820a4e54cacf8c4c1eb5100e36af42",
+      "license": "CC0-1.0"
+    },
+    {
+      "source": "kenney_ui-audio/Audio/mouseclick1.ogg",
+      "destination": "assets/audio/warning.ogg",
+      "sha256": "ece1210c62ccae6c9ea4f4c59466d9d453d6b357c7d4b1a6c31196e5e6fea1bf",
+      "license": "CC0-1.0"
+    },
+    {
+      "source": "kenney_ui-audio/Audio/click5.ogg",
+      "destination": "assets/audio/finish.ogg",
+      "sha256": "52d41e0bb012731bf2a391d53ffb52265ef21589c7701e66b391d5e36a65b293",
+      "license": "CC0-1.0"
+    },
+    {
+      "source": "kenney_pirate-pack/License.txt",
+      "destination": "assets/licenses/kenney_pirate-pack-CC0.txt",
+      "sha256": "39846e7868ef9e1a7be5199be02811f52ac4b642c1a1838a3552f00418dcb5e4",
+      "license": "CC0-1.0"
+    },
+    {
+      "source": "kenney_ui-audio/License.txt",
+      "destination": "assets/licenses/kenney_ui-audio-CC0.txt",
+      "sha256": "4f88ab3c885c87874834441a0d009cea8942f57461d7b870be65cf4e31362073",
+      "license": "CC0-1.0"
+    }
+  ],
+  "originals": "Lighthouse/coast/beam/weather/UI/store vector/code art; synthesized ambient audio; Apache-2.0 original project work."
+}

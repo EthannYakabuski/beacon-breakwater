@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "game": "Beacon Breakwater",
+  "status": "LOCAL_TEST_PACKAGE_COMPLETE_WITH_LIMITATIONS",
+  "scope": "Public source/build/native summary. Private test receipts and real profile records are deliberately not distributed.",
+  "current_main_sha256": "1543ECFB3E982CBD38785DB5FB911B8E8CE50382CA9E07E3768BC2B5FD744454",
+  "android_apk": {
+    "sha256": "82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1",
+    "bytes": 183692140,
+    "filename": "game-debug.apk"
+  },
+  "web": {
+    "accepted": true,
+    "html_sha256": "CBADE2095ADCDCEA22A14305468ECED4D147DDE4D51971C861DADEE9AA0DEB92",
+    "html_bytes": 5491,
+    "pck_entries": 394,
+    "fresh_sidecar_count": 9,
+    "interactive_browser_verified": false
+  },
+  "source_checks": {
+    "ui_retirement_paired_assertions": 106,
+    "ui_retirement_mouse_assertions": 106,
+    "ui_retirement_gpu_assertions": 106,
+    "cold_notice_assertions": 90,
+    "recorded_failures": 0,
+    "scope": "Controlled desktop/headless/GPU checks of reviewed UI changes; separate native evidence is summarized in NATIVE_QA.json."
+  },
+  "runtime_input_freeze": {
+    "scoped_files": 11,
+    "byte_identical_before_after_android_web_exports": true,
+    "whole_project_or_reproducible_build_claim": false
+  },
+  "native_summary": "Current-build ordinary play, earned pause/Resume, once-only natural banking, Back, offline/cold banked retention, restored emulator-only settings and final safe stop were observed. Nine store roles were reviewed.",
+  "screenshot_count": 9,
+  "limits": [
+    "Physical devices and physical tablets were not tested; phone and logical-tablet layouts used one Android emulator.",
+    "Audible output was not tested; the emulator audio output was disabled.",
+    "Interactive Web, Web audio/WebGL, production services, signing/consent and human gameplay balance were not verified.",
+    "Daily-specific watch victory/once-day bonus and current-build unearned SDK dismissal were not verified. Historical gift/quest/upgrade and unearned-ad observations are separately qualified.",
+    "Godot 4.5.1 Compatibility exports used minimum API24/target API35; this does not establish current Google Play eligibility."
+  ],
+  "owner_work": [
+    "Real service IDs and PGS configuration",
+    "Production signing, privacy/contact/consent and store declarations",
+    "Google Play publication and human playtesting"
+  ],
+  "deployment": "Build/test/artifact CI is configured. No Pages deployment job exists and no live site is claimed. No remote publication is performed by this preparation."
+}

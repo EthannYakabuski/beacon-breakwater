@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "key": "tablet-10-home",
+  "file": "tablet-10-home.png",
+  "sha256": "bf5e2415bbd6b6bf98051ed6a1af87f1f744748709578e277ccbf7c8fac43d73",
+  "dimensions": [
+    1600,
+    2560
+  ],
+  "actual_operator_visual_approved": true,
+  "physical_device_test": false,
+  "physical_tablet_test": false,
+  "source_apk_sha256": "82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1",
+  "scope": "Public image identity/review metadata; machine, SDK and private runtime records omitted."
+}

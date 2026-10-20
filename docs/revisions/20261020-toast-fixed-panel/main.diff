@@ -1,0 +1,33 @@
+--- historical-9BC4321E/game/main.gd
++++ staged-fixed-9B5B3C20/game/main.gd
+@@ -35,7 +35,7 @@
+ var last_save_ok = true
+ var hud: Label
+ var horn_button: Button
+-var toast_panel: PanelContainer
++var toast_panel: Panel
+ var toast_label: Label
+ 
+ func _ready() -> void:
+@@ -111,13 +111,16 @@
+ func _toast(text: String) -> void:
+ 	notice=text; notice_left=5.0
+ 	if not is_instance_valid(toast_panel):
+-		toast_panel=PanelContainer.new();toast_panel.name="KeeperNotice"
++		toast_panel=Panel.new();toast_panel.name="KeeperNotice"
+ 		toast_panel.position=Vector2(20,718);toast_panel.size=Vector2(500,72)
+ 		toast_panel.mouse_filter=Control.MOUSE_FILTER_IGNORE
+-		var style=_toast_style();style.content_margin_left=14;style.content_margin_right=14
+-		style.content_margin_top=10;style.content_margin_bottom=10
+-		toast_panel.add_theme_stylebox_override("panel",style)
+-		toast_label=_label("",17,CREAM);toast_panel.add_child(toast_label)
++		toast_panel.clip_contents=true
++		toast_panel.add_theme_stylebox_override("panel",_toast_style())
++		toast_label=_label("",17,CREAM)
++		toast_label.position=Vector2(14,10);toast_label.size=Vector2(472,52)
++		toast_label.clip_text=true;toast_label.max_lines_visible=2
++		toast_label.vertical_alignment=VERTICAL_ALIGNMENT_CENTER
++		toast_panel.add_child(toast_label)
+ 		add_child(toast_panel)
+ 	toast_label.text=text;toast_panel.visible=true
+ 	move_child(toast_panel,get_child_count()-1)

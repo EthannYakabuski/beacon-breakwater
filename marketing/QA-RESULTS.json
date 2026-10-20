@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "capture_count": 9,
+  "capture_apk_sha256": "82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1",
+  "capture_visual_review": "All nine ordinary Android emulator role images individually reviewed.",
+  "scope": "Image/viewport acceptance only; native/source limits are in docs/NATIVE_QA.json."
+}

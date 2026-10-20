@@ -1,0 +1,23 @@
+BEACON BREAKWATER - LOCAL TEST SOURCE PACKAGE
+Godot4.5.1 Compatibility portrait lighthouse arcade. Android is primary; Web export is included.
+See README.md for play/build commands, docs/NATIVE_QA.json for dated native facts and
+docs/LOCAL_TEST_RESULTS.json for scoped source/build checks and limitations.
+
+Current tested Android APK SHA256: 82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1
+Current main SHA256: 1543ECFB3E982CBD38785DB5FB911B8E8CE50382CA9E07E3768BC2B5FD744454
+No prebuilt APK/Web exports are committed. Build locally or use configured CI artifacts.
+Nine individually reviewed phone/logical-tablet screenshots are in marketing/screenshots.
+They use ordinary emulator play, not physical tablets or staged game-state fixtures.
+
+Current earned rewarded return stayed paused through its endcard and required explicit Resume.
+Ordinary natural-result banking, Android Back, offline banked retention/cold restart and
+restoration of emulator-only network/display overrides were observed. Only banked progress
+persists across process death. Historical gift/quest/upgrade and unearned-ad observations
+retain their prior-build scope; current unearned SDK dismissal and daily watch-specific
+bonus remain unverified. Physical devices, audible output, interactive Web, production
+services and human balance remain owner testing. Actual minAPI24/targetAPI35 is not a
+Google Play eligibility claim.
+
+Real IDs, signing, privacy/contact/consent/store declarations and Play publication are owner work.
+Original work is Apache2; retain LICENSE, NOTICE and LICENSES plus all third-party notices.
+Pages deployment is absent and held. This local preparation makes no remote publication claim.

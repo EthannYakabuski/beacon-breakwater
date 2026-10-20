@@ -1,0 +1,3 @@
+Kenney Pirate Pack and UI SFX Set by Kenney (www.kenney.nl), CC0-1.0.
+Exact supplied notices are in assets/licenses. No Creature Mixer content is used.
+Original code-drawn lighthouse/coast/UI/marketing art and synthesized ambient audio: Apache-2.0.

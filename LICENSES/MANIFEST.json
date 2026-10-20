@@ -1,0 +1,128 @@
+{
+  "schema": 1,
+  "game": "Beacon Breakwater",
+  "notice_files": [
+    {
+      "path": "LICENSES/Assets/ASSET-NOTICES.txt",
+      "bytes": 252,
+      "sha256": "073bc5a6f8fac653842679d616a611abc9f360d5f3fcaa48ce998892fcefd3fe",
+      "source_relative": "assets/ASSET-NOTICES.txt",
+      "source_sha256": "073bc5a6f8fac653842679d616a611abc9f360d5f3fcaa48ce998892fcefd3fe",
+      "scope": "Kenney selected assets CC0-1.0"
+    },
+    {
+      "path": "LICENSES/Assets/kenney_pirate-pack-CC0.txt",
+      "bytes": 480,
+      "sha256": "39846e7868ef9e1a7be5199be02811f52ac4b642c1a1838a3552f00418dcb5e4",
+      "source_relative": "assets/licenses/kenney_pirate-pack-CC0.txt",
+      "source_sha256": "39846e7868ef9e1a7be5199be02811f52ac4b642c1a1838a3552f00418dcb5e4",
+      "scope": "Kenney selected assets CC0-1.0"
+    },
+    {
+      "path": "LICENSES/Assets/kenney_ui-audio-CC0.txt",
+      "bytes": 479,
+      "sha256": "4f88ab3c885c87874834441a0d009cea8942f57461d7b870be65cf4e31362073",
+      "source_relative": "assets/licenses/kenney_ui-audio-CC0.txt",
+      "source_sha256": "4f88ab3c885c87874834441a0d009cea8942f57461d7b870be65cf4e31362073",
+      "scope": "Kenney selected assets CC0-1.0"
+    },
+    {
+      "path": "LICENSES/INDEX.txt",
+      "bytes": 964,
+      "sha256": "18088d7d93053b46f9a2e7cfc269ff9c5b49434a0ca11a5fed0d125a18bc2213",
+      "source_relative": "LICENSES/INDEX.txt",
+      "source_sha256": "18088d7d93053b46f9a2e7cfc269ff9c5b49434a0ca11a5fed0d125a18bc2213",
+      "scope": "Exact retained third-party notice; license text controls"
+    },
+    {
+      "path": "LICENSES/Project/LICENSE",
+      "bytes": 11560,
+      "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+      "source_relative": "LICENSE",
+      "source_sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+      "scope": "Original project Apache-2.0"
+    },
+    {
+      "path": "LICENSES/Project/LICENSE.txt",
+      "bytes": 11560,
+      "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+      "source_relative": "LICENSE",
+      "source_sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+      "scope": "Original project Apache-2.0"
+    },
+    {
+      "path": "LICENSES/Project/NOTICE",
+      "bytes": 753,
+      "sha256": "15c77d8c1874655633152f173a385f2a9b05d3f63d4a1d835c603e6930ef6041",
+      "source_relative": "NOTICE",
+      "source_sha256": "15c77d8c1874655633152f173a385f2a9b05d3f63d4a1d835c603e6930ef6041",
+      "scope": "Original project Apache-2.0"
+    },
+    {
+      "path": "LICENSES/Project/NOTICE.txt",
+      "bytes": 753,
+      "sha256": "15c77d8c1874655633152f173a385f2a9b05d3f63d4a1d835c603e6930ef6041",
+      "source_relative": "NOTICE",
+      "source_sha256": "15c77d8c1874655633152f173a385f2a9b05d3f63d4a1d835c603e6930ef6041",
+      "scope": "Original project Apache-2.0"
+    },
+    {
+      "path": "LICENSES/ThirdParty/GODOT-4.5.1-AUTHORS.md",
+      "bytes": 10363,
+      "sha256": "a7e071854c78bbf53191277aec4cee716467ef34723a9d805fba734df1e03a00",
+      "source_relative": "LICENSES/ThirdParty/GODOT-4.5.1-AUTHORS.md",
+      "source_sha256": "a7e071854c78bbf53191277aec4cee716467ef34723a9d805fba734df1e03a00",
+      "scope": "Exact retained third-party notice; license text controls"
+    },
+    {
+      "path": "LICENSES/ThirdParty/GODOT-4.5.1-COPYRIGHT.txt",
+      "bytes": 97253,
+      "sha256": "2039020f520ebd55592070ede2ef38dfbc28a6550140008da004143872789e5d",
+      "source_relative": "LICENSES/ThirdParty/GODOT-4.5.1-COPYRIGHT.txt",
+      "source_sha256": "2039020f520ebd55592070ede2ef38dfbc28a6550140008da004143872789e5d",
+      "scope": "Exact retained third-party notice; license text controls"
+    },
+    {
+      "path": "LICENSES/ThirdParty/GODOT-4.5.1-LICENSE.txt",
+      "bytes": 1149,
+      "sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80",
+      "source_relative": "LICENSES/ThirdParty/GODOT-4.5.1-LICENSE.txt",
+      "source_sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80",
+      "scope": "Exact retained third-party notice; license text controls"
+    },
+    {
+      "path": "LICENSES/ThirdParty/NOTO-CJK-OFL-1.1.txt",
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+      "source_relative": "LICENSES/ThirdParty/NOTO-CJK-OFL-1.1.txt",
+      "source_sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+      "scope": "Exact retained third-party notice; license text controls"
+    },
+    {
+      "path": "LICENSES/ThirdParty/NOTO-CJK-SC-NOTICE.txt",
+      "bytes": 571,
+      "sha256": "608baec27c2d106c8cedd4dce3b6a08e3ef054c681a5c3307ec026465df0bdef",
+      "source_relative": "LICENSES/ThirdParty/NOTO-CJK-SC-NOTICE.txt",
+      "source_sha256": "608baec27c2d106c8cedd4dce3b6a08e3ef054c681a5c3307ec026465df0bdef",
+      "scope": "Exact retained third-party notice; license text controls"
+    },
+    {
+      "path": "LICENSES/ThirdParty/PLAY-GAMES-MIT.txt",
+      "bytes": 1080,
+      "sha256": "ed364d1a1fe81fcd672eabc639889075173da2906c69b746753ccb3672b1ea94",
+      "source_relative": "addons/GodotPlayGameServices/LICENSE",
+      "source_sha256": "ed364d1a1fe81fcd672eabc639889075173da2906c69b746753ccb3672b1ea94",
+      "scope": "Exact retained third-party notice; license text controls"
+    },
+    {
+      "path": "LICENSES/ThirdParty/POING-ADMOB-MIT.txt",
+      "bytes": 1078,
+      "sha256": "9154d410d6795817a45e1a5f2caa9236111e313152c0b51ea39f48aaf7034834",
+      "source_relative": "addons/admob/LICENSE",
+      "source_sha256": "9154d410d6795817a45e1a5f2caa9236111e313152c0b51ea39f48aaf7034834",
+      "scope": "Exact retained third-party notice; license text controls"
+    }
+  ],
+  "scope": "Accompanying source/APK/Web notices. Does not relicense third-party content.",
+  "engine_notice_provenance": "Exact retained Godot4.5.1 engine/component/font notice bundle from the reviewed shared platform distribution."
+}

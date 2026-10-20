@@ -1,0 +1,3 @@
+App/feature/achievement/leaderboard graphics are original code-drawn promotional illustrations.
+They are not gameplay screenshots or native-device evidence.
+Actual screenshots require normal implemented play and coordinator capture approval.

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "game": "Beacon Breakwater",
+  "package": "com.ethannyakabuski.beaconbreakwater",
+  "scope": "Public summary of dated local verification; no private logs, real saves, machine records or evidence coordinates are included.",
+  "status": "LOCAL_NATIVE_FUNCTIONAL_QA_ACCEPTED_WITH_LIMITATIONS",
+  "tested_apk": {
+    "sha256": "82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1",
+    "bytes": 183692140,
+    "filename": "game-debug.apk"
+  },
+  "current_main_sha256": "1543ECFB3E982CBD38785DB5FB911B8E8CE50382CA9E07E3768BC2B5FD744454",
+  "current_build_observations": [
+    "Normal Android installation/update retained all18 typed banked groups.",
+    "Real SDK rewarded assistance remained paused throughout a60.518second earned endcard; one explicit Resume returned to usable ordinary play.",
+    "A natural assisted result banked once; ordinary Android Back/navigation remained usable.",
+    "Strict current-build native logs observed no Godot SCRIPT ERROR/can_process/FATAL markers.",
+    "Actual offline disconnected state, unbanked ordinary play/Back, cold retention of all18 typed groups, emulator display/network restoration and final package stop were verified.",
+    "Nine exact current-build Home/Battle/Boat Log screenshots were individually visually reviewed across phone and two logical-tablet layouts."
+  ],
+  "historical_observations_qualified": [
+    "An earlier UI candidate supplied genuine login gift, three quest claims and a Lens purchase. These were not replayed or relabeled as current-build tests.",
+    "Earlier unearned SDK attempts supplied no assistance. A current-build unearned attempt was not asserted."
+  ],
+  "screenshot_count": 9,
+  "limits": [
+    "Physical devices and physical tablets were not tested; phone and logical-tablet layouts used one Android emulator.",
+    "Audible output was not tested; the emulator audio output was disabled.",
+    "Interactive Web, Web audio/WebGL, production services, signing/consent and human gameplay balance were not verified.",
+    "Daily-specific watch victory/once-day bonus and current-build unearned SDK dismissal were not verified. Historical gift/quest/upgrade and unearned-ad observations are separately qualified.",
+    "Godot 4.5.1 Compatibility exports used minimum API24/target API35; this does not establish current Google Play eligibility."
+  ]
+}

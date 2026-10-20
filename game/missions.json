@@ -1,0 +1,2743 @@
+{
+  "schema": 1,
+  "coasts": [
+    {
+      "name": "Lantern Bay",
+      "tagline": "A warm first light"
+    },
+    {
+      "name": "Tideglass Reach",
+      "tagline": "The water leans east"
+    },
+    {
+      "name": "Rainneedle Rocks",
+      "tagline": "Every gap matters"
+    },
+    {
+      "name": "Gale Sound",
+      "tagline": "Listen for the weather"
+    },
+    {
+      "name": "Mistward Shelf",
+      "tagline": "Find the signal"
+    },
+    {
+      "name": "Northlight Cape",
+      "tagline": "Bring everyone home"
+    }
+  ],
+  "missions": [
+    {
+      "id": 0,
+      "name": "Your first light",
+      "coast": 0,
+      "coast_name": "Lantern Bay",
+      "tagline": "A warm first light",
+      "briefing": "Hold the beam on a boat until its ring fills.",
+      "tutorial": true,
+      "target": 4,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": 0,
+      "storm": 0,
+      "fog": 0,
+      "reefs": [],
+      "lives": 3,
+      "duration": 44.7,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 260,
+          "drift": -4
+        },
+        {
+          "time": 4.7,
+          "kind": "skiff",
+          "x": 130,
+          "drift": 3
+        },
+        {
+          "time": 8.7,
+          "kind": "sailor",
+          "x": 405,
+          "drift": 0
+        },
+        {
+          "time": 12.7,
+          "kind": "skiff",
+          "x": 280,
+          "drift": 6
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Two on the tide",
+      "coast": 0,
+      "coast_name": "Lantern Bay",
+      "tagline": "A warm first light",
+      "briefing": "Hold the beam on a boat until its ring fills.",
+      "tutorial": true,
+      "target": 6,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": 0,
+      "storm": 0,
+      "fog": 0,
+      "reefs": [],
+      "lives": 3,
+      "duration": 52.7,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 100,
+          "drift": -4
+        },
+        {
+          "time": 4.7,
+          "kind": "sailor",
+          "x": 430,
+          "drift": 3
+        },
+        {
+          "time": 8.7,
+          "kind": "skiff",
+          "x": 275,
+          "drift": 0
+        },
+        {
+          "time": 12.7,
+          "kind": "sailor",
+          "x": 145,
+          "drift": 6
+        },
+        {
+          "time": 16.7,
+          "kind": "skiff",
+          "x": 370,
+          "drift": -2
+        },
+        {
+          "time": 20.7,
+          "kind": "skiff",
+          "x": 250,
+          "drift": -4
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "White sail welcome",
+      "coast": 0,
+      "coast_name": "Lantern Bay",
+      "tagline": "A warm first light",
+      "briefing": "Hold the beam on a boat until its ring fills.",
+      "tutorial": false,
+      "target": 7,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": 0,
+      "storm": 0,
+      "fog": 0,
+      "reefs": [],
+      "lives": 3,
+      "duration": 59.3,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "sailor",
+          "x": 95,
+          "drift": -4
+        },
+        {
+          "time": 4.5,
+          "kind": "cargo",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 8.3,
+          "kind": "skiff",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 12.1,
+          "kind": "cutter",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 15.9,
+          "kind": "sailor",
+          "x": 430,
+          "drift": -2
+        },
+        {
+          "time": 19.7,
+          "kind": "cargo",
+          "x": 215,
+          "drift": -4
+        },
+        {
+          "time": 23.5,
+          "kind": "skiff",
+          "x": 350,
+          "drift": 3
+        },
+        {
+          "time": 27.3,
+          "kind": "skiff",
+          "x": 110,
+          "drift": 0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "A little convoy",
+      "coast": 0,
+      "coast_name": "Lantern Bay",
+      "tagline": "A warm first light",
+      "briefing": "Hold the beam on a boat until its ring fills.",
+      "tutorial": false,
+      "target": 8,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": 0,
+      "storm": 0,
+      "fog": 0,
+      "reefs": [],
+      "lives": 3,
+      "duration": 63.1,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "rescue",
+          "x": 270,
+          "drift": -4
+        },
+        {
+          "time": 4.5,
+          "kind": "skiff",
+          "x": 100,
+          "drift": 3
+        },
+        {
+          "time": 8.3,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 0
+        },
+        {
+          "time": 12.1,
+          "kind": "rescue",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 15.9,
+          "kind": "cargo",
+          "x": 340,
+          "drift": -2
+        },
+        {
+          "time": 19.7,
+          "kind": "skiff",
+          "x": 240,
+          "drift": -4
+        },
+        {
+          "time": 23.5,
+          "kind": "cutter",
+          "x": 450,
+          "drift": 3
+        },
+        {
+          "time": 27.3,
+          "kind": "sailor",
+          "x": 120,
+          "drift": 0
+        },
+        {
+          "time": 31.1,
+          "kind": "skiff",
+          "x": 330,
+          "drift": 6
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Bay keeper",
+      "coast": 0,
+      "coast_name": "Lantern Bay",
+      "tagline": "A warm first light",
+      "briefing": "Hold the beam on a boat until its ring fills.",
+      "tutorial": false,
+      "target": 9,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": 0,
+      "storm": 0,
+      "fog": 0,
+      "reefs": [],
+      "lives": 3,
+      "duration": 66.9,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "cargo",
+          "x": 110,
+          "drift": -4
+        },
+        {
+          "time": 4.5,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 3
+        },
+        {
+          "time": 8.3,
+          "kind": "cutter",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 12.1,
+          "kind": "skiff",
+          "x": 360,
+          "drift": 6
+        },
+        {
+          "time": 15.9,
+          "kind": "rescue",
+          "x": 145,
+          "drift": -2
+        },
+        {
+          "time": 19.7,
+          "kind": "barge",
+          "x": 300,
+          "drift": -4
+        },
+        {
+          "time": 23.5,
+          "kind": "skiff",
+          "x": 440,
+          "drift": 3
+        },
+        {
+          "time": 27.3,
+          "kind": "sailor",
+          "x": 90,
+          "drift": 0
+        },
+        {
+          "time": 31.1,
+          "kind": "rescue",
+          "x": 385,
+          "drift": 6
+        },
+        {
+          "time": 34.9,
+          "kind": "cargo",
+          "x": 240,
+          "drift": -2
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Eastbound morning",
+      "coast": 1,
+      "coast_name": "Tideglass Reach",
+      "tagline": "The water leans east",
+      "briefing": "A cross-current carries unescorted boats toward the shoals.",
+      "tutorial": false,
+      "target": 5,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": 9,
+      "storm": 0,
+      "fog": 0,
+      "reefs": [
+        [
+          420,
+          445,
+          42
+        ]
+      ],
+      "lives": 3,
+      "duration": 50.9,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 260,
+          "drift": -4
+        },
+        {
+          "time": 4.34,
+          "kind": "skiff",
+          "x": 130,
+          "drift": 3
+        },
+        {
+          "time": 7.98,
+          "kind": "sailor",
+          "x": 405,
+          "drift": 0
+        },
+        {
+          "time": 11.62,
+          "kind": "skiff",
+          "x": 280,
+          "drift": 6
+        },
+        {
+          "time": 15.26,
+          "kind": "skiff",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 18.9,
+          "kind": "sailor",
+          "x": 390,
+          "drift": -4
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Crossing glints",
+      "coast": 1,
+      "coast_name": "Tideglass Reach",
+      "tagline": "The water leans east",
+      "briefing": "A cross-current carries unescorted boats toward the shoals.",
+      "tutorial": false,
+      "target": 7,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": 9,
+      "storm": 0,
+      "fog": 0,
+      "reefs": [
+        [
+          420,
+          445,
+          42
+        ]
+      ],
+      "lives": 3,
+      "duration": 58.18,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 100,
+          "drift": -4
+        },
+        {
+          "time": 4.34,
+          "kind": "sailor",
+          "x": 430,
+          "drift": 3
+        },
+        {
+          "time": 7.98,
+          "kind": "skiff",
+          "x": 275,
+          "drift": 0
+        },
+        {
+          "time": 11.62,
+          "kind": "sailor",
+          "x": 145,
+          "drift": 6
+        },
+        {
+          "time": 15.26,
+          "kind": "skiff",
+          "x": 370,
+          "drift": -2
+        },
+        {
+          "time": 18.9,
+          "kind": "skiff",
+          "x": 250,
+          "drift": -4
+        },
+        {
+          "time": 22.54,
+          "kind": "skiff",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 26.18,
+          "kind": "sailor",
+          "x": 390,
+          "drift": 0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "A loaded sail",
+      "coast": 1,
+      "coast_name": "Tideglass Reach",
+      "tagline": "The water leans east",
+      "briefing": "A cross-current carries unescorted boats toward the shoals.",
+      "tutorial": false,
+      "target": 9,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": 9,
+      "storm": 0,
+      "fog": 0,
+      "reefs": [
+        [
+          420,
+          445,
+          42
+        ]
+      ],
+      "lives": 3,
+      "duration": 65.46,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "sailor",
+          "x": 95,
+          "drift": -4
+        },
+        {
+          "time": 4.34,
+          "kind": "cargo",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 7.98,
+          "kind": "skiff",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 11.62,
+          "kind": "cutter",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 15.26,
+          "kind": "sailor",
+          "x": 430,
+          "drift": -2
+        },
+        {
+          "time": 18.9,
+          "kind": "cargo",
+          "x": 215,
+          "drift": -4
+        },
+        {
+          "time": 22.54,
+          "kind": "skiff",
+          "x": 350,
+          "drift": 3
+        },
+        {
+          "time": 26.18,
+          "kind": "skiff",
+          "x": 110,
+          "drift": 0
+        },
+        {
+          "time": 29.82,
+          "kind": "skiff",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 33.46,
+          "kind": "sailor",
+          "x": 390,
+          "drift": -2
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Urgent passage",
+      "coast": 1,
+      "coast_name": "Tideglass Reach",
+      "tagline": "The water leans east",
+      "briefing": "A cross-current carries unescorted boats toward the shoals.",
+      "tutorial": false,
+      "target": 10,
+      "required_kind": "rescue",
+      "required_count": 1,
+      "tide": 9,
+      "storm": 0,
+      "fog": 0,
+      "reefs": [
+        [
+          420,
+          445,
+          42
+        ]
+      ],
+      "lives": 3,
+      "duration": 69.1,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "rescue",
+          "x": 270,
+          "drift": -4
+        },
+        {
+          "time": 4.34,
+          "kind": "skiff",
+          "x": 100,
+          "drift": 3
+        },
+        {
+          "time": 7.98,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 0
+        },
+        {
+          "time": 11.62,
+          "kind": "rescue",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 15.26,
+          "kind": "cargo",
+          "x": 340,
+          "drift": -2
+        },
+        {
+          "time": 18.9,
+          "kind": "skiff",
+          "x": 240,
+          "drift": -4
+        },
+        {
+          "time": 22.54,
+          "kind": "cutter",
+          "x": 450,
+          "drift": 3
+        },
+        {
+          "time": 26.18,
+          "kind": "sailor",
+          "x": 120,
+          "drift": 0
+        },
+        {
+          "time": 29.82,
+          "kind": "skiff",
+          "x": 330,
+          "drift": 6
+        },
+        {
+          "time": 33.46,
+          "kind": "skiff",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 37.1,
+          "kind": "sailor",
+          "x": 390,
+          "drift": -4
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "The glass run",
+      "coast": 1,
+      "coast_name": "Tideglass Reach",
+      "tagline": "The water leans east",
+      "briefing": "A cross-current carries unescorted boats toward the shoals.",
+      "tutorial": false,
+      "target": 11,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": 9,
+      "storm": 0,
+      "fog": 0,
+      "reefs": [
+        [
+          420,
+          445,
+          42
+        ]
+      ],
+      "lives": 3,
+      "duration": 72.74,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "cargo",
+          "x": 110,
+          "drift": -4
+        },
+        {
+          "time": 4.34,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 3
+        },
+        {
+          "time": 7.98,
+          "kind": "cutter",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 11.62,
+          "kind": "skiff",
+          "x": 360,
+          "drift": 6
+        },
+        {
+          "time": 15.26,
+          "kind": "rescue",
+          "x": 145,
+          "drift": -2
+        },
+        {
+          "time": 18.9,
+          "kind": "barge",
+          "x": 300,
+          "drift": -4
+        },
+        {
+          "time": 22.54,
+          "kind": "skiff",
+          "x": 440,
+          "drift": 3
+        },
+        {
+          "time": 26.18,
+          "kind": "sailor",
+          "x": 90,
+          "drift": 0
+        },
+        {
+          "time": 29.82,
+          "kind": "rescue",
+          "x": 385,
+          "drift": 6
+        },
+        {
+          "time": 33.46,
+          "kind": "cargo",
+          "x": 240,
+          "drift": -2
+        },
+        {
+          "time": 37.1,
+          "kind": "skiff",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 40.74,
+          "kind": "sailor",
+          "x": 390,
+          "drift": 3
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Needle channel",
+      "coast": 2,
+      "coast_name": "Rainneedle Rocks",
+      "tagline": "Every gap matters",
+      "briefing": "Use the horn when traffic reaches the marked shoals.",
+      "tutorial": false,
+      "target": 5,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": -8,
+      "storm": 0.15,
+      "fog": 0.1,
+      "reefs": [
+        [
+          150,
+          450,
+          38
+        ],
+        [
+          387,
+          555,
+          42
+        ]
+      ],
+      "lives": 3,
+      "duration": 50.1,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 260,
+          "drift": -4
+        },
+        {
+          "time": 4.18,
+          "kind": "skiff",
+          "x": 130,
+          "drift": 3
+        },
+        {
+          "time": 7.66,
+          "kind": "sailor",
+          "x": 405,
+          "drift": 0
+        },
+        {
+          "time": 11.14,
+          "kind": "skiff",
+          "x": 280,
+          "drift": 6
+        },
+        {
+          "time": 14.62,
+          "kind": "skiff",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 18.1,
+          "kind": "sailor",
+          "x": 390,
+          "drift": -4
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Three white wakes",
+      "coast": 2,
+      "coast_name": "Rainneedle Rocks",
+      "tagline": "Every gap matters",
+      "briefing": "Use the horn when traffic reaches the marked shoals.",
+      "tutorial": false,
+      "target": 7,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": -8,
+      "storm": 0.15,
+      "fog": 0.1,
+      "reefs": [
+        [
+          150,
+          450,
+          38
+        ],
+        [
+          387,
+          555,
+          42
+        ]
+      ],
+      "lives": 3,
+      "duration": 57.06,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 100,
+          "drift": -4
+        },
+        {
+          "time": 4.18,
+          "kind": "sailor",
+          "x": 430,
+          "drift": 3
+        },
+        {
+          "time": 7.66,
+          "kind": "skiff",
+          "x": 275,
+          "drift": 0
+        },
+        {
+          "time": 11.14,
+          "kind": "sailor",
+          "x": 145,
+          "drift": 6
+        },
+        {
+          "time": 14.62,
+          "kind": "skiff",
+          "x": 370,
+          "drift": -2
+        },
+        {
+          "time": 18.1,
+          "kind": "skiff",
+          "x": 250,
+          "drift": -4
+        },
+        {
+          "time": 21.58,
+          "kind": "skiff",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 25.06,
+          "kind": "sailor",
+          "x": 390,
+          "drift": 0
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Rock garden",
+      "coast": 2,
+      "coast_name": "Rainneedle Rocks",
+      "tagline": "Every gap matters",
+      "briefing": "Use the horn when traffic reaches the marked shoals.",
+      "tutorial": false,
+      "target": 9,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": -8,
+      "storm": 0.15,
+      "fog": 0.1,
+      "reefs": [
+        [
+          150,
+          450,
+          38
+        ],
+        [
+          387,
+          555,
+          42
+        ]
+      ],
+      "lives": 3,
+      "duration": 64.02,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "sailor",
+          "x": 95,
+          "drift": -4
+        },
+        {
+          "time": 4.18,
+          "kind": "cargo",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 7.66,
+          "kind": "skiff",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 11.14,
+          "kind": "cutter",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 14.62,
+          "kind": "sailor",
+          "x": 430,
+          "drift": -2
+        },
+        {
+          "time": 18.1,
+          "kind": "cargo",
+          "x": 215,
+          "drift": -4
+        },
+        {
+          "time": 21.58,
+          "kind": "skiff",
+          "x": 350,
+          "drift": 3
+        },
+        {
+          "time": 25.06,
+          "kind": "skiff",
+          "x": 110,
+          "drift": 0
+        },
+        {
+          "time": 28.54,
+          "kind": "skiff",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 32.02,
+          "kind": "sailor",
+          "x": 390,
+          "drift": -2
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Cargo at dusk",
+      "coast": 2,
+      "coast_name": "Rainneedle Rocks",
+      "tagline": "Every gap matters",
+      "briefing": "Use the horn when traffic reaches the marked shoals.",
+      "tutorial": false,
+      "target": 10,
+      "required_kind": "rescue",
+      "required_count": 1,
+      "tide": -8,
+      "storm": 0.15,
+      "fog": 0.1,
+      "reefs": [
+        [
+          150,
+          450,
+          38
+        ],
+        [
+          387,
+          555,
+          42
+        ]
+      ],
+      "lives": 3,
+      "duration": 67.5,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "rescue",
+          "x": 270,
+          "drift": -4
+        },
+        {
+          "time": 4.18,
+          "kind": "skiff",
+          "x": 100,
+          "drift": 3
+        },
+        {
+          "time": 7.66,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 0
+        },
+        {
+          "time": 11.14,
+          "kind": "rescue",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 14.62,
+          "kind": "cargo",
+          "x": 340,
+          "drift": -2
+        },
+        {
+          "time": 18.1,
+          "kind": "skiff",
+          "x": 240,
+          "drift": -4
+        },
+        {
+          "time": 21.58,
+          "kind": "cutter",
+          "x": 450,
+          "drift": 3
+        },
+        {
+          "time": 25.06,
+          "kind": "sailor",
+          "x": 120,
+          "drift": 0
+        },
+        {
+          "time": 28.54,
+          "kind": "skiff",
+          "x": 330,
+          "drift": 6
+        },
+        {
+          "time": 32.02,
+          "kind": "skiff",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 35.5,
+          "kind": "sailor",
+          "x": 390,
+          "drift": -4
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Rainproof watch",
+      "coast": 2,
+      "coast_name": "Rainneedle Rocks",
+      "tagline": "Every gap matters",
+      "briefing": "Use the horn when traffic reaches the marked shoals.",
+      "tutorial": false,
+      "target": 11,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": -8,
+      "storm": 0.15,
+      "fog": 0.1,
+      "reefs": [
+        [
+          150,
+          450,
+          38
+        ],
+        [
+          387,
+          555,
+          42
+        ]
+      ],
+      "lives": 3,
+      "duration": 70.98,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "cargo",
+          "x": 110,
+          "drift": -4
+        },
+        {
+          "time": 4.18,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 3
+        },
+        {
+          "time": 7.66,
+          "kind": "cutter",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 11.14,
+          "kind": "skiff",
+          "x": 360,
+          "drift": 6
+        },
+        {
+          "time": 14.62,
+          "kind": "rescue",
+          "x": 145,
+          "drift": -2
+        },
+        {
+          "time": 18.1,
+          "kind": "barge",
+          "x": 300,
+          "drift": -4
+        },
+        {
+          "time": 21.58,
+          "kind": "skiff",
+          "x": 440,
+          "drift": 3
+        },
+        {
+          "time": 25.06,
+          "kind": "sailor",
+          "x": 90,
+          "drift": 0
+        },
+        {
+          "time": 28.54,
+          "kind": "rescue",
+          "x": 385,
+          "drift": 6
+        },
+        {
+          "time": 32.02,
+          "kind": "cargo",
+          "x": 240,
+          "drift": -2
+        },
+        {
+          "time": 35.5,
+          "kind": "skiff",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.98,
+          "kind": "sailor",
+          "x": 390,
+          "drift": 3
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "First squall",
+      "coast": 3,
+      "coast_name": "Gale Sound",
+      "tagline": "Listen for the weather",
+      "briefing": "A storm surge arrives near the end of each fifteen-second cycle.",
+      "tutorial": false,
+      "target": 7,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": 13,
+      "storm": 0.65,
+      "fog": 0,
+      "reefs": [
+        [
+          390,
+          420,
+          35
+        ],
+        [
+          150,
+          580,
+          35
+        ]
+      ],
+      "lives": 3,
+      "duration": 55.94,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 260,
+          "drift": -4
+        },
+        {
+          "time": 4.02,
+          "kind": "skiff",
+          "x": 130,
+          "drift": 3
+        },
+        {
+          "time": 7.34,
+          "kind": "sailor",
+          "x": 405,
+          "drift": 0
+        },
+        {
+          "time": 10.66,
+          "kind": "skiff",
+          "x": 280,
+          "drift": 6
+        },
+        {
+          "time": 13.98,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 17.3,
+          "kind": "sailor",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 20.62,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 23.94,
+          "kind": "sailor",
+          "x": 390,
+          "drift": 0
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Shelter call",
+      "coast": 3,
+      "coast_name": "Gale Sound",
+      "tagline": "Listen for the weather",
+      "briefing": "A storm surge arrives near the end of each fifteen-second cycle.",
+      "tutorial": false,
+      "target": 9,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": 13,
+      "storm": 0.65,
+      "fog": 0,
+      "reefs": [
+        [
+          390,
+          420,
+          35
+        ],
+        [
+          150,
+          580,
+          35
+        ]
+      ],
+      "lives": 3,
+      "duration": 62.58,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 100,
+          "drift": -4
+        },
+        {
+          "time": 4.02,
+          "kind": "sailor",
+          "x": 430,
+          "drift": 3
+        },
+        {
+          "time": 7.34,
+          "kind": "skiff",
+          "x": 275,
+          "drift": 0
+        },
+        {
+          "time": 10.66,
+          "kind": "sailor",
+          "x": 145,
+          "drift": 6
+        },
+        {
+          "time": 13.98,
+          "kind": "skiff",
+          "x": 370,
+          "drift": -2
+        },
+        {
+          "time": 17.3,
+          "kind": "skiff",
+          "x": 250,
+          "drift": -4
+        },
+        {
+          "time": 20.62,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 23.94,
+          "kind": "sailor",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 27.26,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 30.58,
+          "kind": "sailor",
+          "x": 390,
+          "drift": -2
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Barge and breeze",
+      "coast": 3,
+      "coast_name": "Gale Sound",
+      "tagline": "Listen for the weather",
+      "briefing": "A storm surge arrives near the end of each fifteen-second cycle.",
+      "tutorial": false,
+      "target": 11,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": 13,
+      "storm": 0.65,
+      "fog": 0,
+      "reefs": [
+        [
+          390,
+          420,
+          35
+        ],
+        [
+          150,
+          580,
+          35
+        ]
+      ],
+      "lives": 3,
+      "duration": 69.22,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "sailor",
+          "x": 95,
+          "drift": -4
+        },
+        {
+          "time": 4.02,
+          "kind": "cargo",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 7.34,
+          "kind": "skiff",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 10.66,
+          "kind": "cutter",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 13.98,
+          "kind": "sailor",
+          "x": 430,
+          "drift": -2
+        },
+        {
+          "time": 17.3,
+          "kind": "cargo",
+          "x": 215,
+          "drift": -4
+        },
+        {
+          "time": 20.62,
+          "kind": "skiff",
+          "x": 350,
+          "drift": 3
+        },
+        {
+          "time": 23.94,
+          "kind": "skiff",
+          "x": 110,
+          "drift": 0
+        },
+        {
+          "time": 27.26,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 30.58,
+          "kind": "sailor",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 33.9,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 37.22,
+          "kind": "sailor",
+          "x": 390,
+          "drift": 3
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "The long gust",
+      "coast": 3,
+      "coast_name": "Gale Sound",
+      "tagline": "Listen for the weather",
+      "briefing": "A storm surge arrives near the end of each fifteen-second cycle.",
+      "tutorial": false,
+      "target": 12,
+      "required_kind": "rescue",
+      "required_count": 1,
+      "tide": 13,
+      "storm": 0.65,
+      "fog": 0,
+      "reefs": [
+        [
+          390,
+          420,
+          35
+        ],
+        [
+          150,
+          580,
+          35
+        ]
+      ],
+      "lives": 3,
+      "duration": 72.54,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "rescue",
+          "x": 270,
+          "drift": -4
+        },
+        {
+          "time": 4.02,
+          "kind": "skiff",
+          "x": 100,
+          "drift": 3
+        },
+        {
+          "time": 7.34,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 0
+        },
+        {
+          "time": 10.66,
+          "kind": "rescue",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 13.98,
+          "kind": "cargo",
+          "x": 340,
+          "drift": -2
+        },
+        {
+          "time": 17.3,
+          "kind": "skiff",
+          "x": 240,
+          "drift": -4
+        },
+        {
+          "time": 20.62,
+          "kind": "cutter",
+          "x": 450,
+          "drift": 3
+        },
+        {
+          "time": 23.94,
+          "kind": "sailor",
+          "x": 120,
+          "drift": 0
+        },
+        {
+          "time": 27.26,
+          "kind": "skiff",
+          "x": 330,
+          "drift": 6
+        },
+        {
+          "time": 30.58,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 33.9,
+          "kind": "sailor",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 37.22,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 40.54,
+          "kind": "sailor",
+          "x": 390,
+          "drift": 0
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Sound of safety",
+      "coast": 3,
+      "coast_name": "Gale Sound",
+      "tagline": "Listen for the weather",
+      "briefing": "A storm surge arrives near the end of each fifteen-second cycle.",
+      "tutorial": false,
+      "target": 13,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": 13,
+      "storm": 0.65,
+      "fog": 0,
+      "reefs": [
+        [
+          390,
+          420,
+          35
+        ],
+        [
+          150,
+          580,
+          35
+        ]
+      ],
+      "lives": 3,
+      "duration": 75.86,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "cargo",
+          "x": 110,
+          "drift": -4
+        },
+        {
+          "time": 4.02,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 3
+        },
+        {
+          "time": 7.34,
+          "kind": "cutter",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 10.66,
+          "kind": "skiff",
+          "x": 360,
+          "drift": 6
+        },
+        {
+          "time": 13.98,
+          "kind": "rescue",
+          "x": 145,
+          "drift": -2
+        },
+        {
+          "time": 17.3,
+          "kind": "barge",
+          "x": 300,
+          "drift": -4
+        },
+        {
+          "time": 20.62,
+          "kind": "skiff",
+          "x": 440,
+          "drift": 3
+        },
+        {
+          "time": 23.94,
+          "kind": "sailor",
+          "x": 90,
+          "drift": 0
+        },
+        {
+          "time": 27.26,
+          "kind": "rescue",
+          "x": 385,
+          "drift": 6
+        },
+        {
+          "time": 30.58,
+          "kind": "cargo",
+          "x": 240,
+          "drift": -2
+        },
+        {
+          "time": 33.9,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 37.22,
+          "kind": "sailor",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 40.54,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 0
+        },
+        {
+          "time": 43.86,
+          "kind": "sailor",
+          "x": 390,
+          "drift": 6
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Soft horizon",
+      "coast": 4,
+      "coast_name": "Mistward Shelf",
+      "tagline": "Find the signal",
+      "briefing": "Emergency boats need a steady beam before the others.",
+      "tutorial": false,
+      "target": 7,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": -13,
+      "storm": 0.35,
+      "fog": 0.6,
+      "reefs": [
+        [
+          130,
+          400,
+          37
+        ],
+        [
+          405,
+          480,
+          40
+        ],
+        [
+          250,
+          590,
+          32
+        ]
+      ],
+      "lives": 3,
+      "duration": 54.82,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 260,
+          "drift": -4
+        },
+        {
+          "time": 3.86,
+          "kind": "skiff",
+          "x": 130,
+          "drift": 3
+        },
+        {
+          "time": 7.02,
+          "kind": "sailor",
+          "x": 405,
+          "drift": 0
+        },
+        {
+          "time": 10.18,
+          "kind": "skiff",
+          "x": 280,
+          "drift": 6
+        },
+        {
+          "time": 13.34,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 16.5,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 19.66,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 22.82,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Signal through mist",
+      "coast": 4,
+      "coast_name": "Mistward Shelf",
+      "tagline": "Find the signal",
+      "briefing": "Emergency boats need a steady beam before the others.",
+      "tutorial": false,
+      "target": 9,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": -13,
+      "storm": 0.35,
+      "fog": 0.6,
+      "reefs": [
+        [
+          130,
+          400,
+          37
+        ],
+        [
+          405,
+          480,
+          40
+        ],
+        [
+          250,
+          590,
+          32
+        ]
+      ],
+      "lives": 3,
+      "duration": 61.14,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 100,
+          "drift": -4
+        },
+        {
+          "time": 3.86,
+          "kind": "sailor",
+          "x": 430,
+          "drift": 3
+        },
+        {
+          "time": 7.02,
+          "kind": "skiff",
+          "x": 275,
+          "drift": 0
+        },
+        {
+          "time": 10.18,
+          "kind": "sailor",
+          "x": 145,
+          "drift": 6
+        },
+        {
+          "time": 13.34,
+          "kind": "skiff",
+          "x": 370,
+          "drift": -2
+        },
+        {
+          "time": 16.5,
+          "kind": "skiff",
+          "x": 250,
+          "drift": -4
+        },
+        {
+          "time": 19.66,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 22.82,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 25.98,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 29.14,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Priority passage",
+      "coast": 4,
+      "coast_name": "Mistward Shelf",
+      "tagline": "Find the signal",
+      "briefing": "Emergency boats need a steady beam before the others.",
+      "tutorial": false,
+      "target": 11,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": -13,
+      "storm": 0.35,
+      "fog": 0.6,
+      "reefs": [
+        [
+          130,
+          400,
+          37
+        ],
+        [
+          405,
+          480,
+          40
+        ],
+        [
+          250,
+          590,
+          32
+        ]
+      ],
+      "lives": 3,
+      "duration": 67.46,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "sailor",
+          "x": 95,
+          "drift": -4
+        },
+        {
+          "time": 3.86,
+          "kind": "cargo",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 7.02,
+          "kind": "skiff",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 10.18,
+          "kind": "cutter",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 13.34,
+          "kind": "sailor",
+          "x": 430,
+          "drift": -2
+        },
+        {
+          "time": 16.5,
+          "kind": "cargo",
+          "x": 215,
+          "drift": -4
+        },
+        {
+          "time": 19.66,
+          "kind": "skiff",
+          "x": 350,
+          "drift": 3
+        },
+        {
+          "time": 22.82,
+          "kind": "skiff",
+          "x": 110,
+          "drift": 0
+        },
+        {
+          "time": 25.98,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 29.14,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 32.3,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 35.46,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "A narrow ribbon",
+      "coast": 4,
+      "coast_name": "Mistward Shelf",
+      "tagline": "Find the signal",
+      "briefing": "Emergency boats need a steady beam before the others.",
+      "tutorial": false,
+      "target": 12,
+      "required_kind": "rescue",
+      "required_count": 1,
+      "tide": -13,
+      "storm": 0.35,
+      "fog": 0.6,
+      "reefs": [
+        [
+          130,
+          400,
+          37
+        ],
+        [
+          405,
+          480,
+          40
+        ],
+        [
+          250,
+          590,
+          32
+        ]
+      ],
+      "lives": 3,
+      "duration": 70.62,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "rescue",
+          "x": 270,
+          "drift": -4
+        },
+        {
+          "time": 3.86,
+          "kind": "skiff",
+          "x": 100,
+          "drift": 3
+        },
+        {
+          "time": 7.02,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 0
+        },
+        {
+          "time": 10.18,
+          "kind": "rescue",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 13.34,
+          "kind": "cargo",
+          "x": 340,
+          "drift": -2
+        },
+        {
+          "time": 16.5,
+          "kind": "skiff",
+          "x": 240,
+          "drift": -4
+        },
+        {
+          "time": 19.66,
+          "kind": "cutter",
+          "x": 450,
+          "drift": 3
+        },
+        {
+          "time": 22.82,
+          "kind": "sailor",
+          "x": 120,
+          "drift": 0
+        },
+        {
+          "time": 25.98,
+          "kind": "skiff",
+          "x": 330,
+          "drift": 6
+        },
+        {
+          "time": 29.14,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 32.3,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 35.46,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 38.62,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Keeper in the fog",
+      "coast": 4,
+      "coast_name": "Mistward Shelf",
+      "tagline": "Find the signal",
+      "briefing": "Emergency boats need a steady beam before the others.",
+      "tutorial": false,
+      "target": 13,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": -13,
+      "storm": 0.35,
+      "fog": 0.6,
+      "reefs": [
+        [
+          130,
+          400,
+          37
+        ],
+        [
+          405,
+          480,
+          40
+        ],
+        [
+          250,
+          590,
+          32
+        ]
+      ],
+      "lives": 3,
+      "duration": 73.78,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "cargo",
+          "x": 110,
+          "drift": -4
+        },
+        {
+          "time": 3.86,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 3
+        },
+        {
+          "time": 7.02,
+          "kind": "cutter",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 10.18,
+          "kind": "skiff",
+          "x": 360,
+          "drift": 6
+        },
+        {
+          "time": 13.34,
+          "kind": "rescue",
+          "x": 145,
+          "drift": -2
+        },
+        {
+          "time": 16.5,
+          "kind": "barge",
+          "x": 300,
+          "drift": -4
+        },
+        {
+          "time": 19.66,
+          "kind": "skiff",
+          "x": 440,
+          "drift": 3
+        },
+        {
+          "time": 22.82,
+          "kind": "sailor",
+          "x": 90,
+          "drift": 0
+        },
+        {
+          "time": 25.98,
+          "kind": "rescue",
+          "x": 385,
+          "drift": 6
+        },
+        {
+          "time": 29.14,
+          "kind": "cargo",
+          "x": 240,
+          "drift": -2
+        },
+        {
+          "time": 32.3,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 35.46,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 38.62,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 0
+        },
+        {
+          "time": 41.78,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 6
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Northern arrivals",
+      "coast": 5,
+      "coast_name": "Northlight Cape",
+      "tagline": "Bring everyone home",
+      "briefing": "Mixed fleets, quick cutters and heavy barges share the final approach.",
+      "tutorial": false,
+      "target": 7,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": 17,
+      "storm": 0.8,
+      "fog": 0.25,
+      "reefs": [
+        [
+          120,
+          455,
+          34
+        ],
+        [
+          405,
+          525,
+          37
+        ],
+        [
+          215,
+          625,
+          27
+        ]
+      ],
+      "lives": 3,
+      "duration": 53.7,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 260,
+          "drift": -4
+        },
+        {
+          "time": 3.7,
+          "kind": "skiff",
+          "x": 130,
+          "drift": 3
+        },
+        {
+          "time": 6.7,
+          "kind": "sailor",
+          "x": 405,
+          "drift": 0
+        },
+        {
+          "time": 9.7,
+          "kind": "skiff",
+          "x": 280,
+          "drift": 6
+        },
+        {
+          "time": 12.7,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 15.7,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 18.7,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 21.7,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Cutter chorus",
+      "coast": 5,
+      "coast_name": "Northlight Cape",
+      "tagline": "Bring everyone home",
+      "briefing": "Mixed fleets, quick cutters and heavy barges share the final approach.",
+      "tutorial": false,
+      "target": 9,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": 17,
+      "storm": 0.8,
+      "fog": 0.25,
+      "reefs": [
+        [
+          120,
+          455,
+          34
+        ],
+        [
+          405,
+          525,
+          37
+        ],
+        [
+          215,
+          625,
+          27
+        ]
+      ],
+      "lives": 3,
+      "duration": 59.7,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 100,
+          "drift": -4
+        },
+        {
+          "time": 3.7,
+          "kind": "sailor",
+          "x": 430,
+          "drift": 3
+        },
+        {
+          "time": 6.7,
+          "kind": "skiff",
+          "x": 275,
+          "drift": 0
+        },
+        {
+          "time": 9.7,
+          "kind": "sailor",
+          "x": 145,
+          "drift": 6
+        },
+        {
+          "time": 12.7,
+          "kind": "skiff",
+          "x": 370,
+          "drift": -2
+        },
+        {
+          "time": 15.7,
+          "kind": "skiff",
+          "x": 250,
+          "drift": -4
+        },
+        {
+          "time": 18.7,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 21.7,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 24.7,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 27.7,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Heavy seas",
+      "coast": 5,
+      "coast_name": "Northlight Cape",
+      "tagline": "Bring everyone home",
+      "briefing": "Mixed fleets, quick cutters and heavy barges share the final approach.",
+      "tutorial": false,
+      "target": 11,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": 17,
+      "storm": 0.8,
+      "fog": 0.25,
+      "reefs": [
+        [
+          120,
+          455,
+          34
+        ],
+        [
+          405,
+          525,
+          37
+        ],
+        [
+          215,
+          625,
+          27
+        ]
+      ],
+      "lives": 3,
+      "duration": 65.7,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "sailor",
+          "x": 95,
+          "drift": -4
+        },
+        {
+          "time": 3.7,
+          "kind": "cargo",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 6.7,
+          "kind": "skiff",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 9.7,
+          "kind": "cutter",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 12.7,
+          "kind": "sailor",
+          "x": 430,
+          "drift": -2
+        },
+        {
+          "time": 15.7,
+          "kind": "cargo",
+          "x": 215,
+          "drift": -4
+        },
+        {
+          "time": 18.7,
+          "kind": "skiff",
+          "x": 350,
+          "drift": 3
+        },
+        {
+          "time": 21.7,
+          "kind": "skiff",
+          "x": 110,
+          "drift": 0
+        },
+        {
+          "time": 24.7,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 27.7,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 30.7,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 33.7,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "All hands home",
+      "coast": 5,
+      "coast_name": "Northlight Cape",
+      "tagline": "Bring everyone home",
+      "briefing": "Mixed fleets, quick cutters and heavy barges share the final approach.",
+      "tutorial": false,
+      "target": 12,
+      "required_kind": "rescue",
+      "required_count": 1,
+      "tide": 17,
+      "storm": 0.8,
+      "fog": 0.25,
+      "reefs": [
+        [
+          120,
+          455,
+          34
+        ],
+        [
+          405,
+          525,
+          37
+        ],
+        [
+          215,
+          625,
+          27
+        ]
+      ],
+      "lives": 3,
+      "duration": 68.7,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "rescue",
+          "x": 270,
+          "drift": -4
+        },
+        {
+          "time": 3.7,
+          "kind": "skiff",
+          "x": 100,
+          "drift": 3
+        },
+        {
+          "time": 6.7,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 0
+        },
+        {
+          "time": 9.7,
+          "kind": "rescue",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 12.7,
+          "kind": "cargo",
+          "x": 340,
+          "drift": -2
+        },
+        {
+          "time": 15.7,
+          "kind": "skiff",
+          "x": 240,
+          "drift": -4
+        },
+        {
+          "time": 18.7,
+          "kind": "cutter",
+          "x": 450,
+          "drift": 3
+        },
+        {
+          "time": 21.7,
+          "kind": "sailor",
+          "x": 120,
+          "drift": 0
+        },
+        {
+          "time": 24.7,
+          "kind": "skiff",
+          "x": 330,
+          "drift": 6
+        },
+        {
+          "time": 27.7,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 30.7,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 33.7,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 36.7,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "The last warm light",
+      "coast": 5,
+      "coast_name": "Northlight Cape",
+      "tagline": "Bring everyone home",
+      "briefing": "Mixed fleets, quick cutters and heavy barges share the final approach.",
+      "tutorial": false,
+      "target": 13,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": 17,
+      "storm": 0.8,
+      "fog": 0.25,
+      "reefs": [
+        [
+          120,
+          455,
+          34
+        ],
+        [
+          405,
+          525,
+          37
+        ],
+        [
+          215,
+          625,
+          27
+        ]
+      ],
+      "lives": 3,
+      "duration": 71.7,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "cargo",
+          "x": 110,
+          "drift": -4
+        },
+        {
+          "time": 3.7,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 3
+        },
+        {
+          "time": 6.7,
+          "kind": "cutter",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 9.7,
+          "kind": "skiff",
+          "x": 360,
+          "drift": 6
+        },
+        {
+          "time": 12.7,
+          "kind": "rescue",
+          "x": 145,
+          "drift": -2
+        },
+        {
+          "time": 15.7,
+          "kind": "barge",
+          "x": 300,
+          "drift": -4
+        },
+        {
+          "time": 18.7,
+          "kind": "skiff",
+          "x": 440,
+          "drift": 3
+        },
+        {
+          "time": 21.7,
+          "kind": "sailor",
+          "x": 90,
+          "drift": 0
+        },
+        {
+          "time": 24.7,
+          "kind": "rescue",
+          "x": 385,
+          "drift": 6
+        },
+        {
+          "time": 27.7,
+          "kind": "cargo",
+          "x": 240,
+          "drift": -2
+        },
+        {
+          "time": 30.7,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 33.7,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 36.7,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 0
+        },
+        {
+          "time": 39.7,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 6
+        }
+      ]
+    }
+  ]
+}
