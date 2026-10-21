@@ -83,12 +83,13 @@ Godot Project Settings. JSON `app_id` alone does not change the manifest;
 
 ## Store package and verification
 
-Round Two replaces the app/feature art with illustrated harbor graphics. The
-26 achievement and four leaderboard illustration redo is staged separately;
-legacy badge files remain historical until replaced. Illustrations are not
-screenshots. Nine earlier-build ordinary-play phone and logical seven/ten-inch
-emulator screenshots remain in `marketing/screenshots`; new final-build captures
-are required after this source update, and no physical-tablet test is claimed.
+Round Two replaces app/feature, all 26 achievement icons and all four leaderboard
+icons with distinct generated illustrations. Originals, prompts and SHA256
+provenance are retained under `marketing/source-art`; standard 512px packaging
+was inspected at final size and at 64px. Illustrations are not screenshots.
+Nine earlier-build ordinary-play phone and logical seven/ten-inch emulator
+screenshots remain in `marketing/screenshots`; updated final-build captures
+are required after this source update. No physical-tablet test is claimed.
 
 `HANDOFF.txt`, `docs/NATIVE_QA.json` and `docs/LOCAL_TEST_RESULTS.json` distinguish
 current-build tests from historical tests and list remaining limits. The original

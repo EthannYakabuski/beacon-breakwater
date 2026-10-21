@@ -1,0 +1,46 @@
+{
+  "generator": "built-in image_gen; one distinct call per badge",
+  "kind": "Original illustrated leaderboards artwork",
+  "files": [
+    {
+      "file": "best_endless-v2-original.png",
+      "bytes": 2620384,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "40b74f31e26eeeeb0a65b5f7040db066fd3aeb2e47d267f1faedd9f17f727fef",
+      "prompt": null
+    },
+    {
+      "file": "keeper_level-v2-original.png",
+      "bytes": 2469741,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "dcac85bdceb25371ee7b407bac5e566acb6ee67a877d486f7012776ce08eb7c1",
+      "prompt": null
+    },
+    {
+      "file": "perfect_watches-v2-original.png",
+      "bytes": 2597849,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "6aba631f22df9113b461be59ca38339d461ff3e6485134b6739fa310372a31c4",
+      "prompt": null
+    },
+    {
+      "file": "total_rescued-v2-original.png",
+      "bytes": 2689336,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "21732777e85506a7694300c41be745c12e79a63fa864a89ae141e06be64b1225",
+      "prompt": null
+    }
+  ]
+}

@@ -1,7 +1,9 @@
-Round Two runtime harbor/lighthouse/shoal and app/feature images are generated
-illustrations, with originals and SHA256 provenance retained in assets/art and
-marketing/source-art. Standard store-size packaging only resizes those originals.
-Achievement/leaderboard illustration replacement is pending; legacy badge files
-retain their earlier scope until replaced. None of these images is a gameplay
-screenshot. Preserved earlier-build screenshots must be refreshed from normal
-implemented play on the updated final APK before claiming updated native views.
+Round Two app/feature plus all26achievement/fourleaderboard illustrations are
+replaced with distinct generated artwork. Each badge had its own built-in
+imagegen call and semantic prompt. Original PNGs, prompts and hash manifests are
+retained under marketing/source-art. Standard resizing packages512px badges,
+512px app icon and1024x500 feature; final512 artwork and64px thumbnails reviewed.
+Runtime harbor/lighthouse/shoal originals retain separate assets/art provenance.
+Illustrations are not gameplay screenshots. Preserved original-APK screenshots
+remain historical until the coordinator replaces them with final-build native
+phone/logical7/logical10 views. No physical-tablet or production-service claim.

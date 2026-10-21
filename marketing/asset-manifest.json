@@ -2,182 +2,182 @@
   {
     "file": "achievements/coast1.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "6e6492f6ac1e1805ee5253bfb49b1b5a5c745a97c8002aa6eab6ab6c6598f39d"
+    "sha256": "08cfb75691b7642c84cb5fbd7b29b5e61e72b47b41a547bb1626c75ff7cbec7f"
   },
   {
     "file": "achievements/coast2.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "6ecdc2f8f819b6e43c64200b4cec1eb7696e2cc53195e0d0e3f7eb862e26ace6"
+    "sha256": "2891bfa52f6156838c0a00186db8bc7eca9b43ee8c68755a51c8061554a53c5c"
   },
   {
     "file": "achievements/coast3.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "0f5878d80900509818d3f012d757909c2a3ca3f8667115462a87081d26fc20ca"
+    "sha256": "ead68f60f43360961041b2049689ca41a9fd5b39725a04ed4d565c4c35996bc9"
   },
   {
     "file": "achievements/coast4.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "cc8b23543f7ed47b6405b73939ca84a6308753bf8b1d2ae14e00db4828b43f32"
+    "sha256": "fd8f9c27baf0017d949815e8ae03cbcedec84c7b5a039ed9e337f607911236ef"
   },
   {
     "file": "achievements/coast5.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "60570ab928f662085b7738a54c389673e72c0557a7577400ddc1f9b85aeb4f29"
+    "sha256": "8a68b3f66acb6be7070a1ff069a839ce700e8f852f8aaab3380757208ac80d93"
   },
   {
     "file": "achievements/coast6.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "ccb97dc1687c88adccf27ae65540cef9847ad4440e820c0a63e466d5f6958bc0"
+    "sha256": "50eb5586827b6473ee24c40f27292028c40645f358a89ec373070ebc5322413d"
   },
   {
     "file": "achievements/daily3.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "757370d929e83613d0e5b1dd1dc773f1d79adf4583b27b3e99d80fdf29d2bdd5"
+    "sha256": "02ca52140551616cbe4d18dec0304dbf8cb19242dcd5652bb5a61ddd50e215ad"
   },
   {
     "file": "achievements/first_rescue.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "4cc73cf7e1cd6eac39c5240a8ba4a0a51cdb04acf67cccfd5bbc1b4b29c2b11d"
+    "sha256": "c3ae0ff1b29c3d79bda165d367cffb86c78ee2778c10a9f674b8ae7b237a5016"
   },
   {
     "file": "achievements/keeper12.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "3fef359b8764d661a517b69dddac75b18953ea3fc3bf201bdfa325971d149ee9"
+    "sha256": "82182680ecc087d55a69bb6dd8e374d182e7719e3e149d90e8e74128310b5178"
   },
   {
     "file": "achievements/keeper3.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "65f565b9bac685683aefff8b13f5c2e33da6dcefec67709b9477338e3fb5cf11"
+    "sha256": "c2077f179a1c954fbe5f527cae647ac9d24e1cab043c77882107602f2cfd9668"
   },
   {
     "file": "achievements/keeper6.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "34bb9c1b0c067c42890c7cd5f9e3900ee56a66ec1453e9e1fbdfc0c85380f454"
+    "sha256": "7f391907e774f8ca2093263ef49a90a21a48c5095abeff8c5c73ca39074c3af8"
   },
   {
     "file": "achievements/perfect1.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "814e8012566e0738c8f6e2c7b1f9d279a4d9bc7a88adea0b3d41bab49ae2fb66"
+    "sha256": "c60b818bbf44e4073080a050bd8c1db661f2b5c9f824dff4a79ffaf88f713f8c"
   },
   {
     "file": "achievements/perfect10.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "eb433136bcc145e8a92ec4bf1d730da3782448b78160ba18cc334f1f1998b0d1"
+    "sha256": "b4d3a9817f5b764a2ed5d783e02513d010720a1325f530ac61cf0661df3468ee"
   },
   {
     "file": "achievements/rescue100.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "d5399eef1b36cd4a20658ee19ef3a7e3b29a6694cfc39c16a4201e372b32a466"
+    "sha256": "99f0148ed27dc675b3aae3a5f28e8a37934947c7c1a1610b4da668f14db4d653"
   },
   {
     "file": "achievements/rescue25.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "7a27ac81d4fde895ca65a972d4a7dd290a8e1b92e1ee0a9f1e62efa799bcb823"
+    "sha256": "c38fd64986fa0590fc467e73d52341d785150d70b3867dd9b2d835f628c5249e"
   },
   {
     "file": "achievements/rescue500.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "1e7652fb40ec140fc02ed89bfb570da69f75aea67dd9b84834ca32200ed3dfa4"
+    "sha256": "d1367bdc84f98872a35e15f883d70cfb1d13d9ac2716780f31db45c430df878f"
   },
   {
     "file": "achievements/upgrade1.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "053026658b4b90d92ae62d860f05a959bb9cc7b6401d5f1e4645ae06e0b17fbe"
+    "sha256": "ffd249001e2b82cf55d98520451a90d42b66e0fc0deb349ecec45442f14cf1f7"
   },
   {
     "file": "achievements/upgrade8.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "963eecf1c732d209d787efa478e4d29de032a732b2228da15cabf8c78737e1c4"
+    "sha256": "23deb0d5122b3aa24b02ddf4ddf80b199a4d21452ec7bf5147dddbd118228461"
   },
   {
     "file": "achievements/watch1.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "bf0c2a886356746e0cd41fca96f4ba97d6012092025ac70daed8a41e6ffa574a"
+    "sha256": "89e6d3a197fc6016a46709d60226941ae19dcbeae6ba29281de327a4f9a6ecb9"
   },
   {
     "file": "achievements/watch10.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "fc357fc67fade38fa445a4af3c2f4639d4c60166a607170b74474df2164896bb"
+    "sha256": "f59039cc845515d7519fdb1b98b41ffa43cbc9711f138b852c3a11086d123b76"
   },
   {
     "file": "app-icon-512.png",
@@ -394,5 +394,59 @@
     ],
     "mode": "RGBA",
     "sha256": "de89285fb3a9c8c3bf8381402d970336e021a55f52fd1724f376f9abc4cbd7ef"
+  },
+  {
+    "file": "achievements/coast7.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "ce4261155e480373d5f089d2eba2fa196b462ffa236927bd9f065ab256a8a9cc"
+  },
+  {
+    "file": "achievements/coast8.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "866ef64d0b32f22b75dcdd21c0ff65c325b9163ff60bb47d943d51ce0f2ce86b"
+  },
+  {
+    "file": "achievements/coast9.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "fba7d14276e8688cf5676dd0edb54dc0fb8e97258023c4cf1e441f07256b258c"
+  },
+  {
+    "file": "achievements/coast10.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "ab8de3b7a396347fe16c07a2d86706e81e1b1ae0ea632945870179c4e8b525f4"
+  },
+  {
+    "file": "achievements/coast11.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "5028ceca6b7d5ca6f8ec53a1288fa1ab2838e0c9f992274260113073c73ae1fa"
+  },
+  {
+    "file": "achievements/coast12.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "67adf94980964f415e74a045915c96a82f7ef88944817b8e0a52514238069719"
   }
 ]

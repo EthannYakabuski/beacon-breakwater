@@ -5,5 +5,16 @@
   "capture_apk_sha256": "82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1",
   "physical_device_test": false,
   "physical_tablet_test": false,
-  "scope": "Preserved original APK captures; Round Two source needs new exports/native checks/final captures. App and feature replaced; badge illustration redo pending."
+  "scope": "Updated illustrations complete; preserved original APK captures retain their previous scope until new native final-build capture acceptance.",
+  "round_two_art": {
+    "app": true,
+    "feature": true,
+    "achievement_icons": 26,
+    "leaderboard_icons": 4,
+    "badge_pixels": [
+      512,
+      512
+    ],
+    "review": "All final512 and64px thumbnails inspected; not gameplay evidence."
+  }
 }

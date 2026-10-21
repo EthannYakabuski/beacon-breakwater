@@ -1,1 +1,5 @@
-Beacon Breakwater Round Two harbor, lighthouse, shoal, app and feature art: original generated illustrations for this project, Apache-2.0 original-work license. Ships, UI stars and selected sounds remain separately licensed Kenney CC0 assets. These illustrations are not gameplay screenshots. Original sources and hashes are retained with the assets.
+Beacon Breakwater Round Two harbor, lighthouse, shoal, app, feature,26achievement
+and4leaderboard images are original generated illustrations for this project,
+Apache-2.0 original-work license. Retained source images/prompts/hash manifests
+document provenance. These are not gameplay screenshots. Ships, UI star assets
+and selected sounds remain separately licensed Kenney CC0 assets; notices kept.

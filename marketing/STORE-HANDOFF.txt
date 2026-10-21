@@ -11,4 +11,5 @@ playtesting remain separate acceptance. See docs/NATIVE_QA.json for scoped facts
 
 Round Two source/art changes require new final-build phone/7/10 captures. These
 preserved screenshots do not verify the new source. App/feature art has been
-replaced with generated illustrations; the badge redo is pending separate art.
+replaced with generated illustrations; all26achievement and four leaderboard illustrations are also replaced.
+Originals/prompts/hashes are retained; final512/64px artwork review is complete.

@@ -21,5 +21,20 @@
     }
   ],
   "packaging": "Godot Image.resize standard-size packaging only; original creative content retained.",
-  "license": "Apache-2.0 original project work."
+  "license": "Apache-2.0 original project work.",
+  "badge_sets": [
+    {
+      "catalog": "game/catalog.json",
+      "kind": "achievements",
+      "count": 26,
+      "originals": "marketing/source-art/achievements/generated-manifest.json",
+      "finals": "marketing/achievements/*.png"
+    },
+    {
+      "kind": "leaderboards",
+      "count": 4,
+      "originals": "marketing/source-art/leaderboards/generated-manifest.json",
+      "finals": "marketing/leaderboards/*.png"
+    }
+  ]
 }

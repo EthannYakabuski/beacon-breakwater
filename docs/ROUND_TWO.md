@@ -44,8 +44,8 @@ assistance have separate licensed feedback. Source and license manifests retain
 Kenney CC0 notices and original score provenance.
 
 New illustrated app/feature images are packaged from retained originals using
-standard resizing. Achievement/leaderboard art replacement is a separate pending
-illustration stage. The old screenshot set is historical until final-build
+standard resizing. All26achievement and four leaderboard illustrations are replaced and packaged
+at512px; final-size pages and64px thumbnails were inspected. The old screenshot set is historical until final-build
 phone/logical7/logical10 captures replace it. Illustrations are not screenshots.
 
 ## Verification and remaining acceptance
@@ -66,7 +66,7 @@ Android audio claim follows from that test.
 The original APK/hash and earlier native QA remain in `HANDOFF.txt`. They were not
 rebuilt or re-tested by these source checks. New Android/Web exports, affected
 native gameplay/earned-continue/endcard/Back/save/offline checks, final-build
-captures and remaining marketing art are required before the updated package's
+captures are required before the updated package's
 handoff. Hosted CI validates its exact commit and is distinct from original local
 APK QA. Physical devices, production services, audible output, interactive Web,
 long sessions and human balance acceptance remain unverified.

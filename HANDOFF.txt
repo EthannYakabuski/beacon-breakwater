@@ -30,7 +30,8 @@ guide it home before its timer expires. Use the free Foghorn, pause and Resume.
 Sixty authored watches across twelve coasts, Endless/Daily, gifts/quests, equipment,
 keeper progression, banked saves/backup and records are implemented. Supplied
 native plugins use sample ad IDs; PGS has 26 achievements/four boards with blank,
-disabled real-ID mappings. New illustrated app/feature art is included; the remaining badge redo is pending.
+disabled real-ID mappings. New illustrated app/feature art, all26achievement icons and all4board icons are
+packaged, with original sources/prompts/hashes and final512/64px visual review.
 Nine preserved earlier-build phone/logical-tablet screenshots retain their old
 APK scope and must be refreshed for the updated build.
 
@@ -91,6 +92,5 @@ logical-tablet previews were inspected. These are development fixtures, not
 auditory acceptance, native SDK evidence or store gameplay screenshots.
 
 New Android/Web exports, affected real native gameplay/rewarded-continue/endcard/
-Back/save/offline checks, final-build phone/7/10 capture review and the remaining
-illustrated badges are pending. Do not relabel the original APK or CI binaries
+Back/save/offline checks, final-build phone/7/10 capture review are pending. All26achievement/fourboard illustrations are complete. Do not relabel the original APK or CI binaries
 as having those checks. See docs/ROUND_TWO.md for behavior and acceptance scope.

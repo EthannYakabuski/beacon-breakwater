@@ -1,0 +1,266 @@
+{
+  "generator": "built-in image_gen; one distinct call per badge",
+  "kind": "Original illustrated achievements artwork",
+  "files": [
+    {
+      "file": "coast1-v2-original.png",
+      "bytes": 2482599,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "299150d4bec9126f7a4ea0f6d29b71781b8f1236179dd59bb9e579383c880268",
+      "prompt": "coast1-v2-original.prompt.txt"
+    },
+    {
+      "file": "coast10-v2-original.png",
+      "bytes": 2969392,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "06df6443b1674ccfb5700e4306c4a0279e856dc6c68e732720178e391116c5bd",
+      "prompt": "coast10-v2-original.prompt.txt"
+    },
+    {
+      "file": "coast11-v2-original.png",
+      "bytes": 2897911,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "427742764d785f4778d42e11c4e5f57198dddcd65a64f0d8f1009e3407b9f856",
+      "prompt": "coast11-v2-original.prompt.txt"
+    },
+    {
+      "file": "coast12-v2-original.png",
+      "bytes": 2905955,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "aeae7e44bcd2e9a0301ceb1c43633a4ec25d9048ed8530d4fa34eb8c849ab9b5",
+      "prompt": "coast12-v2-original.prompt.txt"
+    },
+    {
+      "file": "coast2-v2-original.png",
+      "bytes": 2851547,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "c831addb385b5665631451d1a75a8fffd88d938491ca60b518afcbdf92302b0c",
+      "prompt": "coast2-v2-original.prompt.txt"
+    },
+    {
+      "file": "coast3-v2-original.png",
+      "bytes": 3046814,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "8f6635550a87d09cac56ed0a672ff731869712b21e125bde5cddf33e388409ae",
+      "prompt": "coast3-v2-original.prompt.txt"
+    },
+    {
+      "file": "coast4-v2-original.png",
+      "bytes": 2883599,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "3812b2dff14f4b7f8d573bf60572fd4bb5ea5e702da92df2a036afaacaa42e84",
+      "prompt": "coast4-v2-original.prompt.txt"
+    },
+    {
+      "file": "coast5-v2-original.png",
+      "bytes": 2332940,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "3a93ce96a2764156b35a94785be97b839db6d69128a5483ee4a0ec62b73a10f5",
+      "prompt": "coast5-v2-original.prompt.txt"
+    },
+    {
+      "file": "coast6-v2-original.png",
+      "bytes": 2652389,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "cc763761e5f517f52f79ece16b9fb96cc4fc72069e96c236e9644c863c53d374",
+      "prompt": "coast6-v2-original.prompt.txt"
+    },
+    {
+      "file": "coast7-v2-original.png",
+      "bytes": 2782899,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "08db8bd13bb131fce9441690f2c4c499c40bb4efe3b5721fdc0d8791aa0bb564",
+      "prompt": "coast7-v2-original.prompt.txt"
+    },
+    {
+      "file": "coast8-v2-original.png",
+      "bytes": 2763725,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "854f333d1f62dfb0847509304224109670fbecdb25b3cd580feb4384f96e15af",
+      "prompt": "coast8-v2-original.prompt.txt"
+    },
+    {
+      "file": "coast9-v2-original.png",
+      "bytes": 2721509,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "a8912afba40ba26d87445d470b746990c74e11e61b94becbc493895e9a3f1a97",
+      "prompt": "coast9-v2-original.prompt.txt"
+    },
+    {
+      "file": "daily3-v2-original.png",
+      "bytes": 2693992,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "d7e0f9b4d4965d49d18d1b6588e18133dc5a847c26750eafb553980a789b197e",
+      "prompt": "daily3-v2-original.prompt.txt"
+    },
+    {
+      "file": "first_rescue-v2-original.png",
+      "bytes": 2556083,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "a2619db495dc31e36aa8d136bb49c795e199cf7f9a49378bc31637df76cb0bfc",
+      "prompt": "first_rescue-v2-original.prompt.txt"
+    },
+    {
+      "file": "keeper12-v2-original.png",
+      "bytes": 2801747,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "e659e1b1d25cc696381797fd94d355074bfa6dbddf4c58008f405a2b379295f8",
+      "prompt": "keeper12-v2-original.prompt.txt"
+    },
+    {
+      "file": "keeper3-v2-original.png",
+      "bytes": 2519773,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "a7fce632c498e6899df737fefeed11449b30ea5f0759b755b26bbf82201fd620",
+      "prompt": "keeper3-v2-original.prompt.txt"
+    },
+    {
+      "file": "keeper6-v2-original.png",
+      "bytes": 2711411,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "dd9961c529f42972cd8bc40d5ea8f2a84476219239606217010a72c93585d020",
+      "prompt": "keeper6-v2-original.prompt.txt"
+    },
+    {
+      "file": "perfect1-v2-original.png",
+      "bytes": 2697049,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "64f8038ef3510450eef210b5518d14fddf4d959b8c6d10c4714fade42903f873",
+      "prompt": "perfect1-v2-original.prompt.txt"
+    },
+    {
+      "file": "perfect10-v2-original.png",
+      "bytes": 2788474,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "e57c3916feceeacf7f721b3ac1ff3e857d6db5ec2c218fa4d74bb9f251406149",
+      "prompt": "perfect10-v2-original.prompt.txt"
+    },
+    {
+      "file": "rescue100-v2-original.png",
+      "bytes": 2886948,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "21c9bc7a5456574cd800c92e6e98caa0aea96110f2db1781a3e281dd5965f733",
+      "prompt": "rescue100-v2-original.prompt.txt"
+    },
+    {
+      "file": "rescue25-v2-original.png",
+      "bytes": 2565062,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "4006500ab7775c60c6d3cd9b39df638929ebbcf9c7470bdda636ea44b2db5d76",
+      "prompt": "rescue25-v2-original.prompt.txt"
+    },
+    {
+      "file": "rescue500-v2-original.png",
+      "bytes": 2754684,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "941ba9eee61333f1a3e906f0b951d92c8e5dd830dbcf1584af8d887a708f3316",
+      "prompt": "rescue500-v2-original.prompt.txt"
+    },
+    {
+      "file": "upgrade1-v2-original.png",
+      "bytes": 2581558,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "166df76481e947d28c65638e95d90dca88452e68a204140f6fb3f1e8885bf617",
+      "prompt": "upgrade1-v2-original.prompt.txt"
+    },
+    {
+      "file": "upgrade8-v2-original.png",
+      "bytes": 2951858,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "2d73573d84a8640531c0e4f1102c4692272c18165f6e0819743dd73e041111f3",
+      "prompt": "upgrade8-v2-original.prompt.txt"
+    },
+    {
+      "file": "watch1-v2-original.png",
+      "bytes": 2630476,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "ecb53d79c3521396033932bf7bcc9cbbd416803631445912fbc1d4247253bc95",
+      "prompt": "watch1-v2-original.prompt.txt"
+    },
+    {
+      "file": "watch10-v2-original.png",
+      "bytes": 2620112,
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "c9f14c5630cd8a400e74ae76eadd68f67d337f9a5547f44264cceb95c177e9a6",
+      "prompt": "watch10-v2-original.prompt.txt"
+    }
+  ]
+}

@@ -28,3 +28,12 @@ CHECKPOINT.txt
 /local-backups/
 **/*-stopped-save.json
 **/runtime-receipt.json
+
+/marketing/source-art/**/*.import
+/marketing/screenshots/**/*.import
+/marketing/achievements/coast7.png.import
+/marketing/achievements/coast8.png.import
+/marketing/achievements/coast9.png.import
+/marketing/achievements/coast10.png.import
+/marketing/achievements/coast11.png.import
+/marketing/achievements/coast12.png.import
