@@ -94,3 +94,14 @@ auditory acceptance, native SDK evidence or store gameplay screenshots.
 New Android/Web exports, affected real native gameplay/rewarded-continue/endcard/
 Back/save/offline checks, final-build phone/7/10 capture review are pending. All26achievement/fourboard illustrations are complete. Do not relabel the original APK or CI binaries
 as having those checks. See docs/ROUND_TWO.md for behavior and acceptance scope.
+
+
+FOCUSED SOURCE FOLLOW-UP: CARD TOUCH SCROLL
+Native testing found card-body swipes did not scroll a clipped briefing; dragging
+the thin scrollbar was a usable workaround. The focused fix sets only the card
+PanelContainer to MOUSE_FILTER_PASS, retaining child Button filters. The actual
+Viewport regression now reveals a genuinely clipped Begin with a body drag,
+proves no callback/profile change during drag, then activates Begin exactly once.
+Strict paired-touch113/mouse106/fullscreen-UI57/notice90 checks passed. New exports
+and native touch-control acceptance remain required; earlier c0bd98f/3F9BE098
+artifact observations retain their own scope and must not be relabeled final.

@@ -70,3 +70,21 @@ captures are required before the updated package's
 handoff. Hosted CI validates its exact commit and is distinct from original local
 APK QA. Physical devices, production services, audible output, interactive Web,
 long sessions and human balance acceptance remain unverified.
+
+
+## Native-discovered card scrolling correction
+
+Card PanelContainers now pass GUI events to their ScrollContainer; child action
+Button filters and ownership are unchanged. The earlier source let a touch drag
+over a card body stop at the panel, leaving a clipped Begin control inaccessible
+without using the narrow scrollbar. An isolated actual Viewport reproduction
+showed zero scroll before this one-property correction and full available scroll
+after it. A measured-reserve fixture now proves the Begin button is clipped,
+drags through the card body to reveal it, and activates it exactly once with the
+ordinary paired touch/mouse release. Dragging preserves the page and banked data.
+
+Focused strict checks passed:113 paired-touch dispatch,106 mouse dispatch,57
+fullscreen/UI and90 notice-bounds checks, with no engine errors. Test touchscreen
+emulation is confined to the fixture process; project/platform settings and real
+saves are unchanged. New exports and affected native controls must be verified;
+the preceding c0bd98f build's observations do not certify this corrected binary.

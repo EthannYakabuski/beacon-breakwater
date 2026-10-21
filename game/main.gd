@@ -231,7 +231,7 @@ func _layout_page() -> void:
 	if is_instance_valid(back): back.position.y=bottom-58.0
 
 func _card(column: VBoxContainer, title: String, description: String, action: String = "", callback: Callable = Callable(), key: String = "", disabled: bool = false) -> VBoxContainer:
-	var panel=PanelContainer.new()
+	var panel=PanelContainer.new();panel.mouse_filter=Control.MOUSE_FILTER_PASS
 	var style=StyleBoxFlat.new();style.bg_color=Color("183f50")
 	style.border_color=Color("3a6570");style.set_border_width_all(1);style.set_corner_radius_all(15)
 	style.content_margin_left=17;style.content_margin_right=17;style.content_margin_top=15;style.content_margin_bottom=15
