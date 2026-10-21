@@ -1,0 +1,1 @@
+Beacon Breakwater Round Two: thirteen original 16-bar coastal scores, composed/synthesized by tools/build_content.py. Apache-2.0 original project work; no external sampled recording.

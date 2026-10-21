@@ -21,19 +21,21 @@ SHA256: 82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1
 Bytes: 183692140
 The original APK and previous packages/evidence are retained locally outside
 Git. Hosted CI artifacts are separate builds without this APK's native QA.
-This continuation update changes documentation only; no APK rebuild is required.
+The current Round Two source update changes runtime behavior and requires new
+Android/Web exports and affected native checks. The original APK remains unchanged.
 
 PLAY AND IMPLEMENTED PACKAGE
 Aim by dragging over water. Hold the beam on a boat until guidance completes;
 guide it home before its timer expires. Use the free Foghorn, pause and Resume.
-Thirty authored watches across six coasts, Endless/Daily, gifts/quests, equipment,
+Sixty authored watches across twelve coasts, Endless/Daily, gifts/quests, equipment,
 keeper progression, banked saves/backup and records are implemented. Supplied
-native plugins use sample ad IDs; PGS has 20 achievements/four boards with blank,
-disabled real-ID mappings. Store illustrations/copy/icons and nine reviewed
-normal-play phone/logical-tablet screenshots are included with their notices.
+native plugins use sample ad IDs; PGS has 26 achievements/four boards with blank,
+disabled real-ID mappings. New illustrated app/feature art is included; the remaining badge redo is pending.
+Nine preserved earlier-build phone/logical-tablet screenshots retain their old
+APK scope and must be refreshed for the updated build.
 
-ACTUAL QA AND ITS SCOPE
-On this exact APK, a genuine earned rescue flare stayed paused through a
+ORIGINAL APK QA AND ITS SCOPE
+On the original APK identified above, a genuine earned rescue flare stayed paused through a
 60.518-second native endcard. Explicit Resume returned to usable ordinary play.
 A natural assisted result banked once; Android Back remained usable. All 18
 typed banked save groups survived the observed installation/update and offline
@@ -49,7 +51,7 @@ The sanitized details remain in docs/NATIVE_QA.json and docs/LOCAL_TEST_RESULTS.
 No raw logs, real saves or private evidence references belong in public docs.
 
 NEXT INTEGRATION STEPS
-Use game/catalog.json keys/metrics/icons to create the 20 achievements/four
+Use game/catalog.json keys/metrics/icons to create the 26 achievements/four
 leaderboards in Play Console. Put actual IDs and numeric game_id in
 platform/config.json, set the same numeric godot_play_game_services/game_id in
 the Android export preset, and enable PGS only after linked-app/OAuth/signing
@@ -69,3 +71,26 @@ devices, audible output, interactive Web/audio/WebGL, production services and
 human balance remain unverified. Owner supplies production/backend/signing,
 privacy/contact/consent/store declarations and handles Play publication.
 Retain LICENSE, NOTICE and the complete LICENSES tree with redistributed builds.
+
+
+ROUND TWO SOURCE VERIFICATION (2026-10-21)
+Proportional beam-footprint illumination controls movement, with immediate base
+speed off beam; distinct vessel types have maximum lit speed 58 versus the old
+118, and ring budgets are 25 percent shorter. There are 60 watches/12 coasts,
+five upgrade families, Kenney filled star textures and a true hollow CC0 vector derivative, thirteen full musical loops,
+new guidance/arrival/horn/assistance feedback and illustrated coastal runtime art.
+One earned loss continue restores the real lost fleet, marks assistance and keeps
+the game paused until explicit Resume. Existing banked schema1 progress remains.
+
+Strict isolated checks passed: Round Two38, model235 (including60/60 deterministic
+baseline-gear priority-solver victories), UI57, dispatch106, notice-bounds90 and
+service smoke checks; clean import and no engine/script/assertion failures.
+A bounded actual Windows Compatibility GPU fixture passed52 rendered-view and
+actual-player policy checks, with its process audio muted. Five synthetic phone/
+logical-tablet previews were inspected. These are development fixtures, not
+auditory acceptance, native SDK evidence or store gameplay screenshots.
+
+New Android/Web exports, affected real native gameplay/rewarded-continue/endcard/
+Back/save/offline checks, final-build phone/7/10 capture review and the remaining
+illustrated badges are pending. Do not relabel the original APK or CI binaries
+as having those checks. See docs/ROUND_TWO.md for behavior and acceptance scope.

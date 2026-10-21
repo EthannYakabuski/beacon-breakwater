@@ -1,0 +1,99 @@
+{
+  "license": "Apache-2.0 original composition",
+  "sample_rate": 22050,
+  "tracks": [
+    {
+      "file": "assets/audio/music-menu.wav",
+      "bars": 16,
+      "bpm": 88,
+      "seconds": 43.6364,
+      "sha256": "2a18d8cb6df51d64456faa1777f7bc2028fc6caf31418e3048025b0622ea078c"
+    },
+    {
+      "file": "assets/audio/music-coast-00.wav",
+      "bars": 16,
+      "bpm": 84,
+      "seconds": 45.7143,
+      "sha256": "5d999a01a8d98dfcb3e3caa13f96dd2dcc09ca81e345f14e61caff6481938266"
+    },
+    {
+      "file": "assets/audio/music-coast-01.wav",
+      "bars": 16,
+      "bpm": 86,
+      "seconds": 44.6512,
+      "sha256": "7ee6839fbe3d14c44599a58bb551ee8747020a66cc972e177195e950ae7eab90"
+    },
+    {
+      "file": "assets/audio/music-coast-02.wav",
+      "bars": 16,
+      "bpm": 88,
+      "seconds": 43.6364,
+      "sha256": "83eee33920e66b267feb73032b8dfc4f225b0fa92aba42f857c3c9892c723af9"
+    },
+    {
+      "file": "assets/audio/music-coast-03.wav",
+      "bars": 16,
+      "bpm": 90,
+      "seconds": 42.6667,
+      "sha256": "1d27edbd47d70f608cca90138018a8dd82f56de8bb1ad44bf807b9ef18f080de"
+    },
+    {
+      "file": "assets/audio/music-coast-04.wav",
+      "bars": 16,
+      "bpm": 92,
+      "seconds": 41.7391,
+      "sha256": "7709ab2e8ba18ecadcb0b54da23f22dcd20aa0283e15d349e5463a1ee4fa9bc1"
+    },
+    {
+      "file": "assets/audio/music-coast-05.wav",
+      "bars": 16,
+      "bpm": 94,
+      "seconds": 40.8511,
+      "sha256": "8051ee5b4d245e781a361c4545c50a1b9485dd1bae39521a8aef8a5d65e6a213"
+    },
+    {
+      "file": "assets/audio/music-coast-06.wav",
+      "bars": 16,
+      "bpm": 96,
+      "seconds": 40.0,
+      "sha256": "29f15a891df4d15b83f6227dc7bccc3a6c8057ffa2025cbdee1baab969415b1c"
+    },
+    {
+      "file": "assets/audio/music-coast-07.wav",
+      "bars": 16,
+      "bpm": 98,
+      "seconds": 39.1837,
+      "sha256": "60d56ac39ceeacc1c8ac6e959c2e22d6fd8226acc2f92d29e9dc14af68ec7b40"
+    },
+    {
+      "file": "assets/audio/music-coast-08.wav",
+      "bars": 16,
+      "bpm": 100,
+      "seconds": 38.4,
+      "sha256": "f59bfdfb55c106231a869edfd7877633fd152a7ddd2f7ba3310dd3034978ff0f"
+    },
+    {
+      "file": "assets/audio/music-coast-09.wav",
+      "bars": 16,
+      "bpm": 102,
+      "seconds": 37.6471,
+      "sha256": "cc9442e1741996536b0dce479f492bf0678962149689ed5b1e612e82a4244649"
+    },
+    {
+      "file": "assets/audio/music-coast-10.wav",
+      "bars": 16,
+      "bpm": 104,
+      "seconds": 36.9231,
+      "sha256": "0cfeb5aca6a5bf72d88d808ad49e2fc7e376dcd7bc7d68d9295dd39c69541e97"
+    },
+    {
+      "file": "assets/audio/music-coast-11.wav",
+      "bars": 16,
+      "bpm": 106,
+      "seconds": 36.2264,
+      "sha256": "c8632507bda49e7aaeefea169611660031cca7f1a419f27c7e013e09620400a7"
+    }
+  ],
+  "loop": "Runtime sets AudioStreamWAV whole-buffer loop; unique score per level pack and a separate menu arrangement.",
+  "audible_verification": "Not established by generation, waveform checks or headless tests."
+}

@@ -114,6 +114,54 @@
       "icon": "marketing/achievements/coast6.png"
     },
     {
+      "key": "coast7",
+      "title": "Fundy Narrows keeper",
+      "description": "Clear all five watches on this coast.",
+      "metric": "coasts",
+      "target": 7,
+      "icon": "marketing/achievements/coast7.png"
+    },
+    {
+      "key": "coast8",
+      "title": "Lunenburg Roads keeper",
+      "description": "Clear all five watches on this coast.",
+      "metric": "coasts",
+      "target": 8,
+      "icon": "marketing/achievements/coast8.png"
+    },
+    {
+      "key": "coast9",
+      "title": "Grand Manan keeper",
+      "description": "Clear all five watches on this coast.",
+      "metric": "coasts",
+      "target": 9,
+      "icon": "marketing/achievements/coast9.png"
+    },
+    {
+      "key": "coast10",
+      "title": "Cabot Cliffs keeper",
+      "description": "Clear all five watches on this coast.",
+      "metric": "coasts",
+      "target": 10,
+      "icon": "marketing/achievements/coast10.png"
+    },
+    {
+      "key": "coast11",
+      "title": "Northumberland keeper",
+      "description": "Clear all five watches on this coast.",
+      "metric": "coasts",
+      "target": 11,
+      "icon": "marketing/achievements/coast11.png"
+    },
+    {
+      "key": "coast12",
+      "title": "Signal Hill keeper",
+      "description": "Clear all five watches on this coast.",
+      "metric": "coasts",
+      "target": 12,
+      "icon": "marketing/achievements/coast12.png"
+    },
+    {
       "key": "keeper3",
       "title": "Apprentice of the lens",
       "description": "Reach keeper level three.",

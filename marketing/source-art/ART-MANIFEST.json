@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "images": [
+    {
+      "file": "marketing/source-art/app-icon-v2-original.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "3fc08eb73970bc4c6532b69d2ecfc5c70ccc275d9201e1effe261d51cab35b07",
+      "role": "Retained original generated promotional illustration; not gameplay evidence."
+    },
+    {
+      "file": "marketing/source-art/feature-v2-original.png",
+      "dimensions": [
+        1794,
+        877
+      ],
+      "sha256": "3a3d1bb1c687caa43615277da02d8bc71d493a0cfcf276938b6cfb4073782f0f",
+      "role": "Retained original generated promotional illustration; not gameplay evidence."
+    }
+  ],
+  "packaging": "Godot Image.resize standard-size packaging only; original creative content retained.",
+  "license": "Apache-2.0 original project work."
+}

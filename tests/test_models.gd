@@ -14,7 +14,7 @@ func run_tests() -> void:
 	check(p.level()==1 and p.data.coins==140,"honest starting keeper")
 	check(Profile.integer(true)==0 and Profile.integer("999")==0,"reject malformed numeric types")
 	check(Profile.integer(INF)==0 and Profile.integer(-80)==0,"finite bounded normalization")
-	var malformed={"version":1,"coins":-9,"xp":INF,"upgrades":{"lens":999,"focus":true},"missions":{"-1":3,"0":2,"30":3},"daily":"bad","seen":["skiff","skiff",7]}
+	var malformed={"version":1,"coins":-9,"xp":INF,"upgrades":{"lens":999,"focus":true},"missions":{"-1":3,"0":2,"60":3},"daily":"bad","seen":["skiff","skiff",7]}
 	check(p.restore(malformed),"normalize supported schema")
 	check(p.data.coins==0 and p.data.upgrades.lens==6 and p.data.upgrades.focus==0,"nested bounded wallet/equipment")
 	check(p.data.missions=={"0":2} and p.data.seen==["skiff"],"bounded missions and unique typed log")
@@ -83,7 +83,7 @@ func run_tests() -> void:
 	for suffix in ["",".backup",".temporary"]:
 		if FileAccess.file_exists(path+suffix): DirAccess.remove_absolute(path+suffix)
 	var definitions=JSON.parse_string(FileAccess.get_file_as_string("res://game/missions.json"))
-	check(definitions.missions.size()==30 and definitions.coasts.size()==6,"thirty explicit watches and six coasts")
+	check(definitions.missions.size()==60 and definitions.coasts.size()==12,"sixty explicit watches and twelve coasts")
 	var ids={};var fingerprints={};var victories=0
 	for definition in definitions.missions:
 		ids[int(definition.id)]=true;fingerprints[JSON.stringify(definition.spawns)+JSON.stringify(definition.reefs)+str(definition.tide)]=true
@@ -101,7 +101,7 @@ func run_tests() -> void:
 		check(sim.rescued+sim.lost==definition.spawns.size(),"fleet conservation watch%d"%definition.id)
 		check(not sim.assisted,"no ad or invulnerability in solver watch%d"%definition.id)
 		if sim.won: victories+=1
-	check(ids.size()==30 and fingerprints.size()==30,"unique authored IDs and traffic/coast configurations")
+	check(ids.size()==60 and fingerprints.size()==60,"unique authored IDs and traffic/coast configurations")
 	var sim=Watch.new();sim.start(definitions.missions[0],{"lens":0,"focus":0,"harbor":0})
 	sim.step(0);check(sim.time==0,"zero step cannot advance")
 	sim.spawn("skiff",250);var boat=sim.boats[0];sim.aim(boat.pos)
@@ -118,5 +118,5 @@ func run_tests() -> void:
 	check(not green_fleet.can_flare() and not green_fleet.rescue_flare() and not green_fleet.assisted,"already-guided fleet cannot waste an earned flare")
 	var snapshot=sim.result();sim.done=true;sim.step(1)
 	check(sim.result()==snapshot,"finished model cannot advance behind results")
-	print("BEACON MODEL CHECKS %d failures %d; baseline watches %d/30; synthetic/model only"%[checks,failures,victories])
+	print("BEACON MODEL CHECKS %d failures %d; baseline watches %d/60; synthetic/model only"%[checks,failures,victories])
 	quit(1 if failures else 0)

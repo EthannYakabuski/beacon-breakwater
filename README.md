@@ -2,19 +2,21 @@
 
 A portrait lighthouse rescue arcade built with Godot 4.5.1 Compatibility. Sweep
 one beam over drifting vessels, establish their guidance and bring a fleet home.
-Thirty watches across six coasts, an endless watch and a daily watch share the
+Sixty watches across twelve coasts, an endless watch and a daily watch share the
 same deterministic rescue rules.
 
 ## Play
 
 Drag anywhere over the water to aim the light. Keep a boat inside its beam until
-the inner guidance ring fills. Green boats sail home safely; the outer ring shows
+the inner guidance ring fills. Green boats can sail home, while wider illumination moves them faster; leaving
+the beam resets their speed immediately. The outer ring shows
 time remaining before an unescorted boat is lost. Red emergency marks signal
 priority. The free foghorn slows danger and recharges. Pause is always available.
 Desktop development controls: mouse drag, left/right arrows, Space for foghorn,
 Escape for Back. Android touch is the primary interface.
 
-Coins and keeper XP improve lens width, focus speed and harbor guidance time.
+Coins and keeper XP improve lens width, focus speed, harbor guidance time,
+foghorn reserves and breakwater shelter.
 First mission clears, perfect watches, daily quests and seven-day login gifts
 have explicit rewards. Assisted endless watches never replace the unassisted
 record. Active watches are not resumable saves; only genuine banked progress is
@@ -46,6 +48,7 @@ No Windows distribution build is included.
 
 ```sh
 godot --headless --editor --path . --import
+godot --headless --path . --script tests/test_round_two.gd
 godot --headless --path . --script tests/test_models.gd
 godot --headless --path . --script tests/test_ui.gd -- --qa-isolated
 godot --headless --path . --export-release Web build/web/index.html
@@ -64,11 +67,13 @@ Google Play Games Services and Poing AdMob plugins are vendored with notices.
 The current project uses Google's official sample app and ad unit IDs. Consent
 handling gates ad initialization; Home reserves the measured banner/safe area.
 Natural completed watches advance interstitial cadence every two rounds.
-An earned optional rescue flare guides the visible fleet once per watch. Play
+An earned optional rescue flare guides the visible fleet once per watch. A lost
+watch can offer one earned continue that recovers its actual lost fleet and marks
+the watch assisted. Leaving a continuable loss banks that completed result once. Play
 stays paused through native fullscreen content and requires explicit Resume.
 Offline/Web/unavailable services do not simulate an earned reward.
 
-Play Games is disabled with blank real-ID mappings. Configure the 20 achievements
+Play Games is disabled with blank real-ID mappings. Configure the 26 achievements
 and four boards in `platform/config.json`, using the symbolic keys and metrics in
 `game/catalog.json`, and set the matching numeric PGS game ID in the Android
 export preset. AdMob needs both its JSON ad unit IDs and its manifest App ID in
@@ -78,10 +83,12 @@ Godot Project Settings. JSON `app_id` alone does not change the manifest;
 
 ## Store package and verification
 
-`marketing/` contains app/feature illustrations, 20 achievement icons, four
-leaderboard icons and store/Web copy. Illustrations are not screenshots. Nine
-reviewed ordinary-play phone and logical seven/ten-inch emulator screenshots are
-in `marketing/screenshots`; they are not physical-tablet tests.
+Round Two replaces the app/feature art with illustrated harbor graphics. The
+26 achievement and four leaderboard illustration redo is staged separately;
+legacy badge files remain historical until replaced. Illustrations are not
+screenshots. Nine earlier-build ordinary-play phone and logical seven/ten-inch
+emulator screenshots remain in `marketing/screenshots`; new final-build captures
+are required after this source update, and no physical-tablet test is claimed.
 
 `HANDOFF.txt`, `docs/NATIVE_QA.json` and `docs/LOCAL_TEST_RESULTS.json` distinguish
 current-build tests from historical tests and list remaining limits. The original
@@ -89,8 +96,9 @@ native-tested APK has SHA256
 `82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1`.
 Where restored locally, it remains at `build/android/game-debug.apk`; prebuilt
 exports and private QA evidence are not committed. CI binaries are separate
-builds and have not received that original APK's native QA. No rebuild is needed
-for this documentation-only continuation update.
+builds and have not received that original APK's native QA. The Round Two runtime update needs new exports and affected native checks; the
+older APK and dated hosted CI above do not verify these changes. See
+[Round Two behavior and verification](docs/ROUND_TWO.md).
 
 Physical devices, audible Android output, interactive Web/audio/WebGL, production
 services and human balance remain unverified. Real IDs, backend/signing,
@@ -99,8 +107,9 @@ work. See `marketing/RELEASE-CHECKLIST.txt` for release preparation.
 
 ## License
 
-Original code, authored content, code-drawn illustrations and synthesized ambient
-audio are Apache-2.0. Kenney Pirate Pack and UI SFX Set assets are CC0-1.0. Native
+Original code, authored content, generated harbor illustrations and composed music
+are Apache-2.0. Kenney Pirate Pack, UI Pack, UI SFX and Interface Sounds assets
+are CC0-1.0. Native
 plugins and Godot components retain their own notices. Keep `LICENSE`, `NOTICE`
 and the complete `LICENSES/` directory with redistributed source and builds.
 No Creature Mixer asset is used in this game.

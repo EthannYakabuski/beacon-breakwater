@@ -18,8 +18,8 @@ does not establish present Google Play release eligibility.
 - `game/save_store.gd`: checksummed atomic saves and backup recovery.
 - `game/main.gd`: touch UI, lifecycle pause, once-only result banking and native
   callbacks guarded against a stale run.
-- `game/missions.json`: 30 curated traffic compositions across six coasts.
-- `game/catalog.json`: 20 achievement definitions and four leaderboard metrics/icons.
+- `game/missions.json`: 60 curated traffic compositions across twelve coasts.
+- `game/catalog.json`: 26 achievement definitions and four leaderboard metrics/icons.
 - `platform/services.gd`: consent/native services and pending progress queues.
 
 Preserve assisted versus unassisted records, atomic banked storage and explicit
@@ -31,7 +31,7 @@ round interstitial cadence. Offline/Web paths must not inject rewarded grants.
 
 Use matching Godot templates, JDK 17 and the configured Android SDK. Read the
 commands and strict gates in `.github/workflows/build-and-deploy.yml`; run the
-relevant checks for the change. Useful entry points are `tests/test_models.gd`,
+relevant checks for the change. Useful entry points are `tests/test_round_two.gd`, `tests/test_models.gd`,
 `tests/test_ui.gd -- --qa-isolated`, `tests/test_ui_dispatch.gd` and
 `tests/test_notice_bounds.gd`. The UI isolation flag is required by its harness.
 
@@ -58,8 +58,10 @@ No production service success is established by local sample-ad QA.
 ## Content and notices
 
 `python tools/build_content.py --assets-root <supplied-Kenney-pack-directory>`
-reproduces selected content/art with Pillow. Existing copied assets make normal
-play/build independent of that directory. Illustrations must not be presented as
+reproduces mission/catalog content and copies selected licensed assets. Add
+`--music` to reproduce the original thirteen 16-bar WAV scores. The tool does not
+generate or replace illustrated marketing assets. Existing copied assets make
+normal play/build independent of that directory. Illustrations must not be presented as
 actual gameplay captures. Keep original pack/license texts and engine/plugin
 notices; original Apache-2.0 work does not relicense third-party content.
 
@@ -71,5 +73,5 @@ services and human balance remain unverified. UTC-clock rewards are not tamper-
 proof; no saved-games backend is implemented. Owner handles real service setup,
 signing, privacy/contact/consent/store declarations and Google Play publication.
 Live Pages and Library actions remain outside an ordinary source update.
-Future content idea: Arctic Signal, twelve ice-channel watches and harbor
-cosmetics. It is a proposal, not a current implementation requirement.
+See `ROUND_TWO.md` for illumination coverage, future content, continue accounting,
+legacy-save preservation and the exact source-versus-native verification scope.

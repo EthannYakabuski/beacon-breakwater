@@ -24,7 +24,7 @@ rules, stale-callback protection and the explicit Resume after fullscreen ads.
 An earned callback must not resume combat behind a native endcard. Offline/Web
 fallbacks must not manufacture an earned reward.
 
-Service configuration is in `platform/config.json`; the 20 achievement and four
+Service configuration is in `platform/config.json`; the 26 achievement and four
 leaderboard keys/metrics/icons are in `game/catalog.json`. Play Games also needs
 the matching numeric `godot_play_game_services/game_id` in the Android export
 preset. Its mappings are blank and integration is disabled until configured.

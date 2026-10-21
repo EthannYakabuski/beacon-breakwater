@@ -1,14 +1,15 @@
 extends RefCounted
 ## Banked progress only. Active watches are deliberately not resumable saved runs.
 const LIMIT = 1000000000
-const UPGRADE_KEYS = ["lens", "focus", "harbor"]
+const MISSION_COUNT = 60
+const UPGRADE_KEYS = ["lens", "focus", "harbor", "horn", "breakwater"]
 const QUESTS = {"rescues": 12, "perfect": 2, "watches": 3}
 var data: Dictionary = {}
 
 func _init() -> void:
 	data = {"version":1,"coins":140,"xp":0,"rescued":0,"watches":0,
 		"perfect_watches":0,"best_endless":0,"missions":{},
-		"upgrades":{"lens":0,"focus":0,"harbor":0},"seen":[],
+		"upgrades":{"lens":0,"focus":0,"harbor":0,"horn":0,"breakwater":0},"seen":[],
 		"day":-1,"login_day":-1,"streak":0,"daily":{"rescues":0,"perfect":0,"watches":0},
 		"daily_claimed":[],"daily_best":{"_lifetime":0},"unlocked":[],
 		"settings":{"sound":true,"music":true,"reduced_motion":false}}
@@ -30,7 +31,7 @@ func restore(raw: Variant) -> bool:
 	var missions = raw.get("missions",{})
 	if missions is Dictionary:
 		for key in missions:
-			if str(key).is_valid_int() and int(key) in range(30):
+			if str(key).is_valid_int() and int(key) in range(MISSION_COUNT):
 				data.missions[str(int(key))] = integer(missions[key],0,3)
 	var quests = raw.get("daily",{})
 	if quests is Dictionary:
@@ -90,7 +91,7 @@ func claim_quest(key: String) -> Dictionary:
 
 func upgrade_cost(key: String) -> int:
 	if not UPGRADE_KEYS.has(key): return -1
-	return int(round(70.0 * pow(1.65,float(data.upgrades[key]))))
+	return int(round((90.0 if key=="horn" else 110.0 if key=="breakwater" else 70.0) * pow(1.65,float(data.upgrades[key]))))
 
 func buy_upgrade(key: String) -> bool:
 	var cost = upgrade_cost(key)
@@ -101,8 +102,8 @@ func buy_upgrade(key: String) -> bool:
 
 func unlocked_mission() -> int:
 	var next = 0
-	while next < 30 and int(data.missions.get(str(next),0)) > 0: next += 1
-	return mini(29,next)
+	while next < MISSION_COUNT and int(data.missions.get(str(next),0)) > 0: next += 1
+	return mini(MISSION_COUNT-1,next)
 
 func bank(result: Dictionary, today: int) -> Dictionary:
 	## Caller banks one natural result once; no timer-only, abort or ad completion payout.
@@ -111,11 +112,12 @@ func bank(result: Dictionary, today: int) -> Dictionary:
 	var lost = integer(result.get("lost",0),0,10000)
 	var score = integer(result.get("score",0))
 	var mode = str(result.get("mode","campaign"))
-	var mission = integer(result.get("mission",0),0,29)
+	var mission = integer(result.get("mission",0),0,MISSION_COUNT-1)
 	var won = result.get("won",false) is bool and bool(result.get("won",false))
-	var perfect = won and lost == 0
+	var continued = bool(result.get("continued",false))
+	var perfect = won and lost == 0 and not continued
 	var first = mode == "campaign" and won and int(data.missions.get(str(mission),0)) == 0
-	var stars = (3 if perfect else 2 if lost == 1 else 1) if won else 0
+	var stars = (3 if perfect else 2 if lost <= 1 else 1) if won else 0
 	var coins = rescued * 3 + (25 if first else 0) + (8 if perfect else 0)
 	var xp = rescued * 4 + (20 if first else 0) + (10 if won else 0)
 	data.rescued = mini(LIMIT,int(data.rescued)+rescued)
@@ -144,7 +146,7 @@ func bank(result: Dictionary, today: int) -> Dictionary:
 
 func metrics() -> Dictionary:
 	var coast = 0
-	for chapter in range(6):
+	for chapter in range(MISSION_COUNT/5):
 		var complete = true
 		for index in range(chapter*5,chapter*5+5):
 			if int(data.missions.get(str(index),0)) == 0: complete = false

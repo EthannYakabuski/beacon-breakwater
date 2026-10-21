@@ -19,6 +19,8 @@ var font: Font
 var textures: Dictionary = {}
 var audio: Dictionary = {}
 var music: AudioStreamPlayer
+var music_track=""
+var environment: Dictionary={}
 var screen = "home"
 var clock = 0.0
 var notice = ""
@@ -28,6 +30,7 @@ var selected_coast = 0
 var banked = false
 var bank_receipt: Dictionary = {}
 var reward_pending = false
+var reward_serial=0
 var application_suspended = false
 var run_generation = 0
 var save_path = "user://beacon-progress-v1.json"
@@ -53,6 +56,11 @@ func _ready() -> void:
 	profile.roll_day(_today())
 	if loaded.recovered: _toast("Recovered your last good harbor save.")
 	for key in Watch.KINDS: textures[key]=load("res://assets/ships/"+key+".png")
+	textures["star-filled"]=load("res://assets/ui/star-filled.png")
+	textures["star-empty"]=load("res://assets/ui/star-empty.svg")
+	for entry in [["harbor","harbor-background-v2"],["lighthouse","lighthouse-v2"],["shoal","shoal-v2"]]:
+		var path="res://assets/art/"+entry[1]+".png"
+		if ResourceLoader.exists(path): environment[entry[0]]=load(path)
 	if DisplayServer.get_name() != "headless": _setup_audio()
 	_fit_stage()
 	_show_home()
@@ -85,25 +93,44 @@ func _process(delta: float) -> void:
 		watch.step(delta)
 		for event in watch.events:
 			if event.event == "rescue": _sound("rescue")
-			elif event.event == "lost": _sound("warning")
+			elif event.event == "lost": _sound("loss")
+			elif event.event == "guided": _sound("guided")
+			elif event.event == "arrival": _sound("arrival")
 		watch.events.clear()
 		_refresh_hud()
 		if watch.done: _finish_watch()
+	_sync_audio_state()
 	queue_redraw()
 
 func _setup_audio() -> void:
-	for key in ["click","rescue","warning","finish"]:
-		var player = AudioStreamPlayer.new()
-		player.stream = load("res://assets/audio/"+key+".ogg")
-		player.volume_db = -17
-		add_child(player); audio[key]=player
-	music = AudioStreamPlayer.new()
-	music.stream = load("res://assets/audio/tide.wav")
-	music.volume_db = -24
-	add_child(music)
-	music.finished.connect(func():
-		if profile.data.settings.music: music.play())
-	if profile.data.settings.music: music.play()
+	for key in ["click","rescue","warning","finish","guided","arrival","horn","upgrade","continue","flare","loss"]:
+		var player=AudioStreamPlayer.new()
+		player.stream=load("res://assets/audio/"+key+".ogg")
+		player.volume_db=-21 if key=="arrival" else -17
+		add_child(player);audio[key]=player
+	music=AudioStreamPlayer.new();music.volume_db=-10;add_child(music)
+
+func _select_music(track: String) -> void:
+	if not is_instance_valid(music): return
+	if music_track!=track:
+		music.stop();music_track=track
+		var stream=load("res://assets/audio/music-"+track+".wav").duplicate()
+		if stream is AudioStreamWAV:
+			stream.loop_mode=AudioStreamWAV.LOOP_FORWARD
+			stream.loop_begin=0;stream.loop_end=int(round(stream.get_length()*stream.mix_rate))
+		music.stream=stream
+	_sync_audio_state()
+
+func _sync_audio_state() -> void:
+	if not is_instance_valid(music): return
+	if not bool(profile.data.settings.music): music.stop();return
+	if music.stream!=null and not music.playing: music.play()
+	music.stream_paused=application_suspended or _ads_active()
+
+func _exit_tree() -> void:
+	for player in audio.values():
+		if is_instance_valid(player): player.stop();player.stream=null
+	if is_instance_valid(music): music.stop();music.stream=null
 
 func _sound(key: String) -> void:
 	if bool(profile.data.settings.sound) and audio.has(key): audio[key].play()
@@ -189,6 +216,7 @@ func _page(title: String, subtitle: String = "", back: bool = true) -> VBoxConta
 		var home=_button("Back to harbor",_show_home,"BackHome")
 		home.position=Vector2(24,809);home.size=Vector2(492,58);ui.add_child(home)
 	_layout_page()
+	_select_music("coast-%02d"%int(watch.config.get("coast",0)) if screen in ["pause","results"] else "menu")
 	return page_column
 
 func _layout_page() -> void:
@@ -202,7 +230,7 @@ func _layout_page() -> void:
 	var back=ui.get_node_or_null("BackHome")
 	if is_instance_valid(back): back.position.y=bottom-58.0
 
-func _card(column: VBoxContainer, title: String, description: String, action: String = "", callback: Callable = Callable(), key: String = "", disabled: bool = false) -> void:
+func _card(column: VBoxContainer, title: String, description: String, action: String = "", callback: Callable = Callable(), key: String = "", disabled: bool = false) -> VBoxContainer:
 	var panel=PanelContainer.new()
 	var style=StyleBoxFlat.new();style.bg_color=Color("183f50")
 	style.border_color=Color("3a6570");style.set_border_width_all(1);style.set_corner_radius_all(15)
@@ -212,6 +240,15 @@ func _card(column: VBoxContainer, title: String, description: String, action: St
 	var box=VBoxContainer.new();box.add_theme_constant_override("separation",9);panel.add_child(box)
 	box.add_child(_label(title,23,GOLD));box.add_child(_label(description,17,CREAM))
 	if not action.is_empty(): box.add_child(_button(action,callback,key,disabled))
+	return box
+
+func _star_row(column: VBoxContainer, earned: int, total: int=3) -> void:
+	var row=HBoxContainer.new();row.name="StarRating";row.add_theme_constant_override("separation",4);column.add_child(row)
+	for index in range(total):
+		var icon=TextureRect.new();icon.texture=textures["star-filled" if index<earned else "star-empty"]
+		icon.custom_minimum_size=Vector2(22 if total==3 else 17,22 if total==3 else 17)
+		icon.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;icon.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		icon.tooltip_text="Earned star" if index<earned else "Empty star";row.add_child(icon)
 
 func _show_home() -> void:
 	screen="home";profile.roll_day(_today())
@@ -228,21 +265,20 @@ func _show_home() -> void:
 
 func _show_coasts() -> void:
 	screen="coasts"
-	var column=_page("The six coasts","Thirty authored watches. Improve a score or follow the next light.")
-	for index in range(6):
-		var coast=index;var unlocked=profile.unlocked_mission()>=coast*5
-		var stars=0
+	var column=_page("The twelve coasts","Sixty authored watches. A different score in every pack.")
+	for index in range(missions.coasts.size()):
+		var coast=index;var unlocked=profile.unlocked_mission()>=coast*5;var stars=0
 		for mission in range(coast*5,coast*5+5): stars+=int(profile.data.missions.get(str(mission),0))
-		_card(column,str(missions.coasts[index].name),str(missions.coasts[index].tagline)+"  ·  %d / 15 stars" % stars,"Open coast" if unlocked else "Clear the previous coast",func():_show_missions(coast),"Coast%d"%coast,not unlocked)
+		var card=_card(column,str(missions.coasts[index].name),str(missions.coasts[index].tagline),"Open coast" if unlocked else "Clear the previous coast",func():_show_missions(coast),"Coast%d"%coast,not unlocked)
+		_star_row(card,stars,15)
 
 func _show_missions(coast: int) -> void:
 	selected_coast=coast;screen="missions"
-	var column=_page(str(missions.coasts[coast].name),"Gold rings are your best watch. Replays remain available.")
+	var column=_page(str(missions.coasts[coast].name),"Filled stars mark your best watch. Replays remain available.")
 	for index in range(coast*5,coast*5+5):
-		var mission=index;var definition=missions.missions[index]
-		var available=index<=profile.unlocked_mission()
-		var stars=int(profile.data.missions.get(str(index),0))
-		_card(column,"%02d  %s" % [index+1,definition.name],"%d boats to save  ·  best %d / 3 stars" % [definition.target,stars],"Watch briefing" if available else "Follow the previous light",func():_show_brief(mission),"Mission%d"%mission,not available)
+		var mission=index;var definition=missions.missions[index];var available=index<=profile.unlocked_mission()
+		var card=_card(column,"%02d  %s"%[index+1,definition.name],"%d boats to save"%definition.target,"Watch briefing" if available else "Follow the previous light",func():_show_brief(mission),"Mission%d"%mission,not available)
+		_star_row(card,int(profile.data.missions.get(str(index),0)))
 
 func _show_brief(index: int, mode: String = "campaign") -> void:
 	selected_mission=index;screen="brief"
@@ -251,13 +287,13 @@ func _show_brief(index: int, mode: String = "campaign") -> void:
 	var goal="Bring at least %d of %d boats home. Lose fewer than three." % [definition.target,definition.spawns.size()]
 	if not str(definition.required_kind).is_empty(): goal+=" Bring home a "+str(Watch.KINDS[definition.required_kind].label).to_lower()+" too."
 	_card(column,"Your watch",goal)
-	_card(column,"Sweep. Hold. Guide.",str(definition.briefing)+"\nDrag anywhere over the water to aim. A full guidance ring turns green; that boat sails home safely. Red rings show urgency. The free foghorn slows danger and recharges.")
+	_card(column,"Sweep. Hold. Guide.",str(definition.briefing)+"\nDrag anywhere over the water to aim. A full guidance ring turns green and steers the vessel home. Keep more of its hull in the light to speed it up; off-beam it returns to its normal pace. Red rings show urgency. The free foghorn slows danger and recharges.")
 	if bool(definition.tutorial): _card(column,"No rush to learn","The beam stays where you leave it. Hold it on a boat for a moment. You can pause at any time.")
 	column.add_child(_button("Begin the watch",func():_start_watch(index,mode),"BeginWatch"))
 	column.add_child(_label("Each boat earns 3 coins / 4 XP; first clear +25 coins / 20 XP.\nWins +10 XP; perfect watches +8 coins. Keeper level-ups +35 coins.",16,TEAL))
 
 func _start_endless() -> void:
-	_start_watch(25,"endless")
+	_start_watch(55,"endless")
 
 func _start_watch(index: int, mode: String = "campaign") -> void:
 	if _ads_active() or reward_pending: return
@@ -267,6 +303,7 @@ func _start_watch(index: int, mode: String = "campaign") -> void:
 
 func _build_watch_ui() -> void:
 	_clear_ui();_menu(false)
+	_select_music("coast-%02d"%int(watch.config.get("coast",0)))
 	var title=_label("ENDLESS WATCH" if watch.mode=="endless" else str(watch.config.name).to_upper(),22,GOLD)
 	title.position=Vector2(24,28);title.size=Vector2(400,40);ui.add_child(title)
 	hud=_label("",18,CREAM);hud.name="WatchHUD";hud.position=Vector2(24,82);hud.size=Vector2(490,64);ui.add_child(hud)
@@ -280,12 +317,12 @@ func _refresh_hud() -> void:
 	if not is_instance_valid(hud): return
 	hud.text="%d HOME   /   %s     %d LOST / 3\n%02d:%02d   ·   %d points   ·   chain %d" % [watch.rescued,"∞" if watch.mode=="endless" else str(int(watch.config.target)),watch.lost,int(watch.time)/60,int(watch.time)%60,watch.score,watch.chain]
 	if is_instance_valid(horn_button):
-		horn_button.text="Foghorn  ·  %d / 3" % watch.horn_charges
+		horn_button.text="Foghorn  ·  %d / %d" % [watch.horn_charges,watch.max_horn_charges()]
 		horn_button.disabled=watch.horn_charges<=0
 
 func _horn() -> void:
 	if gameplay_suspended(): return
-	if watch.foghorn(): _sound("warning")
+	if watch.foghorn(): _sound("horn")
 
 func _pause() -> void:
 	if screen != "watch": return
@@ -312,14 +349,15 @@ func _request_flare() -> void:
 	if screen != "pause" or reward_pending or not watch.can_flare() or not is_instance_valid(services): return
 	if not services.has_method("can_reward") or not bool(services.can_reward()):
 		_toast("No ad is ready. You can resume normally.");return
-	reward_pending=true
+	reward_pending=true;reward_serial+=1
+	var request_id=reward_serial
 	var generation=run_generation
 	var requested_watch=watch
 	services.reward_requested("one breakwater rescue flare",func(granted: bool):
-		if generation != run_generation or requested_watch != watch: return
+		if generation != run_generation or requested_watch != watch or request_id!=reward_serial or not reward_pending: return
 		reward_pending=false
 		if granted and screen=="pause" and not watch.done and watch.rescue_flare():
-			_toast("Rescue flare earned. Resume when you are ready.")
+			_sound("flare");_toast("Rescue flare earned. Resume when you are ready.")
 		else: _toast("No flare granted. Your watch remains paused.")
 		# Never enter the simulation here: earned may arrive behind an open endcard.
 		if screen=="pause": _pause_refresh())
@@ -328,20 +366,54 @@ func _pause_refresh() -> void:
 	if screen!="pause": return
 	screen="watch";_pause()
 
-func _finish_watch() -> void:
+func _bank_watch() -> void:
 	if banked: return
-	banked=true
-	bank_receipt=profile.bank(watch.result(),_today())
-	_sync_progress();_save();_sound("finish")
-	screen="results"
-	var column=_page("A coast kept warm" if watch.won else "The next light is yours","Watch complete  ·  %d boats home  ·  %d lost" % [watch.rescued,watch.lost])
-	_card(column,"%d points  ·  best chain %d" % [watch.score,watch.best_chain],"Banked +%d coins / +%d XP\nLevel bonus %d coins  ·  daily bonus %d coins" % [bank_receipt.coins,bank_receipt.xp,bank_receipt.level_bonus,bank_receipt.daily_bonus])
-	if watch.assisted: column.add_child(_label("An earned rescue flare helped this watch. Unassisted endless records were preserved.",16,TEAL))
-	if watch.mode=="campaign" and watch.won and watch.mission<29:
-		column.add_child(_button("Follow the next light",func():_show_brief(watch.mission+1),"NextWatch"))
-	column.add_child(_button("Keep this watch again",func():_start_watch(watch.mission,watch.mode),"RetryWatch"))
-	column.add_child(_button("Return to harbor",_show_home,"ResultsHome"))
+	banked=true;bank_receipt=profile.bank(watch.result(),_today())
+	_sync_progress();_save()
 	if is_instance_valid(services) and services.has_method("round_finished"): services.round_finished()
+
+func _finish_watch() -> void:
+	if screen=="results": return
+	_sound("finish" if watch.won else "loss")
+	if watch.won or not watch.can_continue(): _bank_watch()
+	_show_results()
+
+func _show_results() -> void:
+	screen="results"
+	var column=_page("A coast kept warm" if watch.won else "A second light?","Watch complete  ·  %d boats home  ·  %d lost"%[watch.rescued,watch.lost],false)
+	if banked:
+		_card(column,"%d points  ·  best chain %d"%[watch.score,watch.best_chain],"Banked +%d coins / +%d XP\nLevel bonus %d coins  ·  daily bonus %d coins"%[bank_receipt.coins,bank_receipt.xp,bank_receipt.level_bonus,bank_receipt.daily_bonus])
+		_star_row(column,int(bank_receipt.stars))
+	else:
+		_card(column,"Your rescue crew is standing by","One optional earned ad recovers lost vessels and extends this same watch. Nothing is banked until you finish or leave this result.")
+	if watch.can_continue() and not banked:
+		var ready=is_instance_valid(services) and services.has_method("can_reward") and bool(services.can_reward())
+		column.add_child(_button("Continue this watch · optional ad" if ready else "Continue ad unavailable",_request_continue,"RewardContinue",not ready))
+	if watch.assisted: column.add_child(_label("This watch is assisted. Unassisted endless records are preserved; a second chance cannot earn a perfect-watch record.",16,TEAL))
+	if watch.mode=="campaign" and watch.won and watch.mission<missions.missions.size()-1:
+		column.add_child(_button("Follow the next light",func():_leave_results(func():_show_brief(watch.mission+1)),"NextWatch"))
+	column.add_child(_button("Keep this watch again",func():_leave_results(func():_start_watch(watch.mission,watch.mode)),"RetryWatch"))
+	column.add_child(_button("Return to harbor",func():_leave_results(_show_home),"ResultsHome"))
+
+func _leave_results(action: Callable) -> void:
+	if reward_pending or _ads_active(): return
+	_bank_watch();action.call()
+
+func _request_continue() -> void:
+	if screen!="results" or banked or reward_pending or not watch.can_continue() or not is_instance_valid(services): return
+	if not services.has_method("can_reward") or not bool(services.can_reward()): _toast("No continue ad is ready. Your result remains available.");return
+	reward_pending=true;reward_serial+=1
+	var request_id=reward_serial
+	var generation=run_generation
+	var requested_watch=watch
+	services.reward_requested("one breakwater second chance",func(granted: bool):
+		if generation!=run_generation or requested_watch!=watch or request_id!=reward_serial or not reward_pending: return
+		reward_pending=false
+		if granted and screen=="results" and not banked and watch.continue_watch():
+			_sound("continue");screen="watch";_pause();_toast("Second chance earned. Resume when you are ready.")
+		else:
+			_toast("No second chance granted. Your result is unchanged.")
+			if screen=="results": _show_results())
 
 func _sync_progress() -> void:
 	var metrics=profile.metrics()
@@ -355,12 +427,12 @@ func _sync_progress() -> void:
 func _show_workshop() -> void:
 	screen="workshop"
 	var column=_page("The workshop","%d coins  ·  equipment stays with your keeper" % profile.data.coins)
-	var descriptions={"lens":"A wider beam can guide neighboring boats together. +0.024 radians total width per level.","focus":"A steady light establishes guidance 13% faster per level.","harbor":"Clearer navigation buys each boat 1.8 extra seconds per level."}
+	var descriptions={"lens":"A wider beam can guide neighboring boats together. +0.024 radians total width per level.","focus":"A steady light establishes guidance 13% faster per level.","harbor":"Clearer navigation buys each boat 1.35 extra seconds per level.","horn":"Longer foghorn protection, faster recharge, and another charge every two levels.","breakwater":"Better coastal markers reduce extra danger close to shoals."}
 	for key in Profile.UPGRADE_KEYS:
 		var upgrade=key;var level=int(profile.data.upgrades[key]);var cost=profile.upgrade_cost(key)
 		_card(column,str(key).capitalize()+"  %d / 6" % level,descriptions[key],"Maximum reached" if level>=6 else "Upgrade  ·  %d coins" % cost,func():
 			if profile.buy_upgrade(upgrade):
-				_sync_progress();_save();_show_workshop()
+				_sound("upgrade");_sync_progress();_save();_show_workshop()
 			else: _toast("Keep a few more watches to afford that upgrade."),"Upgrade_"+key,level>=6 or int(profile.data.coins)<cost)
 
 func _show_daily() -> void:
@@ -370,7 +442,7 @@ func _show_daily() -> void:
 	_card(column,"Seven days of light","Next login gift: day %d of 7. Gifts give coins and 12 XP; the seventh adds a 75-coin bonus." % (int(profile.data.streak)%7+1),"Gift already collected" if claimed else "Collect today's gift",func():
 		var paid=profile.claim_login(_today())
 		if not paid.is_empty(): _sync_progress();_save();_show_daily();_toast("Gift: +%d coins / 12 XP"%paid.coins),"LoginGift",claimed)
-	var daily_index=_today()%30
+	var daily_index=_today()%missions.missions.size()
 	_card(column,"Today's watch: "+str(missions.missions[daily_index].name),"Complete this curated watch for a once-per-day 45-coin bonus. Replays keep their ordinary rescue rewards.","Read daily briefing",func():_show_brief(daily_index,"daily"),"DailyWatch")
 	for key in Profile.QUESTS:
 		var quest=key;var ready=int(profile.data.daily[key])>=int(Profile.QUESTS[key]) and key not in profile.data.daily_claimed
@@ -380,12 +452,12 @@ func _show_daily() -> void:
 
 func _show_log() -> void:
 	screen="log"
-	var column=_page("The boat log","%d boats home  ·  endless best %d  ·  %d / 20 local achievements" % [profile.data.rescued,profile.data.best_endless,profile.data.unlocked.size()])
+	var column=_page("The boat log","%d boats home · endless best %d · %d / %d local achievements"%[profile.data.rescued,profile.data.best_endless,profile.data.unlocked.size(),catalog.achievements.size()])
 	for key in Watch.KINDS:
 		var stats=Watch.KINDS[key]
-		_card(column,str(stats.label),"Seen on watch. "+("A quick response keeps this urgent boat safe." if key=="rescue" else "Guidance needed: %.2f seconds at base focus."%float(stats.focus)) if key in profile.data.seen else "A silhouette on the horizon. Follow the coasts to meet this vessel.")
+		_card(column,str(stats.label),"Normal %.0f · full light %.0f speed\n%.0f points · ring %.2fs · focus %.2fs"%[stats.speed,stats.lit_speed,stats.value,stats.life,stats.focus] if key in profile.data.seen else "A silhouette on the horizon. Follow the coasts to meet this vessel.")
 	for achievement in catalog.achievements:
-		_card(column,("●  " if achievement.key in profile.data.unlocked else "○  ")+str(achievement.title),str(achievement.description))
+		_card(column,("✓  " if achievement.key in profile.data.unlocked else "•  ")+str(achievement.title),str(achievement.description))
 
 func _show_settings() -> void:
 	screen="settings"
@@ -397,8 +469,7 @@ func _show_settings() -> void:
 		column.add_child(_button(str(key).replace("_"," ").capitalize()+": "+("On" if profile.data.settings[key] else "Off"),func():
 			profile.data.settings[setting]=not bool(profile.data.settings[setting]);_save()
 			if is_instance_valid(music):
-				if profile.data.settings.music: music.play()
-				else: music.stop()
+				_sync_audio_state()
 			_show_settings(),"Setting_"+key))
 	column.add_child(_button("Play Games sign-in",func():
 		if is_instance_valid(services): services.sign_in(),"PlaySignIn"))
@@ -416,6 +487,7 @@ func _back() -> void:
 		"watch": _pause()
 		"pause": _resume()
 		"home": pass
+		"results": _leave_results(_show_home)
 		_: _show_home()
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -447,12 +519,17 @@ func _notification(what: int) -> void:
 
 func _draw() -> void:
 	draw_rect(Rect2(0,0,540,960),Color("0a2334"))
+	if environment.has("harbor"):
+		draw_texture_rect(environment.harbor,Rect2(0,0,540,960),false)
+		if screen not in ["watch","pause"]: draw_rect(Rect2(0,0,540,960),Color(0.02,0.08,0.12,.56))
 	for index in range(28):
 		var y=150.0+float(index)*26.0
 		var offset=sin(clock*.3+float(index))*9.0 if not profile.data.settings.reduced_motion else 0.0
 		draw_line(Vector2(0,y),Vector2(540,y+offset),Color(.16,.42,.48,.18),1)
 	if screen in ["watch","pause"]:
 		_draw_water()
+		draw_rect(Rect2(0,0,540,148),Color(.025,.08,.12,.86))
+		draw_rect(Rect2(16,886,508,44),Color(.025,.08,.12,.82))
 	else:
 		draw_circle(Vector2(490,55),26,Color(.96,.78,.42,.10))
 		draw_line(Vector2(470,70),Vector2(500,30),GOLD,3)
@@ -476,7 +553,7 @@ func _draw_water() -> void:
 		var point=Vector2(float(reef[0]),float(reef[1]));var radius=float(reef[2])
 		draw_circle(point,radius,Color(.30,.64,.57,.18))
 		draw_arc(point,radius,0,TAU,30,Color(.58,.80,.63,.55),1.4)
-		for rock in range(3): draw_circle(point+Vector2(float(rock-1)*11,float(rock%2)*10-6),8,CORAL.darkened(.45))
+		if environment.has("shoal"): draw_texture_rect(environment.shoal,Rect2(point-Vector2(radius*1.5,radius),Vector2(radius*3.0,radius*2.0)),false)
 	var polygon=PackedVector2Array([Watch.BEACON])
 	for index in range(31):
 		var angle=watch.angle-watch.beam_half_width()+watch.beam_half_width()*2.0*float(index)/30.0
@@ -498,15 +575,11 @@ func _draw_water() -> void:
 			draw_string(font,point+Vector2(-5,-43),"!",HORIZONTAL_ALIGNMENT_LEFT,-1,23,CORAL)
 	if watch.horn_effect>0:
 		draw_arc(Watch.BEACON,60.0+(3.3-watch.horn_effect)*55.0,PI,TAU,60,Color(.5,.9,.84,.7),3)
-	# The harbor's original vector lighthouse and breakwater.
-	draw_ellipse(Watch.BEACON+Vector2(0,8),Vector2(82,27),Color("477b71"))
-	draw_polygon(PackedVector2Array([Watch.BEACON+Vector2(-16,10),Watch.BEACON+Vector2(16,10),Watch.BEACON+Vector2(10,-59),Watch.BEACON+Vector2(-10,-59)]),PackedColorArray([CREAM]))
-	draw_rect(Rect2(Watch.BEACON+Vector2(-14,-18),Vector2(28,13)),CORAL)
-	draw_rect(Rect2(Watch.BEACON+Vector2(-13,-64),Vector2(26,17)),GOLD)
-	draw_polygon(PackedVector2Array([Watch.BEACON+Vector2(-18,-65),Watch.BEACON+Vector2(18,-65),Watch.BEACON+Vector2(0,-78)]),PackedColorArray([CORAL]))
+	if environment.has("lighthouse"):
+		draw_texture_rect(environment.lighthouse,Rect2(Watch.BEACON-Vector2(66,25.08),Vector2(132,132)),false)
 
 func _water_style() -> StyleBoxFlat:
-	var style=StyleBoxFlat.new();style.bg_color=Color(.07,.25,.34,.8);style.set_corner_radius_all(25);return style
+	var style=StyleBoxFlat.new();style.bg_color=Color(.07,.25,.34,.32 if environment.has("harbor") else .8);style.set_corner_radius_all(25);return style
 
 func _beam_end(angle: float) -> Vector2:
 	var direction=Vector2.from_angle(angle)

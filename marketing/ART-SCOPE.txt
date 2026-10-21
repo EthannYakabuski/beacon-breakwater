@@ -1,3 +1,7 @@
-App/feature/achievement/leaderboard graphics are original code-drawn promotional illustrations.
-They are not gameplay screenshots or native-device evidence.
-Actual screenshots require normal implemented play and coordinator capture approval.
+Round Two runtime harbor/lighthouse/shoal and app/feature images are generated
+illustrations, with originals and SHA256 provenance retained in assets/art and
+marketing/source-art. Standard store-size packaging only resizes those originals.
+Achievement/leaderboard illustration replacement is pending; legacy badge files
+retain their earlier scope until replaced. None of these images is a gameplay
+screenshot. Preserved earlier-build screenshots must be refreshed from normal
+implemented play on the updated final APK before claiming updated native views.

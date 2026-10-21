@@ -72,7 +72,105 @@
       "destination": "assets/licenses/kenney_ui-audio-CC0.txt",
       "sha256": "4f88ab3c885c87874834441a0d009cea8942f57461d7b870be65cf4e31362073",
       "license": "CC0-1.0"
+    },
+    {
+      "source": "kenney_ui-pack/PNG/Yellow/Default/star.png",
+      "destination": "assets/ui/star-filled.png",
+      "sha256": "9296db5d197a842bc8b9d52dfca39c3c2881dd45d6ce3cbcd6635af5152fcec6",
+      "license": "CC0-1.0",
+      "pack": "Kenney UI Pack2.0"
+    },
+    {
+      "source": "kenney_ui-pack/PNG/Grey/Default/star_outline.png",
+      "destination": "assets/ui/star-empty.png",
+      "sha256": "9267eda99fd68a28d036beca7a606e334edb2957f74c6531da28bc79e92bc4a1",
+      "license": "CC0-1.0",
+      "pack": "Kenney UI Pack2.0"
+    },
+    {
+      "source": "kenney_interface-sounds/Audio/confirmation_002.ogg",
+      "destination": "assets/audio/guided.ogg",
+      "sha256": "33b17a9a9a2397c62b285c52c33a907fdffb476909c99e42dde603f6a7a8b12c",
+      "license": "CC0-1.0",
+      "pack": "Kenney Interface Sounds"
+    },
+    {
+      "source": "kenney_interface-sounds/Audio/drop_001.ogg",
+      "destination": "assets/audio/arrival.ogg",
+      "sha256": "692ee3a6f1821402ca649ff735bee9591dc4846c8098fc7d6a90fd15fa57c1af",
+      "license": "CC0-1.0",
+      "pack": "Kenney Interface Sounds"
+    },
+    {
+      "source": "kenney_interface-sounds/Audio/bong_001.ogg",
+      "destination": "assets/audio/horn.ogg",
+      "sha256": "d21d0f0b782445db579d11e2506b24cd1ac9d664ee33aeaf807761aa7b6fd710",
+      "license": "CC0-1.0",
+      "pack": "Kenney Interface Sounds"
+    },
+    {
+      "source": "kenney_interface-sounds/Audio/confirmation_004.ogg",
+      "destination": "assets/audio/upgrade.ogg",
+      "sha256": "568967a3d9f8a8f6af54ea01729c4882284308f2a27d78c07ffd7ee0d6951661",
+      "license": "CC0-1.0",
+      "pack": "Kenney Interface Sounds"
+    },
+    {
+      "source": "kenney_interface-sounds/Audio/confirmation_001.ogg",
+      "destination": "assets/audio/continue.ogg",
+      "sha256": "063564703b6094d70718a3e787a55cc9141611e4ecd6b6637f8828f79b4a8c3a",
+      "license": "CC0-1.0",
+      "pack": "Kenney Interface Sounds"
+    },
+    {
+      "source": "kenney_interface-sounds/Audio/confirmation_003.ogg",
+      "destination": "assets/audio/flare.ogg",
+      "sha256": "3091bf0be0497f825769ee0733ca7bdc3bcd59bd6c6e8f2ba8f93d580ff38022",
+      "license": "CC0-1.0",
+      "pack": "Kenney Interface Sounds"
+    },
+    {
+      "source": "kenney_interface-sounds/Audio/error_002.ogg",
+      "destination": "assets/audio/loss.ogg",
+      "sha256": "76810ec365f41078fd0507101da5bb7b8730fe011dde43908329fdabd8575e79",
+      "license": "CC0-1.0",
+      "pack": "Kenney Interface Sounds"
+    },
+    {
+      "source": "kenney_ui-pack/License.txt",
+      "destination": "assets/licenses/kenney_ui-pack-CC0.txt",
+      "sha256": "0626afaa7d0c3c43ac353e46bf2854ead79ce99a8805fe1037d0441f84acecfb",
+      "license": "CC0-1.0",
+      "pack": "kenney_ui-pack",
+      "source_sha256": "69f7eaa5e05913b4d09cf5848f75390b5c3c9a409ef8555777803d9ca0c171fb",
+      "normalization": "UTF8 LF; blank-line whitespace removed; all notice words unchanged."
+    },
+    {
+      "source": "kenney_interface-sounds/License.txt",
+      "destination": "assets/licenses/kenney_interface-sounds-CC0.txt",
+      "sha256": "407f485c8ba302e31f4b5361c1a88ed56b0e8d16fd36bb16bc4e52b700785390",
+      "license": "CC0-1.0",
+      "pack": "kenney_interface-sounds",
+      "source_sha256": "f7966c773bbed0eca6a9c75081c44a178b38eae112724dbb5fdfbd4192d118a9",
+      "normalization": "UTF8 LF; blank-line whitespace removed; all notice words unchanged."
+    },
+    {
+      "source": "kenney_ui-pack/Vector/Grey/star_outline.svg",
+      "destination": "assets/ui/kenney-star-outline-source.svg",
+      "sha256": "88f7acccb7b973d3ba502f93956aa60f59d50f665f195fb07af0d6b8d3f49afa",
+      "license": "CC0-1.0",
+      "source_sha256": "88f7acccb7b973d3ba502f93956aa60f59d50f665f195fb07af0d6b8d3f49afa",
+      "normalization": "UTF8 LF text; original geometry preserved"
     }
   ],
-  "originals": "Lighthouse/coast/beam/weather/UI/store vector/code art; synthesized ambient audio; Apache-2.0 original project work."
+  "originals": "Apache-2.0 original code/content, composed thirteen 16-bar musical scores and generated harbor/lighthouse/shoal/app/feature illustrations; separate provenance files retain source images and hashes. Earlier badge art remains pending replacement.",
+  "round_two": "Kenney filled/empty stars and Interface Sounds selected after actual asset review. Marketing illustration has a separate art workflow; this script never generates promotional images.",
+  "derived_assets": [
+    {
+      "destination": "assets/ui/star-empty.svg",
+      "source": "assets/ui/kenney-star-outline-source.svg",
+      "change": "Existing outer silhouette rendered as hollow stroke for an unmistakable unearned rating; filled Kenney texture unchanged.",
+      "license": "CC0-1.0"
+    }
+  ]
 }

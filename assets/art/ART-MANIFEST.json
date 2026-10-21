@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "images": [
+    {
+      "path": "assets/art/harbor-background-v2.png",
+      "sha256": "E1E923FD9D712C90EFDC0DADAD2E5CB745238743ADA712348BBD0C29127D3A3D",
+      "kind": "original generated runtime illustration",
+      "gameplay_capture": false
+    },
+    {
+      "path": "assets/art/lighthouse-v2.png",
+      "sha256": "DF76A87A7AC0716B021611089A4AFFCA3EB4307F4C0BD25AB53E98E5891F6ECF",
+      "kind": "original generated runtime illustration",
+      "gameplay_capture": false
+    },
+    {
+      "path": "assets/art/shoal-v2.png",
+      "sha256": "1CC5F6F0DF61E4D1486DA65188A9A9A54C87F1068FD6011E43584D7C7CC11A27",
+      "kind": "original generated runtime illustration",
+      "gameplay_capture": false
+    }
+  ],
+  "integration": "Preserve image aspect ratios. Lighthouse beam origin aligns with lantern at normalized(0.5,0.19). Shoal danger radius is the marked central hazard area; foam extends beyond it."
+}

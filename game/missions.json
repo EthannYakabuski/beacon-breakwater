@@ -24,6 +24,30 @@
     {
       "name": "Northlight Cape",
       "tagline": "Bring everyone home"
+    },
+    {
+      "name": "Fundy Narrows",
+      "tagline": "Turn with the tide"
+    },
+    {
+      "name": "Lunenburg Roads",
+      "tagline": "A working waterfront"
+    },
+    {
+      "name": "Grand Manan",
+      "tagline": "Islands in the rain"
+    },
+    {
+      "name": "Cabot Cliffs",
+      "tagline": "The headland wind"
+    },
+    {
+      "name": "Northumberland",
+      "tagline": "Blue-water lanterns"
+    },
+    {
+      "name": "Signal Hill",
+      "tagline": "The Atlantic relay"
     }
   ],
   "missions": [
@@ -43,7 +67,7 @@
       "fog": 0,
       "reefs": [],
       "lives": 3,
-      "duration": 44.7,
+      "duration": 82.7,
       "spawns": [
         {
           "time": 0.7,
@@ -87,7 +111,7 @@
       "fog": 0,
       "reefs": [],
       "lives": 3,
-      "duration": 52.7,
+      "duration": 90.7,
       "spawns": [
         {
           "time": 0.7,
@@ -143,7 +167,7 @@
       "fog": 0,
       "reefs": [],
       "lives": 3,
-      "duration": 59.3,
+      "duration": 97.3,
       "spawns": [
         {
           "time": 0.7,
@@ -211,7 +235,7 @@
       "fog": 0,
       "reefs": [],
       "lives": 3,
-      "duration": 63.1,
+      "duration": 101.1,
       "spawns": [
         {
           "time": 0.7,
@@ -285,7 +309,7 @@
       "fog": 0,
       "reefs": [],
       "lives": 3,
-      "duration": 66.9,
+      "duration": 104.9,
       "spawns": [
         {
           "time": 0.7,
@@ -371,7 +395,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 50.9,
+      "duration": 89.4,
       "spawns": [
         {
           "time": 0.7,
@@ -380,31 +404,31 @@
           "drift": -4
         },
         {
-          "time": 4.34,
+          "time": 4.44,
           "kind": "skiff",
           "x": 130,
           "drift": 3
         },
         {
-          "time": 7.98,
+          "time": 8.18,
           "kind": "sailor",
           "x": 405,
           "drift": 0
         },
         {
-          "time": 11.62,
+          "time": 11.92,
           "kind": "skiff",
           "x": 280,
           "drift": 6
         },
         {
-          "time": 15.26,
+          "time": 15.66,
           "kind": "skiff",
           "x": 170,
           "drift": -2
         },
         {
-          "time": 18.9,
+          "time": 19.4,
           "kind": "sailor",
           "x": 390,
           "drift": -4
@@ -433,7 +457,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 58.18,
+      "duration": 96.88,
       "spawns": [
         {
           "time": 0.7,
@@ -442,43 +466,43 @@
           "drift": -4
         },
         {
-          "time": 4.34,
+          "time": 4.44,
           "kind": "sailor",
           "x": 430,
           "drift": 3
         },
         {
-          "time": 7.98,
+          "time": 8.18,
           "kind": "skiff",
           "x": 275,
           "drift": 0
         },
         {
-          "time": 11.62,
+          "time": 11.92,
           "kind": "sailor",
           "x": 145,
           "drift": 6
         },
         {
-          "time": 15.26,
+          "time": 15.66,
           "kind": "skiff",
           "x": 370,
           "drift": -2
         },
         {
-          "time": 18.9,
+          "time": 19.4,
           "kind": "skiff",
           "x": 250,
           "drift": -4
         },
         {
-          "time": 22.54,
+          "time": 23.14,
           "kind": "skiff",
           "x": 170,
           "drift": 3
         },
         {
-          "time": 26.18,
+          "time": 26.88,
           "kind": "sailor",
           "x": 390,
           "drift": 0
@@ -507,7 +531,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 65.46,
+      "duration": 104.36,
       "spawns": [
         {
           "time": 0.7,
@@ -516,55 +540,55 @@
           "drift": -4
         },
         {
-          "time": 4.34,
+          "time": 4.44,
           "kind": "cargo",
           "x": 390,
           "drift": 3
         },
         {
-          "time": 7.98,
+          "time": 8.18,
           "kind": "skiff",
           "x": 260,
           "drift": 0
         },
         {
-          "time": 11.62,
+          "time": 11.92,
           "kind": "cutter",
           "x": 150,
           "drift": 6
         },
         {
-          "time": 15.26,
+          "time": 15.66,
           "kind": "sailor",
           "x": 430,
           "drift": -2
         },
         {
-          "time": 18.9,
+          "time": 19.4,
           "kind": "cargo",
           "x": 215,
           "drift": -4
         },
         {
-          "time": 22.54,
+          "time": 23.14,
           "kind": "skiff",
           "x": 350,
           "drift": 3
         },
         {
-          "time": 26.18,
+          "time": 26.88,
           "kind": "skiff",
           "x": 110,
           "drift": 0
         },
         {
-          "time": 29.82,
+          "time": 30.62,
           "kind": "skiff",
           "x": 170,
           "drift": 6
         },
         {
-          "time": 33.46,
+          "time": 34.36,
           "kind": "sailor",
           "x": 390,
           "drift": -2
@@ -593,7 +617,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 69.1,
+      "duration": 108.1,
       "spawns": [
         {
           "time": 0.7,
@@ -602,61 +626,61 @@
           "drift": -4
         },
         {
-          "time": 4.34,
+          "time": 4.44,
           "kind": "skiff",
           "x": 100,
           "drift": 3
         },
         {
-          "time": 7.98,
+          "time": 8.18,
           "kind": "sailor",
           "x": 420,
           "drift": 0
         },
         {
-          "time": 11.62,
+          "time": 11.92,
           "kind": "rescue",
           "x": 150,
           "drift": 6
         },
         {
-          "time": 15.26,
+          "time": 15.66,
           "kind": "cargo",
           "x": 340,
           "drift": -2
         },
         {
-          "time": 18.9,
+          "time": 19.4,
           "kind": "skiff",
           "x": 240,
           "drift": -4
         },
         {
-          "time": 22.54,
+          "time": 23.14,
           "kind": "cutter",
           "x": 450,
           "drift": 3
         },
         {
-          "time": 26.18,
+          "time": 26.88,
           "kind": "sailor",
           "x": 120,
           "drift": 0
         },
         {
-          "time": 29.82,
+          "time": 30.62,
           "kind": "skiff",
           "x": 330,
           "drift": 6
         },
         {
-          "time": 33.46,
+          "time": 34.36,
           "kind": "skiff",
           "x": 170,
           "drift": -2
         },
         {
-          "time": 37.1,
+          "time": 38.1,
           "kind": "sailor",
           "x": 390,
           "drift": -4
@@ -685,7 +709,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 72.74,
+      "duration": 111.84,
       "spawns": [
         {
           "time": 0.7,
@@ -694,67 +718,67 @@
           "drift": -4
         },
         {
-          "time": 4.34,
+          "time": 4.44,
           "kind": "sailor",
           "x": 420,
           "drift": 3
         },
         {
-          "time": 7.98,
+          "time": 8.18,
           "kind": "cutter",
           "x": 260,
           "drift": 0
         },
         {
-          "time": 11.62,
+          "time": 11.92,
           "kind": "skiff",
           "x": 360,
           "drift": 6
         },
         {
-          "time": 15.26,
+          "time": 15.66,
           "kind": "rescue",
           "x": 145,
           "drift": -2
         },
         {
-          "time": 18.9,
+          "time": 19.4,
           "kind": "barge",
           "x": 300,
           "drift": -4
         },
         {
-          "time": 22.54,
+          "time": 23.14,
           "kind": "skiff",
           "x": 440,
           "drift": 3
         },
         {
-          "time": 26.18,
+          "time": 26.88,
           "kind": "sailor",
           "x": 90,
           "drift": 0
         },
         {
-          "time": 29.82,
+          "time": 30.62,
           "kind": "rescue",
           "x": 385,
           "drift": 6
         },
         {
-          "time": 33.46,
+          "time": 34.36,
           "kind": "cargo",
           "x": 240,
           "drift": -2
         },
         {
-          "time": 37.1,
+          "time": 38.1,
           "kind": "skiff",
           "x": 170,
           "drift": -4
         },
         {
-          "time": 40.74,
+          "time": 41.84,
           "kind": "sailor",
           "x": 390,
           "drift": 3
@@ -788,7 +812,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 50.1,
+      "duration": 89.1,
       "spawns": [
         {
           "time": 0.7,
@@ -797,31 +821,31 @@
           "drift": -4
         },
         {
-          "time": 4.18,
+          "time": 4.38,
           "kind": "skiff",
           "x": 130,
           "drift": 3
         },
         {
-          "time": 7.66,
+          "time": 8.06,
           "kind": "sailor",
           "x": 405,
           "drift": 0
         },
         {
-          "time": 11.14,
+          "time": 11.74,
           "kind": "skiff",
           "x": 280,
           "drift": 6
         },
         {
-          "time": 14.62,
+          "time": 15.42,
           "kind": "skiff",
           "x": 170,
           "drift": -2
         },
         {
-          "time": 18.1,
+          "time": 19.1,
           "kind": "sailor",
           "x": 390,
           "drift": -4
@@ -855,7 +879,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 57.06,
+      "duration": 96.46,
       "spawns": [
         {
           "time": 0.7,
@@ -864,43 +888,43 @@
           "drift": -4
         },
         {
-          "time": 4.18,
+          "time": 4.38,
           "kind": "sailor",
           "x": 430,
           "drift": 3
         },
         {
-          "time": 7.66,
+          "time": 8.06,
           "kind": "skiff",
           "x": 275,
           "drift": 0
         },
         {
-          "time": 11.14,
+          "time": 11.74,
           "kind": "sailor",
           "x": 145,
           "drift": 6
         },
         {
-          "time": 14.62,
+          "time": 15.42,
           "kind": "skiff",
           "x": 370,
           "drift": -2
         },
         {
-          "time": 18.1,
+          "time": 19.1,
           "kind": "skiff",
           "x": 250,
           "drift": -4
         },
         {
-          "time": 21.58,
+          "time": 22.78,
           "kind": "skiff",
           "x": 170,
           "drift": 3
         },
         {
-          "time": 25.06,
+          "time": 26.46,
           "kind": "sailor",
           "x": 390,
           "drift": 0
@@ -934,7 +958,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 64.02,
+      "duration": 103.82,
       "spawns": [
         {
           "time": 0.7,
@@ -943,55 +967,55 @@
           "drift": -4
         },
         {
-          "time": 4.18,
+          "time": 4.38,
           "kind": "cargo",
           "x": 390,
           "drift": 3
         },
         {
-          "time": 7.66,
+          "time": 8.06,
           "kind": "skiff",
           "x": 260,
           "drift": 0
         },
         {
-          "time": 11.14,
+          "time": 11.74,
           "kind": "cutter",
           "x": 150,
           "drift": 6
         },
         {
-          "time": 14.62,
+          "time": 15.42,
           "kind": "sailor",
           "x": 430,
           "drift": -2
         },
         {
-          "time": 18.1,
+          "time": 19.1,
           "kind": "cargo",
           "x": 215,
           "drift": -4
         },
         {
-          "time": 21.58,
+          "time": 22.78,
           "kind": "skiff",
           "x": 350,
           "drift": 3
         },
         {
-          "time": 25.06,
+          "time": 26.46,
           "kind": "skiff",
           "x": 110,
           "drift": 0
         },
         {
-          "time": 28.54,
+          "time": 30.14,
           "kind": "skiff",
           "x": 170,
           "drift": 6
         },
         {
-          "time": 32.02,
+          "time": 33.82,
           "kind": "sailor",
           "x": 390,
           "drift": -2
@@ -1025,7 +1049,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 67.5,
+      "duration": 107.5,
       "spawns": [
         {
           "time": 0.7,
@@ -1034,61 +1058,61 @@
           "drift": -4
         },
         {
-          "time": 4.18,
+          "time": 4.38,
           "kind": "skiff",
           "x": 100,
           "drift": 3
         },
         {
-          "time": 7.66,
+          "time": 8.06,
           "kind": "sailor",
           "x": 420,
           "drift": 0
         },
         {
-          "time": 11.14,
+          "time": 11.74,
           "kind": "rescue",
           "x": 150,
           "drift": 6
         },
         {
-          "time": 14.62,
+          "time": 15.42,
           "kind": "cargo",
           "x": 340,
           "drift": -2
         },
         {
-          "time": 18.1,
+          "time": 19.1,
           "kind": "skiff",
           "x": 240,
           "drift": -4
         },
         {
-          "time": 21.58,
+          "time": 22.78,
           "kind": "cutter",
           "x": 450,
           "drift": 3
         },
         {
-          "time": 25.06,
+          "time": 26.46,
           "kind": "sailor",
           "x": 120,
           "drift": 0
         },
         {
-          "time": 28.54,
+          "time": 30.14,
           "kind": "skiff",
           "x": 330,
           "drift": 6
         },
         {
-          "time": 32.02,
+          "time": 33.82,
           "kind": "skiff",
           "x": 170,
           "drift": -2
         },
         {
-          "time": 35.5,
+          "time": 37.5,
           "kind": "sailor",
           "x": 390,
           "drift": -4
@@ -1122,7 +1146,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 70.98,
+      "duration": 111.18,
       "spawns": [
         {
           "time": 0.7,
@@ -1131,67 +1155,67 @@
           "drift": -4
         },
         {
-          "time": 4.18,
+          "time": 4.38,
           "kind": "sailor",
           "x": 420,
           "drift": 3
         },
         {
-          "time": 7.66,
+          "time": 8.06,
           "kind": "cutter",
           "x": 260,
           "drift": 0
         },
         {
-          "time": 11.14,
+          "time": 11.74,
           "kind": "skiff",
           "x": 360,
           "drift": 6
         },
         {
-          "time": 14.62,
+          "time": 15.42,
           "kind": "rescue",
           "x": 145,
           "drift": -2
         },
         {
-          "time": 18.1,
+          "time": 19.1,
           "kind": "barge",
           "x": 300,
           "drift": -4
         },
         {
-          "time": 21.58,
+          "time": 22.78,
           "kind": "skiff",
           "x": 440,
           "drift": 3
         },
         {
-          "time": 25.06,
+          "time": 26.46,
           "kind": "sailor",
           "x": 90,
           "drift": 0
         },
         {
-          "time": 28.54,
+          "time": 30.14,
           "kind": "rescue",
           "x": 385,
           "drift": 6
         },
         {
-          "time": 32.02,
+          "time": 33.82,
           "kind": "cargo",
           "x": 240,
           "drift": -2
         },
         {
-          "time": 35.5,
+          "time": 37.5,
           "kind": "skiff",
           "x": 170,
           "drift": -4
         },
         {
-          "time": 38.98,
+          "time": 41.18,
           "kind": "sailor",
           "x": 390,
           "drift": 3
@@ -1225,7 +1249,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 55.94,
+      "duration": 96.04,
       "spawns": [
         {
           "time": 0.7,
@@ -1234,43 +1258,43 @@
           "drift": -4
         },
         {
-          "time": 4.02,
+          "time": 4.32,
           "kind": "skiff",
           "x": 130,
           "drift": 3
         },
         {
-          "time": 7.34,
+          "time": 7.94,
           "kind": "sailor",
           "x": 405,
           "drift": 0
         },
         {
-          "time": 10.66,
+          "time": 11.56,
           "kind": "skiff",
           "x": 280,
           "drift": 6
         },
         {
-          "time": 13.98,
+          "time": 15.18,
           "kind": "cutter",
           "x": 170,
           "drift": -2
         },
         {
-          "time": 17.3,
+          "time": 18.8,
           "kind": "sailor",
           "x": 390,
           "drift": -4
         },
         {
-          "time": 20.62,
+          "time": 22.42,
           "kind": "cutter",
           "x": 170,
           "drift": 3
         },
         {
-          "time": 23.94,
+          "time": 26.04,
           "kind": "sailor",
           "x": 390,
           "drift": 0
@@ -1304,7 +1328,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 62.58,
+      "duration": 103.28,
       "spawns": [
         {
           "time": 0.7,
@@ -1313,55 +1337,55 @@
           "drift": -4
         },
         {
-          "time": 4.02,
+          "time": 4.32,
           "kind": "sailor",
           "x": 430,
           "drift": 3
         },
         {
-          "time": 7.34,
+          "time": 7.94,
           "kind": "skiff",
           "x": 275,
           "drift": 0
         },
         {
-          "time": 10.66,
+          "time": 11.56,
           "kind": "sailor",
           "x": 145,
           "drift": 6
         },
         {
-          "time": 13.98,
+          "time": 15.18,
           "kind": "skiff",
           "x": 370,
           "drift": -2
         },
         {
-          "time": 17.3,
+          "time": 18.8,
           "kind": "skiff",
           "x": 250,
           "drift": -4
         },
         {
-          "time": 20.62,
+          "time": 22.42,
           "kind": "cutter",
           "x": 170,
           "drift": 3
         },
         {
-          "time": 23.94,
+          "time": 26.04,
           "kind": "sailor",
           "x": 390,
           "drift": 0
         },
         {
-          "time": 27.26,
+          "time": 29.66,
           "kind": "cutter",
           "x": 170,
           "drift": 6
         },
         {
-          "time": 30.58,
+          "time": 33.28,
           "kind": "sailor",
           "x": 390,
           "drift": -2
@@ -1395,7 +1419,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 69.22,
+      "duration": 110.52,
       "spawns": [
         {
           "time": 0.7,
@@ -1404,67 +1428,67 @@
           "drift": -4
         },
         {
-          "time": 4.02,
+          "time": 4.32,
           "kind": "cargo",
           "x": 390,
           "drift": 3
         },
         {
-          "time": 7.34,
+          "time": 7.94,
           "kind": "skiff",
           "x": 260,
           "drift": 0
         },
         {
-          "time": 10.66,
+          "time": 11.56,
           "kind": "cutter",
           "x": 150,
           "drift": 6
         },
         {
-          "time": 13.98,
+          "time": 15.18,
           "kind": "sailor",
           "x": 430,
           "drift": -2
         },
         {
-          "time": 17.3,
+          "time": 18.8,
           "kind": "cargo",
           "x": 215,
           "drift": -4
         },
         {
-          "time": 20.62,
+          "time": 22.42,
           "kind": "skiff",
           "x": 350,
           "drift": 3
         },
         {
-          "time": 23.94,
+          "time": 26.04,
           "kind": "skiff",
           "x": 110,
           "drift": 0
         },
         {
-          "time": 27.26,
+          "time": 29.66,
           "kind": "cutter",
           "x": 170,
           "drift": 6
         },
         {
-          "time": 30.58,
+          "time": 33.28,
           "kind": "sailor",
           "x": 390,
           "drift": -2
         },
         {
-          "time": 33.9,
+          "time": 36.9,
           "kind": "cutter",
           "x": 170,
           "drift": -4
         },
         {
-          "time": 37.22,
+          "time": 40.52,
           "kind": "sailor",
           "x": 390,
           "drift": 3
@@ -1498,7 +1522,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 72.54,
+      "duration": 114.14,
       "spawns": [
         {
           "time": 0.7,
@@ -1507,73 +1531,73 @@
           "drift": -4
         },
         {
-          "time": 4.02,
+          "time": 4.32,
           "kind": "skiff",
           "x": 100,
           "drift": 3
         },
         {
-          "time": 7.34,
+          "time": 7.94,
           "kind": "sailor",
           "x": 420,
           "drift": 0
         },
         {
-          "time": 10.66,
+          "time": 11.56,
           "kind": "rescue",
           "x": 150,
           "drift": 6
         },
         {
-          "time": 13.98,
+          "time": 15.18,
           "kind": "cargo",
           "x": 340,
           "drift": -2
         },
         {
-          "time": 17.3,
+          "time": 18.8,
           "kind": "skiff",
           "x": 240,
           "drift": -4
         },
         {
-          "time": 20.62,
+          "time": 22.42,
           "kind": "cutter",
           "x": 450,
           "drift": 3
         },
         {
-          "time": 23.94,
+          "time": 26.04,
           "kind": "sailor",
           "x": 120,
           "drift": 0
         },
         {
-          "time": 27.26,
+          "time": 29.66,
           "kind": "skiff",
           "x": 330,
           "drift": 6
         },
         {
-          "time": 30.58,
+          "time": 33.28,
           "kind": "cutter",
           "x": 170,
           "drift": -2
         },
         {
-          "time": 33.9,
+          "time": 36.9,
           "kind": "sailor",
           "x": 390,
           "drift": -4
         },
         {
-          "time": 37.22,
+          "time": 40.52,
           "kind": "cutter",
           "x": 170,
           "drift": 3
         },
         {
-          "time": 40.54,
+          "time": 44.14,
           "kind": "sailor",
           "x": 390,
           "drift": 0
@@ -1607,7 +1631,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 75.86,
+      "duration": 117.76,
       "spawns": [
         {
           "time": 0.7,
@@ -1616,79 +1640,79 @@
           "drift": -4
         },
         {
-          "time": 4.02,
+          "time": 4.32,
           "kind": "sailor",
           "x": 420,
           "drift": 3
         },
         {
-          "time": 7.34,
+          "time": 7.94,
           "kind": "cutter",
           "x": 260,
           "drift": 0
         },
         {
-          "time": 10.66,
+          "time": 11.56,
           "kind": "skiff",
           "x": 360,
           "drift": 6
         },
         {
-          "time": 13.98,
+          "time": 15.18,
           "kind": "rescue",
           "x": 145,
           "drift": -2
         },
         {
-          "time": 17.3,
+          "time": 18.8,
           "kind": "barge",
           "x": 300,
           "drift": -4
         },
         {
-          "time": 20.62,
+          "time": 22.42,
           "kind": "skiff",
           "x": 440,
           "drift": 3
         },
         {
-          "time": 23.94,
+          "time": 26.04,
           "kind": "sailor",
           "x": 90,
           "drift": 0
         },
         {
-          "time": 27.26,
+          "time": 29.66,
           "kind": "rescue",
           "x": 385,
           "drift": 6
         },
         {
-          "time": 30.58,
+          "time": 33.28,
           "kind": "cargo",
           "x": 240,
           "drift": -2
         },
         {
-          "time": 33.9,
+          "time": 36.9,
           "kind": "cutter",
           "x": 170,
           "drift": -4
         },
         {
-          "time": 37.22,
+          "time": 40.52,
           "kind": "sailor",
           "x": 390,
           "drift": 3
         },
         {
-          "time": 40.54,
+          "time": 44.14,
           "kind": "cutter",
           "x": 170,
           "drift": 0
         },
         {
-          "time": 43.86,
+          "time": 47.76,
           "kind": "sailor",
           "x": 390,
           "drift": 6
@@ -1727,7 +1751,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 54.82,
+      "duration": 95.62,
       "spawns": [
         {
           "time": 0.7,
@@ -1736,43 +1760,43 @@
           "drift": -4
         },
         {
-          "time": 3.86,
+          "time": 4.26,
           "kind": "skiff",
           "x": 130,
           "drift": 3
         },
         {
-          "time": 7.02,
+          "time": 7.82,
           "kind": "sailor",
           "x": 405,
           "drift": 0
         },
         {
-          "time": 10.18,
+          "time": 11.38,
           "kind": "skiff",
           "x": 280,
           "drift": 6
         },
         {
-          "time": 13.34,
+          "time": 14.94,
           "kind": "cutter",
           "x": 170,
           "drift": -2
         },
         {
-          "time": 16.5,
+          "time": 18.5,
           "kind": "rescue",
           "x": 390,
           "drift": -4
         },
         {
-          "time": 19.66,
+          "time": 22.06,
           "kind": "cutter",
           "x": 170,
           "drift": 3
         },
         {
-          "time": 22.82,
+          "time": 25.62,
           "kind": "rescue",
           "x": 390,
           "drift": 0
@@ -1811,7 +1835,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 61.14,
+      "duration": 102.74,
       "spawns": [
         {
           "time": 0.7,
@@ -1820,55 +1844,55 @@
           "drift": -4
         },
         {
-          "time": 3.86,
+          "time": 4.26,
           "kind": "sailor",
           "x": 430,
           "drift": 3
         },
         {
-          "time": 7.02,
+          "time": 7.82,
           "kind": "skiff",
           "x": 275,
           "drift": 0
         },
         {
-          "time": 10.18,
+          "time": 11.38,
           "kind": "sailor",
           "x": 145,
           "drift": 6
         },
         {
-          "time": 13.34,
+          "time": 14.94,
           "kind": "skiff",
           "x": 370,
           "drift": -2
         },
         {
-          "time": 16.5,
+          "time": 18.5,
           "kind": "skiff",
           "x": 250,
           "drift": -4
         },
         {
-          "time": 19.66,
+          "time": 22.06,
           "kind": "cutter",
           "x": 170,
           "drift": 3
         },
         {
-          "time": 22.82,
+          "time": 25.62,
           "kind": "rescue",
           "x": 390,
           "drift": 0
         },
         {
-          "time": 25.98,
+          "time": 29.18,
           "kind": "cutter",
           "x": 170,
           "drift": 6
         },
         {
-          "time": 29.14,
+          "time": 32.74,
           "kind": "rescue",
           "x": 390,
           "drift": -2
@@ -1907,7 +1931,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 67.46,
+      "duration": 109.86,
       "spawns": [
         {
           "time": 0.7,
@@ -1916,67 +1940,67 @@
           "drift": -4
         },
         {
-          "time": 3.86,
+          "time": 4.26,
           "kind": "cargo",
           "x": 390,
           "drift": 3
         },
         {
-          "time": 7.02,
+          "time": 7.82,
           "kind": "skiff",
           "x": 260,
           "drift": 0
         },
         {
-          "time": 10.18,
+          "time": 11.38,
           "kind": "cutter",
           "x": 150,
           "drift": 6
         },
         {
-          "time": 13.34,
+          "time": 14.94,
           "kind": "sailor",
           "x": 430,
           "drift": -2
         },
         {
-          "time": 16.5,
+          "time": 18.5,
           "kind": "cargo",
           "x": 215,
           "drift": -4
         },
         {
-          "time": 19.66,
+          "time": 22.06,
           "kind": "skiff",
           "x": 350,
           "drift": 3
         },
         {
-          "time": 22.82,
+          "time": 25.62,
           "kind": "skiff",
           "x": 110,
           "drift": 0
         },
         {
-          "time": 25.98,
+          "time": 29.18,
           "kind": "cutter",
           "x": 170,
           "drift": 6
         },
         {
-          "time": 29.14,
+          "time": 32.74,
           "kind": "rescue",
           "x": 390,
           "drift": -2
         },
         {
-          "time": 32.3,
+          "time": 36.3,
           "kind": "cutter",
           "x": 170,
           "drift": -4
         },
         {
-          "time": 35.46,
+          "time": 39.86,
           "kind": "rescue",
           "x": 390,
           "drift": 3
@@ -2015,7 +2039,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 70.62,
+      "duration": 113.42,
       "spawns": [
         {
           "time": 0.7,
@@ -2024,73 +2048,73 @@
           "drift": -4
         },
         {
-          "time": 3.86,
+          "time": 4.26,
           "kind": "skiff",
           "x": 100,
           "drift": 3
         },
         {
-          "time": 7.02,
+          "time": 7.82,
           "kind": "sailor",
           "x": 420,
           "drift": 0
         },
         {
-          "time": 10.18,
+          "time": 11.38,
           "kind": "rescue",
           "x": 150,
           "drift": 6
         },
         {
-          "time": 13.34,
+          "time": 14.94,
           "kind": "cargo",
           "x": 340,
           "drift": -2
         },
         {
-          "time": 16.5,
+          "time": 18.5,
           "kind": "skiff",
           "x": 240,
           "drift": -4
         },
         {
-          "time": 19.66,
+          "time": 22.06,
           "kind": "cutter",
           "x": 450,
           "drift": 3
         },
         {
-          "time": 22.82,
+          "time": 25.62,
           "kind": "sailor",
           "x": 120,
           "drift": 0
         },
         {
-          "time": 25.98,
+          "time": 29.18,
           "kind": "skiff",
           "x": 330,
           "drift": 6
         },
         {
-          "time": 29.14,
+          "time": 32.74,
           "kind": "cutter",
           "x": 170,
           "drift": -2
         },
         {
-          "time": 32.3,
+          "time": 36.3,
           "kind": "rescue",
           "x": 390,
           "drift": -4
         },
         {
-          "time": 35.46,
+          "time": 39.86,
           "kind": "cutter",
           "x": 170,
           "drift": 3
         },
         {
-          "time": 38.62,
+          "time": 43.42,
           "kind": "rescue",
           "x": 390,
           "drift": 0
@@ -2129,7 +2153,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 73.78,
+      "duration": 116.98,
       "spawns": [
         {
           "time": 0.7,
@@ -2138,79 +2162,79 @@
           "drift": -4
         },
         {
-          "time": 3.86,
+          "time": 4.26,
           "kind": "sailor",
           "x": 420,
           "drift": 3
         },
         {
-          "time": 7.02,
+          "time": 7.82,
           "kind": "cutter",
           "x": 260,
           "drift": 0
         },
         {
-          "time": 10.18,
+          "time": 11.38,
           "kind": "skiff",
           "x": 360,
           "drift": 6
         },
         {
-          "time": 13.34,
+          "time": 14.94,
           "kind": "rescue",
           "x": 145,
           "drift": -2
         },
         {
-          "time": 16.5,
+          "time": 18.5,
           "kind": "barge",
           "x": 300,
           "drift": -4
         },
         {
-          "time": 19.66,
+          "time": 22.06,
           "kind": "skiff",
           "x": 440,
           "drift": 3
         },
         {
-          "time": 22.82,
+          "time": 25.62,
           "kind": "sailor",
           "x": 90,
           "drift": 0
         },
         {
-          "time": 25.98,
+          "time": 29.18,
           "kind": "rescue",
           "x": 385,
           "drift": 6
         },
         {
-          "time": 29.14,
+          "time": 32.74,
           "kind": "cargo",
           "x": 240,
           "drift": -2
         },
         {
-          "time": 32.3,
+          "time": 36.3,
           "kind": "cutter",
           "x": 170,
           "drift": -4
         },
         {
-          "time": 35.46,
+          "time": 39.86,
           "kind": "rescue",
           "x": 390,
           "drift": 3
         },
         {
-          "time": 38.62,
+          "time": 43.42,
           "kind": "cutter",
           "x": 170,
           "drift": 0
         },
         {
-          "time": 41.78,
+          "time": 46.98,
           "kind": "rescue",
           "x": 390,
           "drift": 6
@@ -2249,7 +2273,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 53.7,
+      "duration": 95.2,
       "spawns": [
         {
           "time": 0.7,
@@ -2258,43 +2282,43 @@
           "drift": -4
         },
         {
-          "time": 3.7,
+          "time": 4.2,
           "kind": "skiff",
           "x": 130,
           "drift": 3
         },
         {
-          "time": 6.7,
+          "time": 7.7,
           "kind": "sailor",
           "x": 405,
           "drift": 0
         },
         {
-          "time": 9.7,
+          "time": 11.2,
           "kind": "skiff",
           "x": 280,
           "drift": 6
         },
         {
-          "time": 12.7,
+          "time": 14.7,
           "kind": "cutter",
           "x": 170,
           "drift": -2
         },
         {
-          "time": 15.7,
+          "time": 18.2,
           "kind": "rescue",
           "x": 390,
           "drift": -4
         },
         {
-          "time": 18.7,
+          "time": 21.7,
           "kind": "cutter",
           "x": 170,
           "drift": 3
         },
         {
-          "time": 21.7,
+          "time": 25.2,
           "kind": "rescue",
           "x": 390,
           "drift": 0
@@ -2333,7 +2357,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 59.7,
+      "duration": 102.2,
       "spawns": [
         {
           "time": 0.7,
@@ -2342,55 +2366,55 @@
           "drift": -4
         },
         {
-          "time": 3.7,
+          "time": 4.2,
           "kind": "sailor",
           "x": 430,
           "drift": 3
         },
         {
-          "time": 6.7,
+          "time": 7.7,
           "kind": "skiff",
           "x": 275,
           "drift": 0
         },
         {
-          "time": 9.7,
+          "time": 11.2,
           "kind": "sailor",
           "x": 145,
           "drift": 6
         },
         {
-          "time": 12.7,
+          "time": 14.7,
           "kind": "skiff",
           "x": 370,
           "drift": -2
         },
         {
-          "time": 15.7,
+          "time": 18.2,
           "kind": "skiff",
           "x": 250,
           "drift": -4
         },
         {
-          "time": 18.7,
+          "time": 21.7,
           "kind": "cutter",
           "x": 170,
           "drift": 3
         },
         {
-          "time": 21.7,
+          "time": 25.2,
           "kind": "rescue",
           "x": 390,
           "drift": 0
         },
         {
-          "time": 24.7,
+          "time": 28.7,
           "kind": "cutter",
           "x": 170,
           "drift": 6
         },
         {
-          "time": 27.7,
+          "time": 32.2,
           "kind": "rescue",
           "x": 390,
           "drift": -2
@@ -2429,7 +2453,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 65.7,
+      "duration": 109.2,
       "spawns": [
         {
           "time": 0.7,
@@ -2438,67 +2462,67 @@
           "drift": -4
         },
         {
-          "time": 3.7,
+          "time": 4.2,
           "kind": "cargo",
           "x": 390,
           "drift": 3
         },
         {
-          "time": 6.7,
+          "time": 7.7,
           "kind": "skiff",
           "x": 260,
           "drift": 0
         },
         {
-          "time": 9.7,
+          "time": 11.2,
           "kind": "cutter",
           "x": 150,
           "drift": 6
         },
         {
-          "time": 12.7,
+          "time": 14.7,
           "kind": "sailor",
           "x": 430,
           "drift": -2
         },
         {
-          "time": 15.7,
+          "time": 18.2,
           "kind": "cargo",
           "x": 215,
           "drift": -4
         },
         {
-          "time": 18.7,
+          "time": 21.7,
           "kind": "skiff",
           "x": 350,
           "drift": 3
         },
         {
-          "time": 21.7,
+          "time": 25.2,
           "kind": "skiff",
           "x": 110,
           "drift": 0
         },
         {
-          "time": 24.7,
+          "time": 28.7,
           "kind": "cutter",
           "x": 170,
           "drift": 6
         },
         {
-          "time": 27.7,
+          "time": 32.2,
           "kind": "rescue",
           "x": 390,
           "drift": -2
         },
         {
-          "time": 30.7,
+          "time": 35.7,
           "kind": "cutter",
           "x": 170,
           "drift": -4
         },
         {
-          "time": 33.7,
+          "time": 39.2,
           "kind": "rescue",
           "x": 390,
           "drift": 3
@@ -2537,7 +2561,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 68.7,
+      "duration": 112.7,
       "spawns": [
         {
           "time": 0.7,
@@ -2546,73 +2570,73 @@
           "drift": -4
         },
         {
-          "time": 3.7,
+          "time": 4.2,
           "kind": "skiff",
           "x": 100,
           "drift": 3
         },
         {
-          "time": 6.7,
+          "time": 7.7,
           "kind": "sailor",
           "x": 420,
           "drift": 0
         },
         {
-          "time": 9.7,
+          "time": 11.2,
           "kind": "rescue",
           "x": 150,
           "drift": 6
         },
         {
-          "time": 12.7,
+          "time": 14.7,
           "kind": "cargo",
           "x": 340,
           "drift": -2
         },
         {
-          "time": 15.7,
+          "time": 18.2,
           "kind": "skiff",
           "x": 240,
           "drift": -4
         },
         {
-          "time": 18.7,
+          "time": 21.7,
           "kind": "cutter",
           "x": 450,
           "drift": 3
         },
         {
-          "time": 21.7,
+          "time": 25.2,
           "kind": "sailor",
           "x": 120,
           "drift": 0
         },
         {
-          "time": 24.7,
+          "time": 28.7,
           "kind": "skiff",
           "x": 330,
           "drift": 6
         },
         {
-          "time": 27.7,
+          "time": 32.2,
           "kind": "cutter",
           "x": 170,
           "drift": -2
         },
         {
-          "time": 30.7,
+          "time": 35.7,
           "kind": "rescue",
           "x": 390,
           "drift": -4
         },
         {
-          "time": 33.7,
+          "time": 39.2,
           "kind": "cutter",
           "x": 170,
           "drift": 3
         },
         {
-          "time": 36.7,
+          "time": 42.7,
           "kind": "rescue",
           "x": 390,
           "drift": 0
@@ -2651,7 +2675,7 @@
         ]
       ],
       "lives": 3,
-      "duration": 71.7,
+      "duration": 116.2,
       "spawns": [
         {
           "time": 0.7,
@@ -2660,82 +2684,3729 @@
           "drift": -4
         },
         {
-          "time": 3.7,
+          "time": 4.2,
           "kind": "sailor",
           "x": 420,
           "drift": 3
         },
         {
-          "time": 6.7,
+          "time": 7.7,
           "kind": "cutter",
           "x": 260,
           "drift": 0
         },
         {
-          "time": 9.7,
+          "time": 11.2,
           "kind": "skiff",
           "x": 360,
           "drift": 6
         },
         {
-          "time": 12.7,
+          "time": 14.7,
           "kind": "rescue",
           "x": 145,
           "drift": -2
         },
         {
-          "time": 15.7,
+          "time": 18.2,
           "kind": "barge",
           "x": 300,
           "drift": -4
         },
         {
-          "time": 18.7,
+          "time": 21.7,
           "kind": "skiff",
           "x": 440,
           "drift": 3
         },
         {
-          "time": 21.7,
+          "time": 25.2,
           "kind": "sailor",
           "x": 90,
           "drift": 0
         },
         {
-          "time": 24.7,
+          "time": 28.7,
           "kind": "rescue",
           "x": 385,
           "drift": 6
         },
         {
-          "time": 27.7,
+          "time": 32.2,
           "kind": "cargo",
           "x": 240,
           "drift": -2
         },
         {
-          "time": 30.7,
+          "time": 35.7,
           "kind": "cutter",
           "x": 170,
           "drift": -4
         },
         {
-          "time": 33.7,
+          "time": 39.2,
           "kind": "rescue",
           "x": 390,
           "drift": 3
         },
         {
-          "time": 36.7,
+          "time": 42.7,
           "kind": "cutter",
           "x": 170,
           "drift": 0
         },
         {
-          "time": 39.7,
+          "time": 46.2,
           "kind": "rescue",
           "x": 390,
           "drift": 6
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Fundy arrival",
+      "coast": 6,
+      "coast_name": "Fundy Narrows",
+      "tagline": "Turn with the tide",
+      "briefing": "Split your attention across the tidal crossing.",
+      "tutorial": false,
+      "target": 9,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": -22,
+      "storm": 0.25,
+      "fog": 0.15,
+      "reefs": [
+        [
+          126,
+          430,
+          35
+        ],
+        [
+          410,
+          565,
+          42
+        ]
+      ],
+      "lives": 3,
+      "duration": 101.75,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 260,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "skiff",
+          "x": 130,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "sailor",
+          "x": 405,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "skiff",
+          "x": 280,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Two-way tide",
+      "coast": 6,
+      "coast_name": "Fundy Narrows",
+      "tagline": "Turn with the tide",
+      "briefing": "Split your attention across the tidal crossing.",
+      "tutorial": false,
+      "target": 11,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": -22,
+      "storm": 0.25,
+      "fog": 0.15,
+      "reefs": [
+        [
+          126,
+          430,
+          35
+        ],
+        [
+          410,
+          565,
+          42
+        ]
+      ],
+      "lives": 3,
+      "duration": 108.65,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 100,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "sailor",
+          "x": 430,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "skiff",
+          "x": 275,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "sailor",
+          "x": 145,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "skiff",
+          "x": 370,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "skiff",
+          "x": 250,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "The narrows convoy",
+      "coast": 6,
+      "coast_name": "Fundy Narrows",
+      "tagline": "Turn with the tide",
+      "briefing": "Split your attention across the tidal crossing.",
+      "tutorial": false,
+      "target": 13,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": -22,
+      "storm": 0.25,
+      "fog": 0.15,
+      "reefs": [
+        [
+          126,
+          430,
+          35
+        ],
+        [
+          410,
+          565,
+          42
+        ]
+      ],
+      "lives": 3,
+      "duration": 115.55,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "sailor",
+          "x": 95,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "cargo",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "skiff",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "cutter",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "sailor",
+          "x": 430,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "cargo",
+          "x": 215,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "skiff",
+          "x": 350,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "skiff",
+          "x": 110,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 6
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Launch in the current",
+      "coast": 6,
+      "coast_name": "Fundy Narrows",
+      "tagline": "Turn with the tide",
+      "briefing": "Split your attention across the tidal crossing.",
+      "tutorial": false,
+      "target": 14,
+      "required_kind": "rescue",
+      "required_count": 1,
+      "tide": -22,
+      "storm": 0.25,
+      "fog": 0.15,
+      "reefs": [
+        [
+          126,
+          430,
+          35
+        ],
+        [
+          410,
+          565,
+          42
+        ]
+      ],
+      "lives": 3,
+      "duration": 119.0,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "rescue",
+          "x": 270,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "skiff",
+          "x": 100,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "rescue",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "cargo",
+          "x": 340,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "skiff",
+          "x": 240,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "cutter",
+          "x": 450,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "sailor",
+          "x": 120,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "skiff",
+          "x": 330,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 49.0,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "High-water keeper",
+      "coast": 6,
+      "coast_name": "Fundy Narrows",
+      "tagline": "Turn with the tide",
+      "briefing": "Split your attention across the tidal crossing.",
+      "tutorial": false,
+      "target": 15,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": -22,
+      "storm": 0.25,
+      "fog": 0.15,
+      "reefs": [
+        [
+          126,
+          430,
+          35
+        ],
+        [
+          410,
+          565,
+          42
+        ]
+      ],
+      "lives": 3,
+      "duration": 122.45,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "cargo",
+          "x": 110,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "cutter",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "skiff",
+          "x": 360,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "rescue",
+          "x": 145,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "barge",
+          "x": 300,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "skiff",
+          "x": 440,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "sailor",
+          "x": 90,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "rescue",
+          "x": 385,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "cargo",
+          "x": 240,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 6
+        },
+        {
+          "time": 49.0,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 52.45,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Wharf opening",
+      "coast": 7,
+      "coast_name": "Lunenburg Roads",
+      "tagline": "A working waterfront",
+      "briefing": "Heavy cargo needs a longer steady light.",
+      "tutorial": false,
+      "target": 9,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": 8,
+      "storm": 0.35,
+      "fog": 0.1,
+      "reefs": [
+        [
+          360,
+          440,
+          45
+        ],
+        [
+          175,
+          570,
+          35
+        ]
+      ],
+      "lives": 3,
+      "duration": 101.75,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 260,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "skiff",
+          "x": 130,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "sailor",
+          "x": 405,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "skiff",
+          "x": 280,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Salt-box sails",
+      "coast": 7,
+      "coast_name": "Lunenburg Roads",
+      "tagline": "A working waterfront",
+      "briefing": "Heavy cargo needs a longer steady light.",
+      "tutorial": false,
+      "target": 11,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": 8,
+      "storm": 0.35,
+      "fog": 0.1,
+      "reefs": [
+        [
+          360,
+          440,
+          45
+        ],
+        [
+          175,
+          570,
+          35
+        ]
+      ],
+      "lives": 3,
+      "duration": 108.65,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 100,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "sailor",
+          "x": 430,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "skiff",
+          "x": 275,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "sailor",
+          "x": 145,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "skiff",
+          "x": 370,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "skiff",
+          "x": 250,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Freight to the harbor",
+      "coast": 7,
+      "coast_name": "Lunenburg Roads",
+      "tagline": "A working waterfront",
+      "briefing": "Heavy cargo needs a longer steady light.",
+      "tutorial": false,
+      "target": 13,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": 8,
+      "storm": 0.35,
+      "fog": 0.1,
+      "reefs": [
+        [
+          360,
+          440,
+          45
+        ],
+        [
+          175,
+          570,
+          35
+        ]
+      ],
+      "lives": 3,
+      "duration": 115.55,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "sailor",
+          "x": 95,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "cargo",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "skiff",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "cutter",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "sailor",
+          "x": 430,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "cargo",
+          "x": 215,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "skiff",
+          "x": 350,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "skiff",
+          "x": 110,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 6
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "The working fleet",
+      "coast": 7,
+      "coast_name": "Lunenburg Roads",
+      "tagline": "A working waterfront",
+      "briefing": "Heavy cargo needs a longer steady light.",
+      "tutorial": false,
+      "target": 14,
+      "required_kind": "rescue",
+      "required_count": 1,
+      "tide": 8,
+      "storm": 0.35,
+      "fog": 0.1,
+      "reefs": [
+        [
+          360,
+          440,
+          45
+        ],
+        [
+          175,
+          570,
+          35
+        ]
+      ],
+      "lives": 3,
+      "duration": 119.0,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "rescue",
+          "x": 270,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "skiff",
+          "x": 100,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "rescue",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "cargo",
+          "x": 340,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "skiff",
+          "x": 240,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "cutter",
+          "x": 450,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "sailor",
+          "x": 120,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "skiff",
+          "x": 330,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 49.0,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Last cargo bell",
+      "coast": 7,
+      "coast_name": "Lunenburg Roads",
+      "tagline": "A working waterfront",
+      "briefing": "Heavy cargo needs a longer steady light.",
+      "tutorial": false,
+      "target": 15,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": 8,
+      "storm": 0.35,
+      "fog": 0.1,
+      "reefs": [
+        [
+          360,
+          440,
+          45
+        ],
+        [
+          175,
+          570,
+          35
+        ]
+      ],
+      "lives": 3,
+      "duration": 122.45,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "cargo",
+          "x": 110,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "cutter",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "skiff",
+          "x": 360,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "rescue",
+          "x": 145,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "barge",
+          "x": 300,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "skiff",
+          "x": 440,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "sailor",
+          "x": 90,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "rescue",
+          "x": 385,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "cargo",
+          "x": 240,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 6
+        },
+        {
+          "time": 49.0,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 52.45,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Island welcome",
+      "coast": 8,
+      "coast_name": "Grand Manan",
+      "tagline": "Islands in the rain",
+      "briefing": "Catch the emergency launches between the islands.",
+      "tutorial": false,
+      "target": 9,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": -18,
+      "storm": 0.55,
+      "fog": 0.35,
+      "reefs": [
+        [
+          110,
+          370,
+          32
+        ],
+        [
+          420,
+          490,
+          32
+        ],
+        [
+          245,
+          605,
+          26
+        ]
+      ],
+      "lives": 3,
+      "duration": 101.75,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 260,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "skiff",
+          "x": 130,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "sailor",
+          "x": 405,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "skiff",
+          "x": 280,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Three misty wakes",
+      "coast": 8,
+      "coast_name": "Grand Manan",
+      "tagline": "Islands in the rain",
+      "briefing": "Catch the emergency launches between the islands.",
+      "tutorial": false,
+      "target": 11,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": -18,
+      "storm": 0.55,
+      "fog": 0.35,
+      "reefs": [
+        [
+          110,
+          370,
+          32
+        ],
+        [
+          420,
+          490,
+          32
+        ],
+        [
+          245,
+          605,
+          26
+        ]
+      ],
+      "lives": 3,
+      "duration": 108.65,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 100,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "sailor",
+          "x": 430,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "skiff",
+          "x": 275,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "sailor",
+          "x": 145,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "skiff",
+          "x": 370,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "skiff",
+          "x": 250,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Shelter between rocks",
+      "coast": 8,
+      "coast_name": "Grand Manan",
+      "tagline": "Islands in the rain",
+      "briefing": "Catch the emergency launches between the islands.",
+      "tutorial": false,
+      "target": 13,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": -18,
+      "storm": 0.55,
+      "fog": 0.35,
+      "reefs": [
+        [
+          110,
+          370,
+          32
+        ],
+        [
+          420,
+          490,
+          32
+        ],
+        [
+          245,
+          605,
+          26
+        ]
+      ],
+      "lives": 3,
+      "duration": 115.55,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "sailor",
+          "x": 95,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "cargo",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "skiff",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "cutter",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "sailor",
+          "x": 430,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "cargo",
+          "x": 215,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "skiff",
+          "x": 350,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "skiff",
+          "x": 110,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 6
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Manan lifeboats",
+      "coast": 8,
+      "coast_name": "Grand Manan",
+      "tagline": "Islands in the rain",
+      "briefing": "Catch the emergency launches between the islands.",
+      "tutorial": false,
+      "target": 14,
+      "required_kind": "rescue",
+      "required_count": 1,
+      "tide": -18,
+      "storm": 0.55,
+      "fog": 0.35,
+      "reefs": [
+        [
+          110,
+          370,
+          32
+        ],
+        [
+          420,
+          490,
+          32
+        ],
+        [
+          245,
+          605,
+          26
+        ]
+      ],
+      "lives": 3,
+      "duration": 119.0,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "rescue",
+          "x": 270,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "skiff",
+          "x": 100,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "rescue",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "cargo",
+          "x": 340,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "skiff",
+          "x": 240,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "cutter",
+          "x": 450,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "sailor",
+          "x": 120,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "skiff",
+          "x": 330,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 49.0,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Island night watch",
+      "coast": 8,
+      "coast_name": "Grand Manan",
+      "tagline": "Islands in the rain",
+      "briefing": "Catch the emergency launches between the islands.",
+      "tutorial": false,
+      "target": 15,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": -18,
+      "storm": 0.55,
+      "fog": 0.35,
+      "reefs": [
+        [
+          110,
+          370,
+          32
+        ],
+        [
+          420,
+          490,
+          32
+        ],
+        [
+          245,
+          605,
+          26
+        ]
+      ],
+      "lives": 3,
+      "duration": 122.45,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "cargo",
+          "x": 110,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "cutter",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "skiff",
+          "x": 360,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "rescue",
+          "x": 145,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "barge",
+          "x": 300,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "skiff",
+          "x": 440,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "sailor",
+          "x": 90,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "rescue",
+          "x": 385,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "cargo",
+          "x": 240,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 6
+        },
+        {
+          "time": 49.0,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 52.45,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Cliffside signal",
+      "coast": 9,
+      "coast_name": "Cabot Cliffs",
+      "tagline": "The headland wind",
+      "briefing": "Fast cutters cross a gusting approach.",
+      "tutorial": false,
+      "target": 11,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": 24,
+      "storm": 0.75,
+      "fog": 0.2,
+      "reefs": [
+        [
+          390,
+          380,
+          35
+        ],
+        [
+          145,
+          520,
+          38
+        ],
+        [
+          385,
+          635,
+          27
+        ]
+      ],
+      "lives": 3,
+      "duration": 108.65,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 260,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "skiff",
+          "x": 130,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "sailor",
+          "x": 405,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "skiff",
+          "x": 280,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Cutters in the gale",
+      "coast": 9,
+      "coast_name": "Cabot Cliffs",
+      "tagline": "The headland wind",
+      "briefing": "Fast cutters cross a gusting approach.",
+      "tutorial": false,
+      "target": 13,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": 24,
+      "storm": 0.75,
+      "fog": 0.2,
+      "reefs": [
+        [
+          390,
+          380,
+          35
+        ],
+        [
+          145,
+          520,
+          38
+        ],
+        [
+          385,
+          635,
+          27
+        ]
+      ],
+      "lives": 3,
+      "duration": 115.55,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 100,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "sailor",
+          "x": 430,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "skiff",
+          "x": 275,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "sailor",
+          "x": 145,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "skiff",
+          "x": 370,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "skiff",
+          "x": 250,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 6
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Cargo under Cabot",
+      "coast": 9,
+      "coast_name": "Cabot Cliffs",
+      "tagline": "The headland wind",
+      "briefing": "Fast cutters cross a gusting approach.",
+      "tutorial": false,
+      "target": 15,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": 24,
+      "storm": 0.75,
+      "fog": 0.2,
+      "reefs": [
+        [
+          390,
+          380,
+          35
+        ],
+        [
+          145,
+          520,
+          38
+        ],
+        [
+          385,
+          635,
+          27
+        ]
+      ],
+      "lives": 3,
+      "duration": 122.45,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "sailor",
+          "x": 95,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "cargo",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "skiff",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "cutter",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "sailor",
+          "x": 430,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "cargo",
+          "x": 215,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "skiff",
+          "x": 350,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "skiff",
+          "x": 110,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 6
+        },
+        {
+          "time": 49.0,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 52.45,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Windward emergency",
+      "coast": 9,
+      "coast_name": "Cabot Cliffs",
+      "tagline": "The headland wind",
+      "briefing": "Fast cutters cross a gusting approach.",
+      "tutorial": false,
+      "target": 16,
+      "required_kind": "rescue",
+      "required_count": 1,
+      "tide": 24,
+      "storm": 0.75,
+      "fog": 0.2,
+      "reefs": [
+        [
+          390,
+          380,
+          35
+        ],
+        [
+          145,
+          520,
+          38
+        ],
+        [
+          385,
+          635,
+          27
+        ]
+      ],
+      "lives": 3,
+      "duration": 125.9,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "rescue",
+          "x": 270,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "skiff",
+          "x": 100,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "rescue",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "cargo",
+          "x": 340,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "skiff",
+          "x": 240,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "cutter",
+          "x": 450,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "sailor",
+          "x": 120,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "skiff",
+          "x": 330,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 49.0,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 52.45,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 55.9,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Cape relay",
+      "coast": 9,
+      "coast_name": "Cabot Cliffs",
+      "tagline": "The headland wind",
+      "briefing": "Fast cutters cross a gusting approach.",
+      "tutorial": false,
+      "target": 17,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": 24,
+      "storm": 0.75,
+      "fog": 0.2,
+      "reefs": [
+        [
+          390,
+          380,
+          35
+        ],
+        [
+          145,
+          520,
+          38
+        ],
+        [
+          385,
+          635,
+          27
+        ]
+      ],
+      "lives": 3,
+      "duration": 129.35,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "cargo",
+          "x": 110,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "cutter",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "skiff",
+          "x": 360,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "rescue",
+          "x": 145,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "barge",
+          "x": 300,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "skiff",
+          "x": 440,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "sailor",
+          "x": 90,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "rescue",
+          "x": 385,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "cargo",
+          "x": 240,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 6
+        },
+        {
+          "time": 49.0,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 52.45,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 55.9,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 59.35,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Blue morning",
+      "coast": 10,
+      "coast_name": "Northumberland",
+      "tagline": "Blue-water lanterns",
+      "briefing": "Dense fog rewards a wider lens and deliberate sweeps.",
+      "tutorial": false,
+      "target": 11,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": -16,
+      "storm": 0.4,
+      "fog": 0.7,
+      "reefs": [
+        [
+          105,
+          480,
+          38
+        ],
+        [
+          432,
+          535,
+          38
+        ],
+        [
+          250,
+          630,
+          25
+        ]
+      ],
+      "lives": 3,
+      "duration": 108.65,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 260,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "skiff",
+          "x": 130,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "sailor",
+          "x": 405,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "skiff",
+          "x": 280,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Lantern through fog",
+      "coast": 10,
+      "coast_name": "Northumberland",
+      "tagline": "Blue-water lanterns",
+      "briefing": "Dense fog rewards a wider lens and deliberate sweeps.",
+      "tutorial": false,
+      "target": 13,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": -16,
+      "storm": 0.4,
+      "fog": 0.7,
+      "reefs": [
+        [
+          105,
+          480,
+          38
+        ],
+        [
+          432,
+          535,
+          38
+        ],
+        [
+          250,
+          630,
+          25
+        ]
+      ],
+      "lives": 3,
+      "duration": 115.55,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 100,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "sailor",
+          "x": 430,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "skiff",
+          "x": 275,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "sailor",
+          "x": 145,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "skiff",
+          "x": 370,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "skiff",
+          "x": 250,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 6
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Northumberland freight",
+      "coast": 10,
+      "coast_name": "Northumberland",
+      "tagline": "Blue-water lanterns",
+      "briefing": "Dense fog rewards a wider lens and deliberate sweeps.",
+      "tutorial": false,
+      "target": 15,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": -16,
+      "storm": 0.4,
+      "fog": 0.7,
+      "reefs": [
+        [
+          105,
+          480,
+          38
+        ],
+        [
+          432,
+          535,
+          38
+        ],
+        [
+          250,
+          630,
+          25
+        ]
+      ],
+      "lives": 3,
+      "duration": 122.45,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "sailor",
+          "x": 95,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "cargo",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "skiff",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "cutter",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "sailor",
+          "x": 430,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "cargo",
+          "x": 215,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "skiff",
+          "x": 350,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "skiff",
+          "x": 110,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 6
+        },
+        {
+          "time": 49.0,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 52.45,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "name": "A hidden sail",
+      "coast": 10,
+      "coast_name": "Northumberland",
+      "tagline": "Blue-water lanterns",
+      "briefing": "Dense fog rewards a wider lens and deliberate sweeps.",
+      "tutorial": false,
+      "target": 16,
+      "required_kind": "rescue",
+      "required_count": 1,
+      "tide": -16,
+      "storm": 0.4,
+      "fog": 0.7,
+      "reefs": [
+        [
+          105,
+          480,
+          38
+        ],
+        [
+          432,
+          535,
+          38
+        ],
+        [
+          250,
+          630,
+          25
+        ]
+      ],
+      "lives": 3,
+      "duration": 125.9,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "rescue",
+          "x": 270,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "skiff",
+          "x": 100,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "rescue",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "cargo",
+          "x": 340,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "skiff",
+          "x": 240,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "cutter",
+          "x": 450,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "sailor",
+          "x": 120,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "skiff",
+          "x": 330,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 49.0,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 52.45,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 55.9,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "name": "The clear-water line",
+      "coast": 10,
+      "coast_name": "Northumberland",
+      "tagline": "Blue-water lanterns",
+      "briefing": "Dense fog rewards a wider lens and deliberate sweeps.",
+      "tutorial": false,
+      "target": 17,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": -16,
+      "storm": 0.4,
+      "fog": 0.7,
+      "reefs": [
+        [
+          105,
+          480,
+          38
+        ],
+        [
+          432,
+          535,
+          38
+        ],
+        [
+          250,
+          630,
+          25
+        ]
+      ],
+      "lives": 3,
+      "duration": 129.35,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "cargo",
+          "x": 110,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "cutter",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "skiff",
+          "x": 360,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "rescue",
+          "x": 145,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "barge",
+          "x": 300,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "skiff",
+          "x": 440,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "sailor",
+          "x": 90,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "rescue",
+          "x": 385,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "cargo",
+          "x": 240,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 6
+        },
+        {
+          "time": 49.0,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 52.45,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 55.9,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 59.35,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Signal arrival",
+      "coast": 11,
+      "coast_name": "Signal Hill",
+      "tagline": "The Atlantic relay",
+      "briefing": "Read every vessel, keep reserves, and bring the relay home.",
+      "tutorial": false,
+      "target": 11,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": 22,
+      "storm": 1.0,
+      "fog": 0.4,
+      "reefs": [
+        [
+          120,
+          390,
+          32
+        ],
+        [
+          425,
+          455,
+          37
+        ],
+        [
+          175,
+          590,
+          31
+        ],
+        [
+          370,
+          630,
+          25
+        ]
+      ],
+      "lives": 3,
+      "duration": 108.65,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 260,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "skiff",
+          "x": 130,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "sailor",
+          "x": 405,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "skiff",
+          "x": 280,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "name": "The ocean chorus",
+      "coast": 11,
+      "coast_name": "Signal Hill",
+      "tagline": "The Atlantic relay",
+      "briefing": "Read every vessel, keep reserves, and bring the relay home.",
+      "tutorial": false,
+      "target": 13,
+      "required_kind": "",
+      "required_count": 0,
+      "tide": 22,
+      "storm": 1.0,
+      "fog": 0.4,
+      "reefs": [
+        [
+          120,
+          390,
+          32
+        ],
+        [
+          425,
+          455,
+          37
+        ],
+        [
+          175,
+          590,
+          31
+        ],
+        [
+          370,
+          630,
+          25
+        ]
+      ],
+      "lives": 3,
+      "duration": 115.55,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "skiff",
+          "x": 100,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "sailor",
+          "x": 430,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "skiff",
+          "x": 275,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "sailor",
+          "x": 145,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "skiff",
+          "x": 370,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "skiff",
+          "x": 250,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 6
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "name": "Big ships home",
+      "coast": 11,
+      "coast_name": "Signal Hill",
+      "tagline": "The Atlantic relay",
+      "briefing": "Read every vessel, keep reserves, and bring the relay home.",
+      "tutorial": false,
+      "target": 15,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": 22,
+      "storm": 1.0,
+      "fog": 0.4,
+      "reefs": [
+        [
+          120,
+          390,
+          32
+        ],
+        [
+          425,
+          455,
+          37
+        ],
+        [
+          175,
+          590,
+          31
+        ],
+        [
+          370,
+          630,
+          25
+        ]
+      ],
+      "lives": 3,
+      "duration": 122.45,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "sailor",
+          "x": 95,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "cargo",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "skiff",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "cutter",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "sailor",
+          "x": 430,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "cargo",
+          "x": 215,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "skiff",
+          "x": 350,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "skiff",
+          "x": 110,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 6
+        },
+        {
+          "time": 49.0,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 52.45,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "name": "All stations calling",
+      "coast": 11,
+      "coast_name": "Signal Hill",
+      "tagline": "The Atlantic relay",
+      "briefing": "Read every vessel, keep reserves, and bring the relay home.",
+      "tutorial": false,
+      "target": 16,
+      "required_kind": "rescue",
+      "required_count": 1,
+      "tide": 22,
+      "storm": 1.0,
+      "fog": 0.4,
+      "reefs": [
+        [
+          120,
+          390,
+          32
+        ],
+        [
+          425,
+          455,
+          37
+        ],
+        [
+          175,
+          590,
+          31
+        ],
+        [
+          370,
+          630,
+          25
+        ]
+      ],
+      "lives": 3,
+      "duration": 125.9,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "rescue",
+          "x": 270,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "skiff",
+          "x": 100,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "rescue",
+          "x": 150,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "cargo",
+          "x": 340,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "skiff",
+          "x": 240,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "cutter",
+          "x": 450,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "sailor",
+          "x": 120,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "skiff",
+          "x": 330,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 6
+        },
+        {
+          "time": 49.0,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -2
+        },
+        {
+          "time": 52.45,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 55.9,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "name": "The Atlantic light",
+      "coast": 11,
+      "coast_name": "Signal Hill",
+      "tagline": "The Atlantic relay",
+      "briefing": "Read every vessel, keep reserves, and bring the relay home.",
+      "tutorial": false,
+      "target": 17,
+      "required_kind": "cargo",
+      "required_count": 1,
+      "tide": 22,
+      "storm": 1.0,
+      "fog": 0.4,
+      "reefs": [
+        [
+          120,
+          390,
+          32
+        ],
+        [
+          425,
+          455,
+          37
+        ],
+        [
+          175,
+          590,
+          31
+        ],
+        [
+          370,
+          630,
+          25
+        ]
+      ],
+      "lives": 3,
+      "duration": 129.35,
+      "spawns": [
+        {
+          "time": 0.7,
+          "kind": "cargo",
+          "x": 110,
+          "drift": -4
+        },
+        {
+          "time": 4.15,
+          "kind": "sailor",
+          "x": 420,
+          "drift": 3
+        },
+        {
+          "time": 7.6,
+          "kind": "cutter",
+          "x": 260,
+          "drift": 0
+        },
+        {
+          "time": 11.05,
+          "kind": "skiff",
+          "x": 360,
+          "drift": 6
+        },
+        {
+          "time": 14.5,
+          "kind": "rescue",
+          "x": 145,
+          "drift": -2
+        },
+        {
+          "time": 17.95,
+          "kind": "barge",
+          "x": 300,
+          "drift": -4
+        },
+        {
+          "time": 21.4,
+          "kind": "skiff",
+          "x": 440,
+          "drift": 3
+        },
+        {
+          "time": 24.85,
+          "kind": "sailor",
+          "x": 90,
+          "drift": 0
+        },
+        {
+          "time": 28.3,
+          "kind": "rescue",
+          "x": 385,
+          "drift": 6
+        },
+        {
+          "time": 31.75,
+          "kind": "cargo",
+          "x": 240,
+          "drift": -2
+        },
+        {
+          "time": 35.2,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -4
+        },
+        {
+          "time": 38.65,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 3
+        },
+        {
+          "time": 42.1,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 0
+        },
+        {
+          "time": 45.55,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 6
+        },
+        {
+          "time": 49.0,
+          "kind": "cutter",
+          "x": 170,
+          "drift": -2
+        },
+        {
+          "time": 52.45,
+          "kind": "rescue",
+          "x": 390,
+          "drift": -4
+        },
+        {
+          "time": 55.9,
+          "kind": "cutter",
+          "x": 170,
+          "drift": 3
+        },
+        {
+          "time": 59.35,
+          "kind": "rescue",
+          "x": 390,
+          "drift": 0
         }
       ]
     }

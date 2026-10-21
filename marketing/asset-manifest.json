@@ -186,7 +186,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "5fdc0db2f9b0c8df5ef0a4d7562121c15021a7a4f8cc17c0060ce681f954b88d"
+    "sha256": "78b1b225af8a7727d2cc681fede9898320bbdf6671c9579daeaec69d41a54090"
   },
   {
     "file": "feature-1024x500.png",
@@ -195,43 +195,43 @@
       500
     ],
     "mode": "RGB",
-    "sha256": "f1f3aaa90a18f5d36f8ef666f343db426421d28d039ded508011e385f8691bb4"
+    "sha256": "24ae5962b4357557a43bcf51d8cde377733c269e7cdbe81801ee7dcef060d4d6"
   },
   {
     "file": "leaderboards/best_endless.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "83901ec6d1fdd8c91cbc3441f64235e41965f27a1a2de732a0a3f3fd0afcb3d6"
+    "sha256": "06e9c4645bea4c6da9af4930931b956278abbf0d8f89ab146893f7e9f7264e3b"
   },
   {
     "file": "leaderboards/keeper_level.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "02ea80ecc9f9e216bb6eac53c8e2c14378267d452285df0115060550464e8fde"
+    "sha256": "ca2563024b457f3d2c696e639e0e54ef3b1579a1c14aa407de33e79f0cbd8c1c"
   },
   {
     "file": "leaderboards/perfect_watches.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "1500076101790bb2d96de188c67f829ee532dad8bdb85bbb01c3521f89cc4047"
+    "sha256": "4234c659e77529e4b8a412fa78b52a0ce5bf9566c315c49f71507739565dce4d"
   },
   {
     "file": "leaderboards/total_rescued.png",
     "dimensions": [
-      256,
-      256
+      512,
+      512
     ],
     "mode": "RGB",
-    "sha256": "10e4de8a2864d7a6e1c95b706030c613d67fa274e990d21eb4b25934fc5df644"
+    "sha256": "696bbf712d5b29813c2ab45245f2cb3c965f5f0b9748343d280070ff19f078f0"
   },
   {
     "file": "screenshots/phone-collection.png",

@@ -8,7 +8,7 @@ against release requirements before publication. Keep the existing package name
 
 ## Google Play Games Services
 
-`game/catalog.json` defines 20 achievements and four leaderboards using `key`
+`game/catalog.json` defines 26 achievements and four leaderboards using `key`
 fields, metrics and icon paths. Preserve these symbolic keys when adding console
 IDs; their spelling connects gameplay to the Services adapter.
 
@@ -23,6 +23,9 @@ IDs; their spelling connects gameplay to the Services adapter.
    `godot_play_game_services/game_id`. The current preset placeholder is `"0"`.
 4. Change `play_games.enabled` to `true` only for a configured test build. Verify
    sign-in and each relevant unlock/score path with a linked tester account.
+
+The six additional `coast7` through `coast12` mappings extend the existing twenty
+achievement keys; preserve any owner-supplied existing IDs when adding them.
 
 All real mappings currently remain blank and PGS is disabled. The adapter queues
 pending progress while unavailable; tests of symbolic callbacks do not prove a
@@ -65,7 +68,8 @@ the owner's actual configuration and device verification.
 Consent gates initialization. Menu banner reserve follows actual measured native
 space. Every two natural completed watches advances interstitial cadence;
 abandonment does not. One earned rescue flare can guide the visible fleet per
-watch. Fullscreen content and pending requests keep play paused even after an
+watch. A lost watch can offer one earned continue that restores its actual lost
+fleet and marks the watch assisted; an unearned dismissal cannot restore it. Fullscreen content and pending requests keep play paused even after an
 earned callback; dismissal returns to Pause and explicit Resume is required.
 Missing services, offline mode and Web must not fabricate an earned reward.
 
