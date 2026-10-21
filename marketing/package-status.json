@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "capture_manifest": "screenshots/capture-manifest.json",
+  "capture_manifest": "screenshots-round-two/capture-manifest.json",
   "capture_count": 9,
-  "capture_apk_sha256": "82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1",
+  "capture_apk_sha256": "C0DF2CED4DD0142B563527AF3D650A1BDFA95B96F19859176D32E54953D7809D",
   "physical_device_test": false,
   "physical_tablet_test": false,
-  "scope": "Updated illustrations complete; preserved original APK captures retain their previous scope until new native final-build capture acceptance.",
+  "scope": "Round Two local handoff ready with limits; current9 raw native captures and illustrations accepted. Historical screenshot set and original APK preserved separately.",
   "round_two_art": {
     "app": true,
     "feature": true,
@@ -16,5 +16,11 @@
       512
     ],
     "review": "All final512 and64px thumbnails inspected; not gameplay evidence."
-  }
+  },
+  "historical_capture_manifest": "screenshots/capture-manifest.json",
+  "historical_capture_apk_sha256": "82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1",
+  "source_runtime_commit": "725c4cac38fc071639d673f11ca37b1667c663ba",
+  "native_status": "accepted_with_documented_limits",
+  "public_round_two_sync": "held_after_approval_system_denial",
+  "round_two_hosted_ci": null
 }

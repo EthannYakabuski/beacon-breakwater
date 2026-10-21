@@ -87,19 +87,33 @@ Round Two replaces app/feature, all 26 achievement icons and all four leaderboar
 icons with distinct generated illustrations. Originals, prompts and SHA256
 provenance are retained under `marketing/source-art`; standard 512px packaging
 was inspected at final size and at 64px. Illustrations are not screenshots.
-Nine earlier-build ordinary-play phone and logical seven/ten-inch emulator
-screenshots remain in `marketing/screenshots`; updated final-build captures
-are required after this source update. No physical-tablet test is claimed.
+Nine approved final-build native screenshots are under
+`marketing/screenshots-round-two`, with relative PNG hashes and display profiles
+in its `capture-manifest.json`. Earlier screenshots remain unchanged under
+`marketing/screenshots` and retain their original APK scope. No physical-tablet
+test is claimed.
+
+The Round Two local handoff is ready with documented limits. Native body-touch
+scrolling, ordinary play, a real earned loss continue held86.55seconds behind its
+endcard, explicit Resume, assisted/unassisted once-only banking, Focus purchase,
+Back and actual offline/cold save retention passed. All18 banked groups and
+pending service-store semantics survived the observed final checks. The initial
+missing AVD package was recovered from a verified genuine legacy backup before
+the tested updates; retention across that earlier session loss is not claimed.
+
+Current runtime commit: `725c4cac38fc071639d673f11ca37b1667c663ba`.
+Local APK: `build/round-two-725c4cac-a1/android/beacon-breakwater-debug.apk`
+(194578012bytes), SHA256 `C0DF2CED4DD0142B563527AF3D650A1BDFA95B96F19859176D32E54953D7809D`.
+Web bundle: `build/round-two-725c4cac-a1/web/index.html` plus its sidecars/notices.
+Strict exports passed with stable inputs and verified source binding. Interactive
+Web remains unverified. Round Two public synchronization remains held after a
+push denial, so no new hosted CI result is claimed.
 
 `HANDOFF.txt`, `docs/NATIVE_QA.json` and `docs/LOCAL_TEST_RESULTS.json` distinguish
-current-build tests from historical tests and list remaining limits. The original
-native-tested APK has SHA256
-`82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1`.
-Where restored locally, it remains at `build/android/game-debug.apk`; prebuilt
-exports and private QA evidence are not committed. CI binaries are separate
-builds and have not received that original APK's native QA. The Round Two runtime update needs new exports and affected native checks; the
-older APK and dated hosted CI above do not verify these changes. See
-[Round Two behavior and verification](docs/ROUND_TWO.md).
+this exact build from historical packages. The untouched original native-tested
+APK remains at `build/android/game-debug.apk` (SHA256
+`82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1`). Hosted CI artifacts are
+separate binaries. See [Round Two behavior and verification](docs/ROUND_TWO.md).
 
 Physical devices, audible Android output, interactive Web/audio/WebGL, production
 services and human balance remain unverified. Real IDs, backend/signing,

@@ -45,8 +45,8 @@ Kenney CC0 notices and original score provenance.
 
 New illustrated app/feature images are packaged from retained originals using
 standard resizing. All26achievement and four leaderboard illustrations are replaced and packaged
-at512px; final-size pages and64px thumbnails were inspected. The old screenshot set is historical until final-build
-phone/logical7/logical10 captures replace it. Illustrations are not screenshots.
+at512px; final-size pages and64px thumbnails were inspected. The old screenshot set remains historical. Nine accepted final-build
+phone/logical7/logical10 raw PNGs now live in `marketing/screenshots-round-two`. Illustrations are not screenshots.
 
 ## Verification and remaining acceptance
 
@@ -63,13 +63,19 @@ pause/background state and actual rendered phone/logical-tablet pages. Five
 views were inspected. Its process audio bus was muted; no audible quality or
 Android audio claim follows from that test.
 
-The original APK/hash and earlier native QA remain in `HANDOFF.txt`. They were not
-rebuilt or re-tested by these source checks. New Android/Web exports, affected
-native gameplay/earned-continue/endcard/Back/save/offline checks, final-build
-captures are required before the updated package's
-handoff. Hosted CI validates its exact commit and is distinct from original local
-APK QA. Physical devices, production services, audible output, interactive Web,
-long sessions and human balance acceptance remain unverified.
+The final runtime commit `725c4cac38fc071639d673f11ca37b1667c663ba` produced accepted
+Android/Web exports with stable input/source binding and full notices. Its APK
+SHA256 is `C0DF2CED4DD0142B563527AF3D650A1BDFA95B96F19859176D32E54953D7809D`.
+Actual Android body scrolling, normal guidance/horn, natural earned loss continue,
+86.55second endcard pause and explicit Resume, once-only assisted/unassisted
+banking, Focus/Lens retention, Back, real offline/cold banked retention and nine
+final-build captures passed. See `NATIVE_QA.json` and `LOCAL_TEST_RESULTS.json` for
+scope, including explicit genuine legacy backup restoration before migration.
+The original APK/hash and earlier native QA remain separately qualified in
+`HANDOFF.txt`; hosted CI validates its own exact commit and separate artifacts.
+Current Round Two public sync is held after denial, with no new hosted CI result.
+Physical devices, production services, audible output, interactive Web, long
+sessions and human balance acceptance remain unverified.
 
 
 ## Native-discovered card scrolling correction
@@ -86,5 +92,6 @@ ordinary paired touch/mouse release. Dragging preserves the page and banked data
 Focused strict checks passed:113 paired-touch dispatch,106 mouse dispatch,57
 fullscreen/UI and90 notice-bounds checks, with no engine errors. Test touchscreen
 emulation is confined to the fixture process; project/platform settings and real
-saves are unchanged. New exports and affected native controls must be verified;
-the preceding c0bd98f build's observations do not certify this corrected binary.
+saves are unchanged. The corrected final binary passed native card-body touch scrolling and affected
+controls. Earlier c0bd98f observations retain their own scope; the final725c APK
+and current native acceptance are identified above.

@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "game": "Beacon Breakwater",
+  "apk_sha256": "C0DF2CED4DD0142B563527AF3D650A1BDFA95B96F19859176D32E54953D7809D",
+  "source_runtime_commit": "725c4cac38fc071639d673f11ca37b1667c663ba",
+  "date_utc": "2026-10-21",
+  "generator": "Unmodified Android screencap from ordinary running game; no generated, resized, cropped or decorated pixels.",
+  "device_scope": "One Android11/API30 emulator; phone plus two logical tablet display profiles, not physical tablet-inch tests.",
+  "manifest_scope": "Only relative PNG identities, dimensions, hashes and visual-acceptance flags. Private evidence, real saves and raw SDK logs are excluded.",
+  "files": [
+    {
+      "file": "phone/01-home.png",
+      "width": 1080,
+      "height": 1920,
+      "density": 420,
+      "bytes": 1428577,
+      "sha256": "0507E2B7CEFEF2F8803022C2DBD91F0548F8F98B09493D7F0F823D7684896F9C",
+      "visual_accepted": true,
+      "raw_native_pixels": true
+    },
+    {
+      "file": "phone/02-live-watch.png",
+      "width": 1080,
+      "height": 1920,
+      "density": 420,
+      "bytes": 1951958,
+      "sha256": "FC9E95FFD8E4AD1D12E4234DFFD820B4638516D5D99B5B7128A3CCD5284DCD84",
+      "visual_accepted": true,
+      "raw_native_pixels": true
+    },
+    {
+      "file": "phone/03-workshop.png",
+      "width": 1080,
+      "height": 1920,
+      "density": 420,
+      "bytes": 1209428,
+      "sha256": "AC201C927C8489648464A0A9F4B7BFA1EA7D3F7572976821C86A5D5C09AFD9F8",
+      "visual_accepted": true,
+      "raw_native_pixels": true
+    },
+    {
+      "file": "7inch/01-home.png",
+      "width": 1200,
+      "height": 1920,
+      "density": 320,
+      "bytes": 1493191,
+      "sha256": "950F78629343D6DF9A42634D0CCFDDDC416B418666B1EEFB858623A75D0B76EB",
+      "visual_accepted": true,
+      "raw_native_pixels": true
+    },
+    {
+      "file": "7inch/02-live-watch.png",
+      "width": 1200,
+      "height": 1920,
+      "density": 320,
+      "bytes": 2027554,
+      "sha256": "AD841AAAC75449056664648AE8ED1AC96F924C94B70184406CD776A2CDBED5D5",
+      "visual_accepted": true,
+      "raw_native_pixels": true
+    },
+    {
+      "file": "7inch/03-boat-log.png",
+      "width": 1200,
+      "height": 1920,
+      "density": 320,
+      "bytes": 1244073,
+      "sha256": "2F8B16C2ADDC67CD039E57316C179D2EEA4A974D25EC9AD74147AB80D6772D66",
+      "visual_accepted": true,
+      "raw_native_pixels": true
+    },
+    {
+      "file": "10inch/01-home.png",
+      "width": 1600,
+      "height": 2560,
+      "density": 300,
+      "bytes": 2353599,
+      "sha256": "D66B3CB44B428451D93A096405587DE7EA20310405E3813635C3E641724183DB",
+      "visual_accepted": true,
+      "raw_native_pixels": true
+    },
+    {
+      "file": "10inch/02-live-watch.png",
+      "width": 1600,
+      "height": 2560,
+      "density": 300,
+      "bytes": 3258788,
+      "sha256": "2BD5E1DA97C0B7904075D423EF1B281334C871E1BB711293746BC6E152CCF76A",
+      "visual_accepted": true,
+      "raw_native_pixels": true
+    },
+    {
+      "file": "10inch/03-workshop.png",
+      "width": 1600,
+      "height": 2560,
+      "density": 300,
+      "bytes": 1768719,
+      "sha256": "0BDDA9130A9708C71DBF3AFA418A87EF0EA278EF35650E648583B81F72899DFA",
+      "visual_accepted": true,
+      "raw_native_pixels": true
+    }
+  ]
+}

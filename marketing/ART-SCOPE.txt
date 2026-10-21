@@ -5,5 +5,5 @@ retained under marketing/source-art. Standard resizing packages512px badges,
 512px app icon and1024x500 feature; final512 artwork and64px thumbnails reviewed.
 Runtime harbor/lighthouse/shoal originals retain separate assets/art provenance.
 Illustrations are not gameplay screenshots. Preserved original-APK screenshots
-remain historical until the coordinator replaces them with final-build native
-phone/logical7/logical10 views. No physical-tablet or production-service claim.
+remain unchanged and historical; nine accepted final-build native phone/logical7/
+logical10 views are now under marketing/screenshots-round-two. No physical-tablet or production-service claim.

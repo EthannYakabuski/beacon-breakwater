@@ -1,107 +1,86 @@
-BEACON BREAKWATER - DEVELOPMENT CONTINUATION AND LOCAL TEST HANDOFF
+BEACON BREAKWATER - ROUND TWO LOCAL HANDOFF READY WITH LIMITATIONS
+Updated2026-10-21. Android primary; Godot4.5.1 Compatibility; single-threaded Web.
 
-Use this game's canonical repository as the single active development copy.
-Read AGENTS.md, README.md, docs/DEVELOPER.md and docs/PLATFORM_SETUP.md before a
-focused update. A fresh Codex task should receive its goal and supplied service
-IDs explicitly; it must not depend on this project's earlier conversations.
-Preserved original folders and private QA are local archives, not edit targets.
+CURRENT LOCAL PACKAGE
+Runtime/source commit: 725c4cac38fc071639d673f11ca37b1667c663ba
+APK: build/round-two-725c4cac-a1/android/beacon-breakwater-debug.apk
+SHA256: C0DF2CED4DD0142B563527AF3D650A1BDFA95B96F19859176D32E54953D7809D
+Bytes:194578012
+Web: build/round-two-725c4cac-a1/web/index.html (retain JS/PCK/WASM and sidecars).
+Android/Web exports passed strict gates and verified stable runtime input/source
+binding before/after. Complete LICENSE/NOTICE/LICENSES bundles were checked.
+These are dated local artifacts, separate from hosted CI binaries.
 
-PUBLIC SOURCE AND DATED CI BASELINE
-Repository: https://github.com/EthannYakabuski/beacon-breakwater
-Before this documentation update, verified source main:
-ed10494e9c61bd3330b5fbd062adc97d5befe177
-Hosted CI PASS: https://github.com/EthannYakabuski/beacon-breakwater/actions/runs/39527175172
-Android and Web exports passed. This records that exact baseline, not future
-commits. Pages deployment is absent/held. No Library or Google Play publication
-is part of this handoff. These results supersede old publication-blocked wording.
+NATIVE ACCEPTANCE
+Final-build body-touch scrolling, ordinary guidance/foghorn, a natural lost-watch
+earned continue,86.55-second earned-endcard pause, Android Back to explicit Pause,
+Resume and once-only assisted banking passed. A separate unassisted four-boat
+victory/perfect record and real interstitial close/Back did not double-bank.
+A Focus purchase retained Lens ownership. Actual disconnected play, unavailable
+ads, Back/abandon, guest reboot without backup restoration, cold launch and final
+stop retained all18 banked groups; pending service-store semantics also retained.
+Strict native diagnostic scan found zero targeted engine/script/fatal matches.
+Display overrides were cleared, original1080x1920/density420 and radio1/1 restored,
+actual Wi-Fi/mobile connections verified, and package safely stopped.
 
-ORIGINAL NATIVE-TESTED LOCAL APK
-Local artifact, where restored: build/android/game-debug.apk
+LEGACY MIGRATION QUALIFICATION
+The initial AVD session lacked this package. A verified genuine legacy backup
+was explicitly restored and observed on the old APK before updating; retention
+across the earlier missing session is not claimed. Normal observed updates after
+that restoration preserved all18 banked groups and owned equipment. No fabricated
+progression or reward replay was used. Active unfinished watches do not persist.
+
+ART / SCREENSHOTS
+Illustrated runtime harbor/lighthouse/shoal, app/feature,26achievement and4board
+icons are complete, with originals/prompts/hashes retained. All final512 badges
+and64px thumbnails reviewed. Illustrations are promotional art, not screenshots.
+Nine approved final-build native PNGs: marketing/screenshots-round-two/
+Relative identities/hashes: marketing/screenshots-round-two/capture-manifest.json
+Three phone1080x1920@420, three logical7 views1200x1920@320 and three logical10
+views1600x2560@300. Raw Android pixels are unchanged. These are one emulator's
+logical layouts; no physical-tablet claim. Earlier PNGs remain untouched under
+marketing/screenshots and retain their original APK scope.
+
+ORIGINAL PACKAGE PRESERVED
+build/android/game-debug.apk
 SHA256: 82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1
-Bytes: 183692140
-The original APK and previous packages/evidence are retained locally outside
-Git. Hosted CI artifacts are separate builds without this APK's native QA.
-The current Round Two source update changes runtime behavior and requires new
-Android/Web exports and affected native checks. The original APK remains unchanged.
+Bytes:183692140. Earlier60.518-second earned-endcard and related native QA remain
+qualified under historical sections of docs/NATIVE_QA.json and LOCAL_TEST_RESULTS.
+Do not relabel the old APK, earlier candidate observations or CI artifacts as
+testing the final Round Two binary.
 
-PLAY AND IMPLEMENTED PACKAGE
-Aim by dragging over water. Hold the beam on a boat until guidance completes;
-guide it home before its timer expires. Use the free Foghorn, pause and Resume.
-Sixty authored watches across twelve coasts, Endless/Daily, gifts/quests, equipment,
-keeper progression, banked saves/backup and records are implemented. Supplied
-native plugins use sample ad IDs; PGS has 26 achievements/four boards with blank,
-disabled real-ID mappings. New illustrated app/feature art, all26achievement icons and all4board icons are
-packaged, with original sources/prompts/hashes and final512/64px visual review.
-Nine preserved earlier-build phone/logical-tablet screenshots retain their old
-APK scope and must be refreshed for the updated build.
+SOURCE / PUBLIC STATUS
+Canonical repository: https://github.com/EthannYakabuski/beacon-breakwater
+Current Round Two work is committed locally; public synchronization remains held
+after an approval-system push denial. No new Round Two hosted CI is claimed.
+Dated earlier hosted PASS only: ed10494e9c61bd3330b5fbd062adc97d5befe177
+https://github.com/EthannYakabuski/beacon-breakwater/actions/runs/39527175172
+No Pages, Library or Google Play publication/activation is included.
 
-ORIGINAL APK QA AND ITS SCOPE
-On the original APK identified above, a genuine earned rescue flare stayed paused through a
-60.518-second native endcard. Explicit Resume returned to usable ordinary play.
-A natural assisted result banked once; Android Back remained usable. All 18
-typed banked save groups survived the observed installation/update and offline
-cold starts. Ordinary disconnected play/Back and nine current-build screenshot
-roles were checked. Emulator-only display/network overrides were restored and
-the package was safely stopped. Current native phase strict gates passed.
+CONTINUE / SERVICE SETUP
+Use this folder as the single active Git working copy. A fresh Codex task must
+read AGENTS.md, README.md, docs/DEVELOPER.md and docs/PLATFORM_SETUP.md and receive
+the requested change/IDs explicitly; do not assume chat inheritance. Preserve
+user changes and real saves; isolate all test user data and pending stores.
+Map26achievement/fourleaderboard catalog keys in platform/config.json, supply
+matching numeric PGS game_id in JSON and Android export preset, then configure
+linked app/OAuth/signing/testers before enabling PGS. AdMob unit IDs live in JSON;
+manifest App ID is Godot ProjectSettings admob/general/android/app_id in
+project.godot. JSON app_id is reference-only. test_mode changes wording; it does
+not configure test devices or convert production requests into test requests.
+Keep Google sample IDs for development unless device testing is configured.
 
-Gift/quest/Lens purchase and unearned-ad observations from earlier builds retain
-their historical scope. Current-build unearned SDK dismissal and the daily
-watch-specific victory/once-day bonus remain unverified. Only banked progress
-persists across process death; unfinished watches intentionally do not resume.
-The sanitized details remain in docs/NATIVE_QA.json and docs/LOCAL_TEST_RESULTS.json.
-No raw logs, real saves or private evidence references belong in public docs.
+LIMITS / OWNER WORK
+MinAPI24/targetAPI35 is an observed engine constraint, not Play release approval.
+Physical devices/tablets, audible Android output (emulator output disabled),
+interactive Web/audio/WebGL, production PGS/AdMob, signing/consent and human
+balance remain unverified. No supported browser tab was available. Final-build
+unearned SDK dismissal and daily-specific victory/once-day bonus are unverified;
+older gift/quest/unearned observations retain their historical scope. No Windows
+distribution is supplied. Owner supplies real backend IDs, signing, privacy/
+contact/consent/store declarations and Google Play publication. Retain LICENSE,
+NOTICE and the complete LICENSES tree with all redistributed source/builds.
 
-NEXT INTEGRATION STEPS
-Use game/catalog.json keys/metrics/icons to create the 26 achievements/four
-leaderboards in Play Console. Put actual IDs and numeric game_id in
-platform/config.json, set the same numeric godot_play_game_services/game_id in
-the Android export preset, and enable PGS only after linked-app/OAuth/signing
-setup. Verify on a properly configured tester account/device.
-
-For AdMob, configure banner/interstitial/rewarded unit IDs in platform/config.json
-and the manifest App ID via Godot Project Settings admob/general/android/app_id
-in project.godot. JSON app_id is reference-only; test_mode changes wording and
-does not configure test devices or convert production requests to test requests.
-Keep sample IDs for development unless test-device setup has been verified.
-
-LIMITS AND OWNER WORK
-Godot 4.5.1 Compatibility; Android primary, single-threaded Web export.
-Minimum API 24 / target API 35 is an observed engine export constraint, not
-current Google Play release eligibility. Emulator audio was disabled. Physical
-devices, audible output, interactive Web/audio/WebGL, production services and
-human balance remain unverified. Owner supplies production/backend/signing,
-privacy/contact/consent/store declarations and handles Play publication.
-Retain LICENSE, NOTICE and the complete LICENSES tree with redistributed builds.
-
-
-ROUND TWO SOURCE VERIFICATION (2026-10-21)
-Proportional beam-footprint illumination controls movement, with immediate base
-speed off beam; distinct vessel types have maximum lit speed 58 versus the old
-118, and ring budgets are 25 percent shorter. There are 60 watches/12 coasts,
-five upgrade families, Kenney filled star textures and a true hollow CC0 vector derivative, thirteen full musical loops,
-new guidance/arrival/horn/assistance feedback and illustrated coastal runtime art.
-One earned loss continue restores the real lost fleet, marks assistance and keeps
-the game paused until explicit Resume. Existing banked schema1 progress remains.
-
-Strict isolated checks passed: Round Two38, model235 (including60/60 deterministic
-baseline-gear priority-solver victories), UI57, dispatch106, notice-bounds90 and
-service smoke checks; clean import and no engine/script/assertion failures.
-A bounded actual Windows Compatibility GPU fixture passed52 rendered-view and
-actual-player policy checks, with its process audio muted. Five synthetic phone/
-logical-tablet previews were inspected. These are development fixtures, not
-auditory acceptance, native SDK evidence or store gameplay screenshots.
-
-New Android/Web exports, affected real native gameplay/rewarded-continue/endcard/
-Back/save/offline checks, final-build phone/7/10 capture review are pending. All26achievement/fourboard illustrations are complete. Do not relabel the original APK or CI binaries
-as having those checks. See docs/ROUND_TWO.md for behavior and acceptance scope.
-
-
-FOCUSED SOURCE FOLLOW-UP: CARD TOUCH SCROLL
-Native testing found card-body swipes did not scroll a clipped briefing; dragging
-the thin scrollbar was a usable workaround. The focused fix sets only the card
-PanelContainer to MOUSE_FILTER_PASS, retaining child Button filters. The actual
-Viewport regression now reveals a genuinely clipped Begin with a body drag,
-proves no callback/profile change during drag, then activates Begin exactly once.
-Strict paired-touch113/mouse106/fullscreen-UI57/notice90 checks passed. New exports
-and native touch-control acceptance remain required; earlier c0bd98f/3F9BE098
-artifact observations retain their own scope and must not be relabeled final.
+See docs/NATIVE_QA.json, docs/LOCAL_TEST_RESULTS.json and docs/ROUND_TWO.md for
+sanitized dated behavior/source/export/capture verification. Private raw logs,
+real saves and machine evidence never belong in public tracked content.

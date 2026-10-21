@@ -1,15 +1,19 @@
-BEACON BREAKWATER - PRESERVED EARLIER-BUILD SCREENSHOTS
-Nine ordinary Android emulator Home/Battle/Boat Log images were individually reviewed.
-Phone images use1080x1920; logical7 uses1200x1920; logical10 uses1600x2560.
-One emulator supplied the display overrides; no physical-tablet claim is made.
-Image pixels were not resized, cropped, rotated or decorated. Public identities and
-dimensions appear in screenshots/capture-manifest.json and per-image provenance summaries.
-Private SDK/runtime logs, machine identifiers and source-evidence coordinates are omitted.
-Original tested APK SHA256:82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1
-Physical devices, audible output, interactive Web, production services and human
-playtesting remain separate acceptance. See docs/NATIVE_QA.json for scoped facts/limits.
+BEACON BREAKWATER - ROUND TWO LOCAL STORE ART/CAPTURE HANDOFF
+App/feature plus26achievement/fourleaderboard illustrations are complete, with
+originals/prompts/hashes and final512/64px visual review. Illustrations are not
+gameplay screenshots.
 
-Round Two source/art changes require new final-build phone/7/10 captures. These
-preserved screenshots do not verify the new source. App/feature art has been
-replaced with generated illustrations; all26achievement and four leaderboard illustrations are also replaced.
-Originals/prompts/hashes are retained; final512/64px artwork review is complete.
+Nine accepted final-build screenshots: screenshots-round-two/
+Manifest: screenshots-round-two/capture-manifest.json
+Source runtime commit: 725c4cac38fc071639d673f11ca37b1667c663ba
+APK SHA256: C0DF2CED4DD0142B563527AF3D650A1BDFA95B96F19859176D32E54953D7809D
+Three phone1080x1920@420, three logical7 views1200x1920@320, three logical10
+views1600x2560@300, all one API30 emulator. Exact ordinary-game Android PNG pixels
+were copied without resizing, cropping, decoration or generation. The7/03 view
+is Boat Log; phone/10inch03 are Workshop. No physical-inch/device claim follows.
+Earlier screenshots/ remains untouched and belongs to original APK82C96A57.
+
+Native functional acceptance and limits are in ../docs/NATIVE_QA.json and
+../HANDOFF.txt. Physical devices, audible output, interactive Web, production
+services and human/store acceptance remain owner work. Public Round Two sync is
+held after approval-system denial; no new hosted CI, Pages, Library or Play claim.
