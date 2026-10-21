@@ -1,23 +1,71 @@
-BEACON BREAKWATER - LOCAL TEST SOURCE PACKAGE
-Godot4.5.1 Compatibility portrait lighthouse arcade. Android is primary; Web export is included.
-See README.md for play/build commands, docs/NATIVE_QA.json for dated native facts and
-docs/LOCAL_TEST_RESULTS.json for scoped source/build checks and limitations.
+BEACON BREAKWATER - DEVELOPMENT CONTINUATION AND LOCAL TEST HANDOFF
 
-Current tested Android APK SHA256: 82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1
-Current main SHA256: 1543ECFB3E982CBD38785DB5FB911B8E8CE50382CA9E07E3768BC2B5FD744454
-No prebuilt APK/Web exports are committed. Build locally or use configured CI artifacts.
-Nine individually reviewed phone/logical-tablet screenshots are in marketing/screenshots.
-They use ordinary emulator play, not physical tablets or staged game-state fixtures.
+Use this game's canonical repository as the single active development copy.
+Read AGENTS.md, README.md, docs/DEVELOPER.md and docs/PLATFORM_SETUP.md before a
+focused update. A fresh Codex task should receive its goal and supplied service
+IDs explicitly; it must not depend on this project's earlier conversations.
+Preserved original folders and private QA are local archives, not edit targets.
 
-Current earned rewarded return stayed paused through its endcard and required explicit Resume.
-Ordinary natural-result banking, Android Back, offline banked retention/cold restart and
-restoration of emulator-only network/display overrides were observed. Only banked progress
-persists across process death. Historical gift/quest/upgrade and unearned-ad observations
-retain their prior-build scope; current unearned SDK dismissal and daily watch-specific
-bonus remain unverified. Physical devices, audible output, interactive Web, production
-services and human balance remain owner testing. Actual minAPI24/targetAPI35 is not a
-Google Play eligibility claim.
+PUBLIC SOURCE AND DATED CI BASELINE
+Repository: https://github.com/EthannYakabuski/beacon-breakwater
+Before this documentation update, verified source main:
+ed10494e9c61bd3330b5fbd062adc97d5befe177
+Hosted CI PASS: https://github.com/EthannYakabuski/beacon-breakwater/actions/runs/39527175172
+Android and Web exports passed. This records that exact baseline, not future
+commits. Pages deployment is absent/held. No Library or Google Play publication
+is part of this handoff. These results supersede old publication-blocked wording.
 
-Real IDs, signing, privacy/contact/consent/store declarations and Play publication are owner work.
-Original work is Apache2; retain LICENSE, NOTICE and LICENSES plus all third-party notices.
-Pages deployment is absent and held. This local preparation makes no remote publication claim.
+ORIGINAL NATIVE-TESTED LOCAL APK
+Local artifact, where restored: build/android/game-debug.apk
+SHA256: 82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1
+Bytes: 183692140
+The original APK and previous packages/evidence are retained locally outside
+Git. Hosted CI artifacts are separate builds without this APK's native QA.
+This continuation update changes documentation only; no APK rebuild is required.
+
+PLAY AND IMPLEMENTED PACKAGE
+Aim by dragging over water. Hold the beam on a boat until guidance completes;
+guide it home before its timer expires. Use the free Foghorn, pause and Resume.
+Thirty authored watches across six coasts, Endless/Daily, gifts/quests, equipment,
+keeper progression, banked saves/backup and records are implemented. Supplied
+native plugins use sample ad IDs; PGS has 20 achievements/four boards with blank,
+disabled real-ID mappings. Store illustrations/copy/icons and nine reviewed
+normal-play phone/logical-tablet screenshots are included with their notices.
+
+ACTUAL QA AND ITS SCOPE
+On this exact APK, a genuine earned rescue flare stayed paused through a
+60.518-second native endcard. Explicit Resume returned to usable ordinary play.
+A natural assisted result banked once; Android Back remained usable. All 18
+typed banked save groups survived the observed installation/update and offline
+cold starts. Ordinary disconnected play/Back and nine current-build screenshot
+roles were checked. Emulator-only display/network overrides were restored and
+the package was safely stopped. Current native phase strict gates passed.
+
+Gift/quest/Lens purchase and unearned-ad observations from earlier builds retain
+their historical scope. Current-build unearned SDK dismissal and the daily
+watch-specific victory/once-day bonus remain unverified. Only banked progress
+persists across process death; unfinished watches intentionally do not resume.
+The sanitized details remain in docs/NATIVE_QA.json and docs/LOCAL_TEST_RESULTS.json.
+No raw logs, real saves or private evidence references belong in public docs.
+
+NEXT INTEGRATION STEPS
+Use game/catalog.json keys/metrics/icons to create the 20 achievements/four
+leaderboards in Play Console. Put actual IDs and numeric game_id in
+platform/config.json, set the same numeric godot_play_game_services/game_id in
+the Android export preset, and enable PGS only after linked-app/OAuth/signing
+setup. Verify on a properly configured tester account/device.
+
+For AdMob, configure banner/interstitial/rewarded unit IDs in platform/config.json
+and the manifest App ID via Godot Project Settings admob/general/android/app_id
+in project.godot. JSON app_id is reference-only; test_mode changes wording and
+does not configure test devices or convert production requests to test requests.
+Keep sample IDs for development unless test-device setup has been verified.
+
+LIMITS AND OWNER WORK
+Godot 4.5.1 Compatibility; Android primary, single-threaded Web export.
+Minimum API 24 / target API 35 is an observed engine export constraint, not
+current Google Play release eligibility. Emulator audio was disabled. Physical
+devices, audible output, interactive Web/audio/WebGL, production services and
+human balance remain unverified. Owner supplies production/backend/signing,
+privacy/contact/consent/store declarations and handles Play publication.
+Retain LICENSE, NOTICE and the complete LICENSES tree with redistributed builds.
