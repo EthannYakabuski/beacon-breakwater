@@ -10,6 +10,16 @@ const KINDS = {
 	"cutter":{"label":"Fast cutter","focus":1.15,"life":11.25,"speed":42.0,"lit_speed":58.0,"value":90},
 	"barge":{"label":"Heavy barge","focus":2.9,"life":21.75,"speed":13.0,"lit_speed":27.0,"value":240}}
 const BEACON = Vector2(270,690)
+# Rates multiply the pre-Round-Three unlit ring drain, with weather/reef/horn
+# effects applied afterward. Round Two skipped guided drain entirely, so there
+# was no nonzero lit rate to increase: use a quarter-rate baseline, then +25%.
+const NEVER_GUIDED_DRAIN = 1.33
+const GUIDED_UNLIT_DRAIN = 1.0
+const GUIDED_LIT_BASE_DRAIN = 0.25
+const GUIDED_LIT_DRAIN = GUIDED_LIT_BASE_DRAIN * 1.25
+# 28px half-hull length plus the existing 20px harbor arrival radius. This is
+# only a speed exception for guided hulls clipping the narrowing cone apex.
+const NEAR_SHORE_RADIUS = 48.0
 var config: Dictionary = {}
 var boats: Array = []
 var events: Array = []
@@ -75,8 +85,24 @@ func beam_coverage(boat: Dictionary) -> float:
 func lit(boat: Dictionary) -> bool:
 	return beam_coverage(boat)>0.001
 
+func ring_phase(boat: Dictionary) -> String:
+	# `guided` remembers completed guidance for routing; `lit` is current hull
+	# coverage. Moving the light away must not erase routing or imply immunity.
+	if not bool(boat.get("guided",false)): return "never_guided"
+	return "guided_lit" if bool(boat.get("lit",false)) else "guided_unlit"
+
+func ring_drain(boat: Dictionary) -> float:
+	match ring_phase(boat):
+		"never_guided": return NEVER_GUIDED_DRAIN
+		"guided_lit": return GUIDED_LIT_DRAIN
+	return GUIDED_UNLIT_DRAIN
+
+func near_shore_guidance(boat: Dictionary) -> bool:
+	return bool(boat.get("guided",false)) and boat.has("pos") and boat.pos.distance_to(BEACON)<=NEAR_SHORE_RADIUS
+
 func travel_speed(boat: Dictionary, coverage: float) -> float:
 	var stats = KINDS[boat.kind]
+	if near_shore_guidance(boat): return float(stats.lit_speed)
 	return lerpf(float(stats.speed),float(stats.lit_speed),clampf(coverage,0.0,1.0))
 
 func max_horn_charges() -> int:
@@ -174,6 +200,22 @@ func step(delta: float) -> void:
 		var coverage = beam_coverage(boat)
 		boat.coverage = coverage
 		boat.lit = coverage>0.001
+		if not bool(boat.guided) and bool(boat.lit):
+			var focus = (1.0+float(upgrades.get("focus",0))*0.13)/float(stats.focus)
+			boat.guidance = minf(1.0,float(boat.guidance)+dt*focus*coverage)
+			if float(boat.guidance) >= 1.0:
+				boat.guided = true
+				events.append({"event":"guided","kind":boat.kind})
+		var slow = 0.25 if horn_effect > 0.0 else 1.0
+		var danger = 1.0
+		for reef in config.get("reefs",[]):
+			if boat.pos.distance_to(Vector2(float(reef[0]),float(reef[1]))) < float(reef[2]): danger = 1.0+1.5/(1.0+float(upgrades.get("breakwater",0))*0.2)
+		# Every active boat spends its ring budget, including the first completed
+		# guidance frame and returning ships. Near-shore speed grants no protection.
+		boat.life -= dt*weather_pulse*danger*slow*ring_drain(boat)
+		if float(boat.life) <= 0.0:
+			_lose_boat(index)
+			continue
 		var speed = travel_speed(boat,coverage)
 		if bool(boat.guided):
 			var toward = BEACON-boat.pos
@@ -186,31 +228,23 @@ func step(delta: float) -> void:
 				events.append({"event":"rescue","kind":boat.kind,"pos":boat.pos})
 				boats.remove_at(index)
 			continue
-		var slow = 0.25 if horn_effect > 0.0 else 1.0
-		var focus = (1.0+float(upgrades.get("focus",0))*0.13)/float(stats.focus)
-		if bool(boat.lit):
-			boat.guidance = minf(1.0,float(boat.guidance)+dt*focus*coverage)
-			if float(boat.guidance) >= 1.0:
-				boat.guided = true
-				events.append({"event":"guided","kind":boat.kind})
-				continue
-		var danger = 1.0
-		for reef in config.get("reefs",[]):
-			if boat.pos.distance_to(Vector2(float(reef[0]),float(reef[1]))) < float(reef[2]): danger = 1.0+1.5/(1.0+float(upgrades.get("breakwater",0))*0.2)
-		boat.life -= dt*weather_pulse*danger*slow
 		boat.pos += Vector2(float(boat.drift)+tide*weather_pulse,speed) * dt*slow
 		boat.pos.x = clampf(boat.pos.x,32,508)
 		boat.rotation = sin(time+float(boat.id))*0.05
-		if float(boat.life) <= 0.0 or boat.pos.y > BEACON.y+15.0:
-			lost += 1; chain = 0
-			lost_boats.append({"kind":boat.kind,"x":boat.pos.x,"drift":boat.drift})
-			events.append({"event":"lost","kind":boat.kind,"pos":boat.pos})
-			boats.remove_at(index)
+		if boat.pos.y > BEACON.y+15.0: _lose_boat(index)
+
 	var exhausted = mode != "endless" and next_spawn >= schedule.size() and boats.is_empty()
 	if lost >= int(config.get("lives",3)) or exhausted or (mode != "endless" and time >= float(config.get("duration",100.0))):
 		done = true
 		won = mode != "endless" and _goal_met() and lost < int(config.get("lives",3))
 		events.append({"event":"finished","won":won})
+
+func _lose_boat(index: int) -> void:
+	var boat = boats[index]
+	lost += 1; chain = 0
+	lost_boats.append({"kind":boat.kind,"x":boat.pos.x,"drift":boat.drift})
+	events.append({"event":"lost","kind":boat.kind,"pos":boat.pos})
+	boats.remove_at(index)
 
 func result() -> Dictionary:
 	return {"mode":mode,"mission":mission,"rescued":rescued,"lost":lost,"score":score,

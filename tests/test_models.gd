@@ -8,6 +8,51 @@ func check(value: bool, label: String) -> void:
 	checks+=1
 	if not value: failures+=1;push_error("Assertion failed: "+label)
 func _initialize() -> void: call_deferred("run_tests")
+func rescue_policy(sim: RefCounted) -> void:
+	# The old solver ignored returning ships because they could not expire.
+	# Estimate latest safe full-light attention using ring life, remaining focus
+	# and travel. Consider shared headings, not only a single boat's center.
+	# Only ordinary aim/foghorn inputs are used; no model state is overridden.
+	var candidates=[];var headings=[];var weights=[];var tightest=INF
+	var lit_drain=Watch.GUIDED_LIT_DRAIN
+	for boat in sim.boats:
+		var stats=Watch.KINDS[boat.kind]
+		var distance=maxf(0,boat.pos.distance_to(Watch.BEACON)-20.0)
+		var life=float(boat.life)
+		var danger=1.0+float(sim.config.get("storm",0))
+		for reef in sim.config.get("reefs",[]):
+			if boat.pos.distance_to(Vector2(reef[0],reef[1]))<reef[2]: danger*=2.5
+		var focus=0.0 if boat.guided else float(stats.focus)*(1.0-float(boat.guidance))
+		var min_cost=(focus*Watch.NEVER_GUIDED_DRAIN+maxf(0,distance/float(stats.lit_speed)-focus)*lit_drain)*danger
+		var drain=(Watch.GUIDED_UNLIT_DRAIN if boat.guided else Watch.NEVER_GUIDED_DRAIN)*danger
+		var deadline=(life-min_cost)/(drain-lit_drain*danger*float(stats.speed)/float(stats.lit_speed))
+		# Reserve a short acquisition window for fresh traffic before its tighter
+		# first-guidance clock forces an impossible last-second beam switch.
+		if not boat.guided: deadline-=1.5
+		tightest=minf(tightest,deadline)
+		var weight=1.0/maxf(.1,deadline)
+		if boat.guided and life>distance/float(stats.speed)*danger+.1: weight=0.0
+		weights.append(weight)
+		var heading=(boat.pos-Watch.BEACON).angle()
+		headings.append(heading)
+		candidates.append(heading)
+		candidates.append(heading+sim.beam_half_width()*.5)
+		candidates.append(heading-sim.beam_half_width()*.5)
+	for a in range(headings.size()):
+		for b in range(a+1,headings.size()): candidates.append((headings[a]+headings[b])*.5)
+	var best=-1.0;var selected_heading=sim.angle
+	for heading in candidates:
+		sim.aim(Watch.BEACON+Vector2.from_angle(heading)*500)
+		var benefit=0.0
+		for index in range(sim.boats.size()):
+			var coverage=sim.beam_coverage(sim.boats[index])
+			if coverage>.001:
+				benefit+=weights[index]*((1.0-lit_drain)+coverage*.5 if sim.boats[index].guided else coverage*1.5)
+		if benefit>best: best=benefit;selected_heading=sim.angle
+	if not candidates.is_empty(): sim.aim(Watch.BEACON+Vector2.from_angle(selected_heading)*500)
+	# Let protection finish instead of wasting the remaining charges each frame.
+	if sim.horn_effect<=.05 and sim.horn_charges>0 and tightest<1.0: sim.foghorn()
+
 func run_tests() -> void:
 	var p=Profile.new()
 	check(p.data.size()==18,"eighteen banked groups")
@@ -90,12 +135,7 @@ func run_tests() -> void:
 		var sim=Watch.new();sim.start(definition,{"lens":0,"focus":0,"harbor":0})
 		var steps=0
 		while not sim.done and steps<6000:
-			var target: Variant=null
-			for boat in sim.boats:
-				if not boat.guided and (target==null or float(boat.life)<float(target.life)): target=boat
-			if target!=null:
-				sim.aim(target.pos)
-				if float(target.life)<5.0 and sim.horn_charges>0: sim.foghorn()
+			if steps%3==0: rescue_policy(sim)
 			sim.step(1.0/30.0);steps+=1
 		check(sim.done and sim.won,"baseline-gear deterministic priority solver watch%d"%definition.id)
 		check(sim.rescued+sim.lost==definition.spawns.size(),"fleet conservation watch%d"%definition.id)

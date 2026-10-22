@@ -75,3 +75,7 @@ signing, privacy/contact/consent/store declarations and Google Play publication.
 Live Pages and Library actions remain outside an ordinary source update.
 See `ROUND_TWO.md` for illumination coverage, future content, continue accounting,
 legacy-save preservation and the exact source-versus-native verification scope.
+
+See `ROUND_THREE.md` for current versus historical guidance, ring drain rates,
+near-harbor speed geometry, and the separate source/native verification scope.
+The dedicated deterministic regression is `tests/test_round_three.gd`.

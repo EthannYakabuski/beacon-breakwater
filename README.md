@@ -8,10 +8,13 @@ same deterministic rescue rules.
 ## Play
 
 Drag anywhere over the water to aim the light. Keep a boat inside its beam until
-the inner guidance ring fills. Green boats can sail home, while wider illumination moves them faster; leaving
-the beam resets their speed immediately. The outer ring shows
-time remaining before an unescorted boat is lost. Red emergency marks signal
-priority. The free foghorn slows danger and recharges. Pause is always available.
+the inner guidance ring fills and the vessel starts steering home. Its outer
+ring stays green only while currently illuminated and continues draining slowly.
+Off-beam guided boats turn gold (red when urgent), drain faster and return to
+normal speed; never-guided boats drain fastest. More hull coverage gives more
+speed. Guided boats keep full speed during their final harbor approach, without
+extra ring protection. The outer ring is the remaining budget before loss.
+Red emergency marks signal priority. The free foghorn slows danger and recharges. Pause is always available.
 Desktop development controls: mouse drag, left/right arrows, Space for foghorn,
 Escape for Back. Android touch is the primary interface.
 
@@ -128,3 +131,7 @@ are CC0-1.0. Native
 plugins and Godot components retain their own notices. Keep `LICENSE`, `NOTICE`
 and the complete `LICENSES/` directory with redistributed source and builds.
 No Creature Mixer asset is used in this game.
+
+Round Three ring phases and the explicit nonzero illuminated-rate assumption
+are documented in [docs/ROUND_THREE.md](docs/ROUND_THREE.md). Source changes do
+not relabel the historical native-tested APK or screenshots as a new build.

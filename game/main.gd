@@ -287,7 +287,7 @@ func _show_brief(index: int, mode: String = "campaign") -> void:
 	var goal="Bring at least %d of %d boats home. Lose fewer than three." % [definition.target,definition.spawns.size()]
 	if not str(definition.required_kind).is_empty(): goal+=" Bring home a "+str(Watch.KINDS[definition.required_kind].label).to_lower()+" too."
 	_card(column,"Your watch",goal)
-	_card(column,"Sweep. Hold. Guide.",str(definition.briefing)+"\nDrag anywhere over the water to aim. A full guidance ring turns green and steers the vessel home. Keep more of its hull in the light to speed it up; off-beam it returns to its normal pace. Red rings show urgency. The free foghorn slows danger and recharges.")
+	_card(column,"Sweep. Hold. Guide.",str(definition.briefing)+"\nDrag to aim. Fill the inner ring to steer home. The outer ring drains fastest before guidance, normally off-beam, slowly while green/lit. More hull in the beam means more speed; guided boats keep full speed near shore. Red means urgent. Foghorn slows danger.")
 	if bool(definition.tutorial): _card(column,"No rush to learn","The beam stays where you leave it. Hold it on a boat for a moment. You can pause at any time.")
 	column.add_child(_button("Begin the watch",func():_start_watch(index,mode),"BeginWatch"))
 	column.add_child(_label("Each boat earns 3 coins / 4 XP; first clear +25 coins / 20 XP.\nWins +10 XP; perfect watches +8 coins. Keeper level-ups +35 coins.",16,TEAL))
@@ -455,7 +455,7 @@ func _show_log() -> void:
 	var column=_page("The boat log","%d boats home · endless best %d · %d / %d local achievements"%[profile.data.rescued,profile.data.best_endless,profile.data.unlocked.size(),catalog.achievements.size()])
 	for key in Watch.KINDS:
 		var stats=Watch.KINDS[key]
-		_card(column,str(stats.label),"Normal %.0f · full light %.0f speed\n%.0f points · ring %.2fs · focus %.2fs"%[stats.speed,stats.lit_speed,stats.value,stats.life,stats.focus] if key in profile.data.seen else "A silhouette on the horizon. Follow the coasts to meet this vessel.")
+		_card(column,str(stats.label),"Normal %.0f · full light %.0f speed\n%.0f points · ring budget %.2f · focus %.2fs"%[stats.speed,stats.lit_speed,stats.value,stats.life,stats.focus] if key in profile.data.seen else "A silhouette on the horizon. Follow the coasts to meet this vessel.")
 	for achievement in catalog.achievements:
 		_card(column,("✓  " if achievement.key in profile.data.unlocked else "•  ")+str(achievement.title),str(achievement.description))
 
@@ -538,6 +538,10 @@ func _draw() -> void:
 func _toast_style() -> StyleBoxFlat:
 	var box=StyleBoxFlat.new();box.bg_color=Color("284b59");box.set_corner_radius_all(12);return box
 
+func _boat_ring_color(boat: Dictionary) -> Color:
+	if watch.ring_phase(boat)=="guided_lit": return TEAL
+	return CORAL if float(boat.life)/float(boat.max_life)<0.35 else GOLD
+
 func _draw_water() -> void:
 	draw_style_box(_water_style(),Rect2(16,153,508,626))
 	var fog=float(watch.config.get("fog",0.0))
@@ -562,8 +566,7 @@ func _draw_water() -> void:
 	for side in [-1.0,1.0]: draw_line(Watch.BEACON,_beam_end(watch.angle+watch.beam_half_width()*side),Color(.98,.84,.53,.4),1.5)
 	for boat in watch.boats:
 		var point: Vector2=boat.pos
-		var urgent=float(boat.life)/float(boat.max_life)<.35
-		var color=TEAL if boat.guided else CORAL if urgent else GOLD
+		var color=_boat_ring_color(boat)
 		draw_circle(point,37,Color(color,.10))
 		draw_arc(point,35,-PI/2.0,-PI/2.0+TAU*clampf(float(boat.life)/float(boat.max_life),.001,1),32,color,3)
 		if float(boat.guidance)>0: draw_arc(point,29,-PI/2.0,-PI/2.0+TAU*float(boat.guidance),32,CREAM,4)
