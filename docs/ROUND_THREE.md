@@ -40,10 +40,10 @@ near-shore boundaries, losses and once-only rescues. Scene tests cover ring colo
 and pause/endcard lifecycle. The 60 authored campaign watches must still pass the
 ordinary, unassisted baseline-gear solver with fleet conservation enforced.
 
-Source test results are not native gameplay acceptance. The existing `HANDOFF.txt`
-identifies the historical native-tested Round Two APK and captures. The separately named Android/Web exports below are now verified. Affected
-native checks and fresh capture provenance are still required before a Round Three
-package is described as natively accepted.
+Source test results are separate from native gameplay acceptance. `HANDOFF.txt`
+now identifies the current Round Three export and qualified native scope, plus
+the preserved Round Two APK and captures. Eighteen fresh current-build screenshots
+are independently accepted; remaining native limits are explicit below.
 
 ## Source validation, 2026-10-22
 
@@ -69,6 +69,14 @@ Runtime/source commit: `b71583c14a7fbaddb05f6faed5bd24cda970f8de`.
 - Web: `build/round-three-b71583c1-a1/web/index.html` plus every sidecar and notice.
 - [Exact-runtime hosted build/test CI](https://github.com/EthannYakabuski/beacon-breakwater/actions/runs/39795036517): **SUCCESS**, with the same runtime commit.
 
-Both exports passed source/input binding, strict error checks and complete-notice verification. They were compiled from frozen committed export settings; unrelated owner working-tree files/settings remain preserved and were not build inputs. These are export-only candidates, distinct from hosted artifacts and historical native-tested binaries. Later documentation commits require their own CI result.
+Both exports passed source/input binding, strict error checks and complete-notice verification. They were compiled from frozen committed export settings; unrelated owner working-tree files/settings remain preserved and were not build inputs. These local test exports are distinct from hosted artifacts and historical native-tested binaries. The current qualified native scope is below; later documentation/capture commits require their own CI result.
 
-**Native acceptance remains pending.** This Round Three APK has not yet received native testing. Native work is delayed by task-emulator System UI failure; no application defect is inferred and no Round Three screenshots are accepted. Affected native behavior and six genuine screenshots per phone/7-inch/10-inch profile are still required. See `../HANDOFF.txt` for complete artifact identities and dated Round Two qualifications. Interactive Web, audible output, physical devices and production backend/services remain unverified.
+## Qualified native scope and screenshots, 2026-10-22
+
+Limited affected native checks and 18 fresh raw screenshots are complete on the exact 02EE APK. Ordinary aiming showed never-completed guidance, completed currently-lit teal rings and completed off-beam coral rings with routing retained. Free foghorn worked. One guided boat reached home without further reaiming at the cone apex. This observation does not measure numeric ring drain, exact speed or the fully uncovered near-shore exception.
+
+Android Back/pause, background return, a genuine failed2 HOME / 2 LOST outcome and source-defined 6 coins / 8 XP once-only bank were observed. Cold loaded Home retained banked main bytes without another restoration. A tablet capture-watch was explicitly abandoned without banking unfinished progress. The profile was initially restored from a genuine historical backup after a temporary host-session loss; restoration is not retention across that loss.
+
+The [capture manifest](../marketing/screenshots-round-three/capture-manifest.json) records six actual screenshots per phone/logical 7-inch/logical 10-inch profile, with exact hashes/dimensions/densities. Operator and coordinator reviewed every unchanged PNG. Important controls fit; long lists intentionally scroll. Logical profiles do not prove physical-tablet acceptance.
+
+Actual disconnected networking remains unverified because guest flags/UI did not remove validated connectivity. Current fullscreen ad display/return was not exercised; unused optional ad buttons do not imply absence of SDK initialization/prefetch. Native numeric drain/speed measurements, human balance, audible output, physical devices, interactive Web and production services remain unverified. The bounded recent-log scan found no targeted matches, without an exhaustive SDK-clean claim. See `../HANDOFF.txt` and `NATIVE_QA.json` for exact current and historical scopes.

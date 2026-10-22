@@ -5,9 +5,9 @@ one beam over drifting vessels, establish their guidance and bring a fleet home.
 Sixty watches across twelve coasts, an endless watch and a daily watch share the
 same deterministic rescue rules.
 
-## Round Three export candidate
+## Round Three qualified local handoff
 
-Runtime `b71583c14a7fbaddb05f6faed5bd24cda970f8de` has accepted local Android/Web test exports under `build/round-three-b71583c1-a1/` and [exact-source CI SUCCESS](https://github.com/EthannYakabuski/beacon-breakwater/actions/runs/39795036517). Artifact paths/full hashes are in `HANDOFF.txt`; [Round Three rules](docs/ROUND_THREE.md) explain the changed rings and harbor approach. Native testing and six screenshots per profile remain pending behind task-emulator System UI failure. These exports are not a completed Round Three native handoff. Historical Round Two evidence below retains its original scope.
+Runtime `b71583c14a7fbaddb05f6faed5bd24cda970f8de` has accepted local Android/Web test exports under `build/round-three-b71583c1-a1/` and [exact-source CI SUCCESS](https://github.com/EthannYakabuski/beacon-breakwater/actions/runs/39795036517). Limited current-build native checks and [18 genuine screenshots](marketing/screenshots-round-three/capture-manifest.json), six per phone/logical 7-inch/logical 10-inch profile, are complete. Ring-state aiming, free foghorn, natural outcome/once-only banking, Back/pause/background/cold banked retention and intentional list scrolling were observed. Actual offline connectivity, current fullscreen ad return, exact native drain/speed measurements, human balance, audible output, physical devices, interactive Web and production services remain unverified. See `HANDOFF.txt`, [native scope](docs/NATIVE_QA.json) and [Round Three rules](docs/ROUND_THREE.md). Historical Round Two evidence below retains its original scope.
 
 ## Play
 
@@ -88,7 +88,7 @@ Godot Project Settings. JSON `app_id` alone does not change the manifest;
 `test_mode` alone does not make production ads test requests. Exact steps are in
 [platform setup](docs/PLATFORM_SETUP.md).
 
-## Store package and verification
+## Preserved Round Two store package and verification
 
 Round Two replaces app/feature, all 26 achievement icons and all four leaderboard
 icons with distinct generated illustrations. Originals, prompts and SHA256
@@ -103,7 +103,7 @@ test is claimed.
 The Round Two local handoff is ready with documented limits. Native body-touch
 scrolling, ordinary play, a real earned loss continue held86.55seconds behind its
 endcard, explicit Resume, assisted/unassisted once-only banking, Focus purchase,
-Back and actual offline/cold save retention passed. All18 banked groups and
+Back and actual offline/cold save retention passed. All 18 banked groups and
 pending service-store semantics survived the observed final checks. The initial
 missing AVD package was recovered from a verified genuine legacy backup before
 the tested updates; retention across that earlier session loss is not claimed.
@@ -116,7 +116,8 @@ Strict exports passed with stable inputs and verified source binding. Interactiv
 Web remains unverified. The dated Round Two handoff recorded a push denial; the current Round Three exact-source CI result is linked above.
 
 `HANDOFF.txt`, `docs/NATIVE_QA.json` and `docs/LOCAL_TEST_RESULTS.json` distinguish
-this exact build from historical packages. The untouched original native-tested
+the current Round Three build from this preserved Round Two package. The dated
+Round Two summaries are under `docs/history/round-two-c0df2ced/`. The untouched original native-tested
 APK remains at `build/android/game-debug.apk` (SHA256
 `82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1`). Hosted CI artifacts are
 separate binaries. See [Round Two behavior and verification](docs/ROUND_TWO.md).

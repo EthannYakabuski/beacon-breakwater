@@ -37,3 +37,6 @@ CHECKPOINT.txt
 /marketing/achievements/coast10.png.import
 /marketing/achievements/coast11.png.import
 /marketing/achievements/coast12.png.import
+
+# Generated editor metadata for current raw Round Three screenshots stays local.
+/marketing/screenshots-round-three/**/*.import

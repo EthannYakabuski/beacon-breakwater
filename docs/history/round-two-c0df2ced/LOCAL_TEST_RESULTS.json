@@ -1,0 +1,122 @@
+{
+  "schema": 2,
+  "game": "Beacon Breakwater",
+  "status": "ROUND_TWO_LOCAL_HANDOFF_READY_WITH_LIMITATIONS",
+  "date_utc": "2026-10-21",
+  "source_runtime_commit": "725c4cac38fc071639d673f11ca37b1667c663ba",
+  "android_apk": {
+    "file": "build/round-two-725c4cac-a1/android/beacon-breakwater-debug.apk",
+    "sha256": "C0DF2CED4DD0142B563527AF3D650A1BDFA95B96F19859176D32E54953D7809D",
+    "bytes": 194578012
+  },
+  "web": {
+    "file": "build/round-two-725c4cac-a1/web/index.html",
+    "export_accepted": true,
+    "strict_errors": 0,
+    "complete_bundle_and_licenses_verified": true,
+    "files": {
+      "index.html": {
+        "bytes": 5492,
+        "sha256": "73338BBADE88A428278BD6AA3A79A8131CE6637683E5927644C7759DB81E27CF"
+      },
+      "index.js": {
+        "bytes": 305185,
+        "sha256": "8A7C7D57F7DA69BB71DA9DE302480B87E4C7ECB467CE643665B4A288683CD18F"
+      },
+      "index.pck": {
+        "bytes": 13099644,
+        "sha256": "CD81FC61F7FE6347965A0E162E48ADF4A3F5DE4F39A52EE1D1EFB56BF4C126D2"
+      },
+      "index.wasm": {
+        "bytes": 38034280,
+        "sha256": "6498359BA889796A0D95A2F71113AC184BADC0F2D84CF28F4103C7E399D2D547"
+      }
+    },
+    "interactive_browser_verified": false
+  },
+  "export_binding": {
+    "android_and_web_runtime_inputs_stable": true,
+    "source_commit_binding_before_and_after_verified": true,
+    "complete_license_bundles_verified": true,
+    "original_apk_preserved": true,
+    "reproducible_build_claim": false
+  },
+  "source_checks": {
+    "round_two": 38,
+    "models": 235,
+    "baseline_solver_missions": 60,
+    "ui": 57,
+    "paired_touch_final": 113,
+    "mouse_dispatch_final": 106,
+    "notice_bounds": 90,
+    "service_smoke": "passed",
+    "strict_errors": 0,
+    "synthetic_gpu": "52 actual-player/render checks; isolated muted Windows process, separate from native evidence"
+  },
+  "native_summary": "See NATIVE_QA.json for actual earned continue/endcard/explicit Resume, assisted and unassisted once-only banking, Focus/Lens, Back, offline/real banked retention and restoration scope.",
+  "capture_manifest": "../marketing/screenshots-round-two/capture-manifest.json",
+  "screenshot_count": 9,
+  "publication": {
+    "repository": "https://github.com/EthannYakabuski/beacon-breakwater",
+    "round_two_sync": "HELD_AFTER_APPROVAL_SYSTEM_DENIAL",
+    "round_two_hosted_ci": null,
+    "no_push_retried": true,
+    "pages_library_play": "No activation or publication performed."
+  },
+  "limits": [
+    "Physical devices and physical tablets were not tested; all layouts used one Android11/API30 emulator.",
+    "Audible Android output was not tested because emulator audio output was disabled.",
+    "Interactive Web, Web audio/WebGL, production PGS/AdMob, production signing/consent and human balance acceptance remain unverified. No supported browser tab was available for interactive Web QA.",
+    "Current-build unearned SDK dismissal and the daily-watch-specific victory/once-day bonus were not verified. Earlier gift/quest/Lens and unearned-ad observations retain their historical build scope.",
+    "Only banked progress persists; unfinished watches intentionally do not resume after process death.",
+    "Godot4.5.1 Compatibility exports use minAPI24/targetAPI35, an observed engine constraint that does not establish current Google Play eligibility."
+  ],
+  "historical_original_package": {
+    "schema": 1,
+    "game": "Beacon Breakwater",
+    "status": "LOCAL_TEST_PACKAGE_COMPLETE_WITH_LIMITATIONS",
+    "scope": "Public source/build/native summary. Private test receipts and real profile records are deliberately not distributed.",
+    "current_main_sha256": "1543ECFB3E982CBD38785DB5FB911B8E8CE50382CA9E07E3768BC2B5FD744454",
+    "android_apk": {
+      "sha256": "82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1",
+      "bytes": 183692140,
+      "filename": "game-debug.apk"
+    },
+    "web": {
+      "accepted": true,
+      "html_sha256": "CBADE2095ADCDCEA22A14305468ECED4D147DDE4D51971C861DADEE9AA0DEB92",
+      "html_bytes": 5491,
+      "pck_entries": 394,
+      "fresh_sidecar_count": 9,
+      "interactive_browser_verified": false
+    },
+    "source_checks": {
+      "ui_retirement_paired_assertions": 106,
+      "ui_retirement_mouse_assertions": 106,
+      "ui_retirement_gpu_assertions": 106,
+      "cold_notice_assertions": 90,
+      "recorded_failures": 0,
+      "scope": "Controlled desktop/headless/GPU checks of reviewed UI changes; separate native evidence is summarized in NATIVE_QA.json."
+    },
+    "runtime_input_freeze": {
+      "scoped_files": 11,
+      "byte_identical_before_after_android_web_exports": true,
+      "whole_project_or_reproducible_build_claim": false
+    },
+    "native_summary": "Current-build ordinary play, earned pause/Resume, once-only natural banking, Back, offline/cold banked retention, restored emulator-only settings and final safe stop were observed. Nine store roles were reviewed.",
+    "screenshot_count": 9,
+    "limits": [
+      "Physical devices and physical tablets were not tested; phone and logical-tablet layouts used one Android emulator.",
+      "Audible output was not tested; the emulator audio output was disabled.",
+      "Interactive Web, Web audio/WebGL, production services, signing/consent and human gameplay balance were not verified.",
+      "Daily-specific watch victory/once-day bonus and current-build unearned SDK dismissal were not verified. Historical gift/quest/upgrade and unearned-ad observations are separately qualified.",
+      "Godot 4.5.1 Compatibility exports used minimum API24/target API35; this does not establish current Google Play eligibility."
+    ],
+    "owner_work": [
+      "Real service IDs and PGS configuration",
+      "Production signing, privacy/contact/consent and store declarations",
+      "Google Play publication and human playtesting"
+    ],
+    "deployment": "Build/test/artifact CI is configured. No Pages deployment job exists and no live site is claimed. No remote publication is performed by this preparation."
+  }
+}

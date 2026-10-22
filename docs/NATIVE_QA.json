@@ -1,71 +1,56 @@
 {
-  "schema": 2,
+  "schema": "public-native-qa-summary-v3",
   "game": "Beacon Breakwater",
   "package": "com.ethannyakabuski.beaconbreakwater",
-  "status": "ROUND_TWO_LOCAL_NATIVE_FUNCTIONAL_QA_ACCEPTED_WITH_LIMITATIONS",
-  "date_utc": "2026-10-21",
-  "source_runtime_commit": "725c4cac38fc071639d673f11ca37b1667c663ba",
+  "status": "ROUND_THREE_LIMITED_NATIVE_AND_18_CAPTURE_HANDOFF_WITH_LIMITATIONS",
+  "date_utc": "2026-10-22",
+  "source_runtime_commit": "b71583c14a7fbaddb05f6faed5bd24cda970f8de",
   "tested_apk": {
-    "file": "build/round-two-725c4cac-a1/android/beacon-breakwater-debug.apk",
-    "sha256": "C0DF2CED4DD0142B563527AF3D650A1BDFA95B96F19859176D32E54953D7809D",
-    "bytes": 194578012
+    "file": "build/round-three-b71583c1-a1/android/beacon-breakwater-debug.apk",
+    "sha256": "02EEFCE690AFD59F1A1614C91AEE97C05636F1951FF3AE96FE1BFFB3B9703C8F",
+    "bytes": 194578744
   },
-  "scope": "Sanitized dated functional summary. No raw logs, real saves, profile totals, machine identifiers or private evidence coordinates.",
+  "scope": "Sanitized current-build summary; no raw logs, real saves, machine identifiers or private evidence paths. Limited checks do not establish every native gate.",
+  "limited_affected_native_checks_complete": true,
+  "all_native_gates_passed": false,
   "current_build_observations": [
-    "A verified genuine legacy backup was explicitly restored because the earlier AVD session lacked the package. The old native-tested APK then displayed that real progress; migration to Round Two retained all18 banked groups and existing Lens ownership. Retention across the earlier missing AVD session is not claimed.",
-    "The final native build accepts ordinary card-body touch dragging and reveals Begin; a new watch starts with normal controls.",
-    "A natural loss deferred banking. One real SDK earned continue restored the lost fleet and remained paused behind its earned endcard for86.553595seconds. Android Back returned to explicit Pause; banking remained unchanged until Resume and the natural final outcome.",
-    "Ordinary guidance and free foghorn worked. The assisted result banked once, offered no second continue and awarded no perfect record.",
-    "A separate unassisted four-boat victory banked once and added one perfect record. Closing its real interstitial and pressing Back did not bank again.",
-    "A normal Focus purchase retained the earlier Lens upgrade.",
-    "Actual offline no-active-network state, normal guest reboot without restoring a backup, cold launch, ordinary play, Back pause, unavailable-ad handling and abandon retained all18 banked groups. Final normal cold launch/stop also retained all18 groups and pending service-store semantics.",
-    "Nine exact final-build PNGs were visually accepted across phone and logical7/10 profiles; pixels are unchanged.",
-    "Final strict diagnostic scan found zero targeted engine/script/fatal matches. Display overrides were cleared; original1080x1920/density420 and radio1/1 settings were restored, later actual Wi-Fi and mobile connectivity verified, and the package safely stopped."
+    "The accepted Round Three APK was installed after the temporary emulator session was lost. Only the genuine historical banked main and pending progress files were restored and verified before launch. This is restoration, not retention across that host-session loss.",
+    "Ordinary beam aiming displayed never-completed guidance, completed currently-lit guidance with a teal outer ring, and completed off-beam guidance with an urgent coral outer ring while routing was retained.",
+    "Two ordinary free Foghorn uses consumed charges and displayed their wave effect. Optional ad buttons, purchases and daily claims were not used.",
+    "One guided boat was observed approaching the harbor and then arriving without further reaiming at the cone apex. No stall was observed for that boat; no exact speed constant or fully uncovered near-shore exception is inferred.",
+    "Android Back paused genuine watches. Pause held the same elapsed time through Android Home/background return and a further wait.",
+    "A natural failed watch with two rescued and two lost boats remained unbanked until Return to harbor. It then awarded the source-defined 6 coins / 8 XP once. The local watch10 achievement counted total watches; it did not unlock campaign mission10.",
+    "Home Back and cold launch retained the banked main bytes without another restoration; the later loaded Home was visually confirmed. Existing mission stars, owned upgrades/settings, unassisted record and perfect-watch count were retained.",
+    "A separate genuine watch supplied tablet action views. Explicit Leave this watch discarded its unfinished progress and left banked main bytes unchanged.",
+    "All 18 unmodified screenshots were independently reviewed at the actual phone and logical7/10-inch display profiles. Important controls and pause cards fit. Long workshop, briefing, coast and mission lists intentionally scroll.",
+    "Original display overrides were cleared and original radio flags restored; normal Launcher and actual connected-network state were checked. A fresh stopped full private backup was verified."
   ],
-  "capture_manifest": "../marketing/screenshots-round-two/capture-manifest.json",
-  "screenshot_count": 9,
+  "capture_manifest": "../marketing/screenshots-round-three/capture-manifest.json",
+  "screenshot_count": 18,
+  "profiles": {
+    "phone": "1080x1920@420",
+    "logical7inch": "1200x1920@320",
+    "logical10inch": "1600x2560@300"
+  },
+  "diagnostics": {
+    "bounded_recent_log_scan_targeted_matches": 0,
+    "full_lifetime_sdk_clean_claim": false,
+    "scope": "Bounded retained recent logs only; no exhaustive SDK or every-frame clean-log claim."
+  },
+  "offline_native_verified": false,
+  "current_fullscreen_ad_return_verified": false,
+  "exact_native_drain_speed_measurement": false,
   "physical_device_test": false,
   "physical_tablet_test": false,
   "auditory_test": false,
   "limits": [
-    "Physical devices and physical tablets were not tested; all layouts used one Android11/API30 emulator.",
-    "Audible Android output was not tested because emulator audio output was disabled.",
-    "Interactive Web, Web audio/WebGL, production PGS/AdMob, production signing/consent and human balance acceptance remain unverified. No supported browser tab was available for interactive Web QA.",
-    "Current-build unearned SDK dismissal and the daily-watch-specific victory/once-day bonus were not verified. Earlier gift/quest/Lens and unearned-ad observations retain their historical build scope.",
-    "Only banked progress persists; unfinished watches intentionally do not resume after process death.",
-    "Godot4.5.1 Compatibility exports use minAPI24/targetAPI35, an observed engine constraint that does not establish current Google Play eligibility."
+    "Actual disconnected networking remains UNVERIFIED. Emulator radio flags and a Wi-Fi switch change did not remove the validated active network; source fallback tests are separate evidence.",
+    "Current Round Three fullscreen rewarded/interstitial presentation and return were not exercised. Optional ad actions were unused, but native initialization/loading and visible test banners are distinct; no absence of SDK ad requests is claimed.",
+    "Ring states and an ordinary harbor arrival were observed. Exact ring-drain/speed values and the fully uncovered near-shore speed exception were not measured natively; source fixtures cover those numeric rules.",
+    "Human balance remains unverified. The ring-state check deliberately moved the beam away and produced a failed two-of-four watch; automated campaign solvability is separate.",
+    "Audible Android output was disabled. Physical phones/tablets, interactive Web/audio/WebGL, production services and long-session reliability remain unverified.",
+    "Only banked progress persists; unfinished watches intentionally do not resume after process death. Local clocks/profiles are not anti-cheat secure.",
+    "Godot 4.5.1 Compatibility minimum API 24 / target API 35 is the tested engine constraint, not current Google Play release eligibility."
   ],
-  "historical_original_apk_qa": {
-    "schema": 1,
-    "game": "Beacon Breakwater",
-    "package": "com.ethannyakabuski.beaconbreakwater",
-    "scope": "Public summary of dated local verification; no private logs, real saves, machine records or evidence coordinates are included.",
-    "status": "LOCAL_NATIVE_FUNCTIONAL_QA_ACCEPTED_WITH_LIMITATIONS",
-    "tested_apk": {
-      "sha256": "82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1",
-      "bytes": 183692140,
-      "filename": "game-debug.apk"
-    },
-    "current_main_sha256": "1543ECFB3E982CBD38785DB5FB911B8E8CE50382CA9E07E3768BC2B5FD744454",
-    "current_build_observations": [
-      "Normal Android installation/update retained all18 typed banked groups.",
-      "Real SDK rewarded assistance remained paused throughout a60.518second earned endcard; one explicit Resume returned to usable ordinary play.",
-      "A natural assisted result banked once; ordinary Android Back/navigation remained usable.",
-      "Strict current-build native logs observed no Godot SCRIPT ERROR/can_process/FATAL markers.",
-      "Actual offline disconnected state, unbanked ordinary play/Back, cold retention of all18 typed groups, emulator display/network restoration and final package stop were verified.",
-      "Nine exact current-build Home/Battle/Boat Log screenshots were individually visually reviewed across phone and two logical-tablet layouts."
-    ],
-    "historical_observations_qualified": [
-      "An earlier UI candidate supplied genuine login gift, three quest claims and a Lens purchase. These were not replayed or relabeled as current-build tests.",
-      "Earlier unearned SDK attempts supplied no assistance. A current-build unearned attempt was not asserted."
-    ],
-    "screenshot_count": 9,
-    "limits": [
-      "Physical devices and physical tablets were not tested; phone and logical-tablet layouts used one Android emulator.",
-      "Audible output was not tested; the emulator audio output was disabled.",
-      "Interactive Web, Web audio/WebGL, production services, signing/consent and human gameplay balance were not verified.",
-      "Daily-specific watch victory/once-day bonus and current-build unearned SDK dismissal were not verified. Historical gift/quest/upgrade and unearned-ad observations are separately qualified.",
-      "Godot 4.5.1 Compatibility exports used minimum API24/target API35; this does not establish current Google Play eligibility."
-    ]
-  }
+  "historical_round_two_report": "history/round-two-c0df2ced/NATIVE_QA.json"
 }

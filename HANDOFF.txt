@@ -1,26 +1,38 @@
-BEACON BREAKWATER - ROUND THREE EXPORT CANDIDATE
-Updated2026-10-22. EXPORTS VERIFIED; NATIVE ACCEPTANCE NOT COMPLETE. This is an incremental build receipt, not a completed Round Three gameplay/store handoff.
+BEACON BREAKWATER - ROUND THREE QUALIFIED LOCAL TEST HANDOFF
+Updated 2026-10-22. Limited affected native checks and 18 genuine screenshots complete. Offline and other stated native gates remain unverified; this is not a production-release or blanket native-clean claim.
 
+CURRENT ARTIFACTS
 Runtime/source commit: b71583c14a7fbaddb05f6faed5bd24cda970f8de
 Android: build/round-three-b71583c1-a1/android/beacon-breakwater-debug.apk
 SHA256 02EEFCE690AFD59F1A1614C91AEE97C05636F1951FF3AE96FE1BFFB3B9703C8F
-Bytes: 194578744; debug/test build; minAPI24/targetAPI35.
+Bytes: 194578744; debug/test preset; min API 24 / target API 35.
 Web: build/round-three-b71583c1-a1/web/index.html
 HTML SHA256 28CEA5FF4B6FB2B6BB2AB0626119554869DD0E656241F494E7666AC94F2373EB
 PCK SHA256 18265A8B636943F6FE064ADFD87D3EFFC8107466081A077B3FEA7D9B3BA4E16E
-Keep the complete Web bundle and matching LICENSE/NOTICE/LICENSES with both exports.
+Keep every Web sidecar and complete matching LICENSE/NOTICE/LICENSES with distributions.
 
-EXACT RUNTIME SOURCE CI: SUCCESS
+LOCAL DISTRIBUTIONS
+build/round-three-b71583c1-a1/packages/beacon-breakwater-round-three-android-test-02eefce6.zip
+build/round-three-b71583c1-a1/packages/beacon-breakwater-round-three-complete-02eefce6.zip
+The first includes the exact accepted APK and matching notices. The complete bundle adds Web, this handoff and the audited committed source/assets/docs/marketing tree. Internal PACKAGE-MANIFEST.json separates runtime from final documentation/source-package commit; sibling PACKAGE-RECEIPT.json records final ZIP hashes/bytes. Original APKs, earlier ZIPs and export-only candidates are preserved.
+
+SOURCE / BUILD / CI
+Exact-runtime hosted build/test CI SUCCESS:
 https://github.com/EthannYakabuski/beacon-breakwater/actions/runs/39795036517
-The completed hosted build/test run matches runtime commit b71583c14a7fbaddb05f6faed5bd24cda970f8de. Later documentation commits and hosted artifacts have their own identities; this result does not certify their native behavior.
+All 769 isolated game assertions, service smoke/import and60 of 60 ordinary baseline-gear campaign solver watches passed with strict checks and fleet conservation. This is source evidence, not human balance or native numeric measurement. Both exports passed frozen committed runtime/test-preset binding, stable before/after inputs, empty strict-error lists and complete notices. Unrelated owner working-tree artwork/configuration is preserved and excluded from compilation/source packaging. Later documentation/capture commits require their own exact CI check; hosted artifacts are separate binaries.
 
-BUILD BINDING
-Both local exports exited0 with stable before/after runtime inputs, verified frozen committed-source binding, empty strict error/bundle-error lists and complete accompanying notices. They use the pinned committed export settings. Preserved owner working-tree settings and unrelated local files were not injected into the build. A later owner build using changed backend/signing/export settings is a distinct binary requiring its own checks.
+ACTUAL CURRENT NATIVE SCOPE
+A genuine historical main/pending profile was restored after the temporary emulator session was lost. This is restoration, not retention across that host exit. Ordinary aiming showed never-guided, currently-lit completed guidance and off-beam completed guidance with a coral outer ring. Two free foghorn uses responded. One guided boat arrived without further reaiming at the cone apex; exact speed/drain values and the fully uncovered near-shore exception were not measured natively.
+Android Back paused; background return and a further wait kept the paused watch unchanged. A natural failed watch with2 HOME / 2 LOST banked its source-defined 6 coins / 8 XP once on Return to harbor. Local watch10 counted total watches, not campaign mission10. Home Back/cold relaunch retained banked main bytes without another restoration, and the loaded Home was visually checked. Existing mission stars/equipment/settings and records remained. A separate tablet capture-watch was explicitly abandoned; its unfinished progress was not banked.
+Original display/radio flags and actual connected-network state were restored and checked; final stopped profile/full private backup were verified. A bounded recent-log scan had zero targeted engine/script/fatal/lifecycle/leak matches; exhaustive lifetime SDK cleanliness is not claimed.
 
-NATIVE / REMAINING ACCEPTANCE
-This Round Three APK has not yet received native testing. Native work is delayed by task-emulator System UI failure; no application defect is inferred and no Round Three screenshots are accepted.
-Affected native gameplay, controls/layout, reward-return, Back/save/offline checks and six genuine screenshots per phone/7-inch/10-inch profile remain pending. Old Round Two APK observations and captures are historical evidence for those binaries only. Interactive Web/WebGL/audio, audible Android output, physical devices/tablets, production backend/services and human balance remain unverified. API24/35 is the tested engine constraint, not current Play-release eligibility.
-No Pages activation, Library action or Google Play publication is included.
+SCREENSHOTS
+marketing/screenshots-round-three/capture-manifest.json records18 exact unmodified PNGs, six per phone 1080x1920@420, logical 7-inch 1200x1920@320 and logical 10-inch 1600x2560@300. Operator and coordinator reviewed all 18. Important controls/pause cards fit; long workshop/briefing/coast/mission lists intentionally scroll. These are emulator display profiles, not physical tablets. Old nine-image Round Two and original screenshots remain unchanged and tied to their original APKs.
+
+REMAINING LIMITS / OWNER WORK
+Actual offline mode is UNVERIFIED: radio flags and Wi-Fi UI changes did not remove the guest validated network. Source offline fallbacks do not substitute for that native check. No current Round Three fullscreen rewarded/interstitial display/return was exercised; optional buttons/claims/purchases were unused, while test banners and normal SDK initialization/loading were observed. Historical endcard proof belongs to its older binary.
+Human balance, audible Android output, physical devices/tablets, interactive Web/audio/WebGL, production services and long-session reliability remain unverified. Only banked progress persists; unfinished watches do not resume after process death. API 24/35 is a tested engine constraint, not current Play eligibility. Owner supplies real IDs/backend/signing/privacy/consent/store declarations and Play publication. No Pages activation or Library action.
+Current sanitized details: docs/NATIVE_QA.json and docs/LOCAL_TEST_RESULTS.json. Dated Round Two current summaries were preserved under docs/history/round-two-c0df2ced/. Continue from AGENTS.md and docs/PLATFORM_SETUP.md, preserving user edits and private artifacts.
 
 PRESERVED DATED ROUND TWO HANDOFF
 The following evidence and then-current publication notes are historical; current Round Three export/source status is above.

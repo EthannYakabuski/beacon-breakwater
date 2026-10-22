@@ -1,122 +1,66 @@
 {
-  "schema": 2,
+  "schema": "public-local-test-summary-v3",
   "game": "Beacon Breakwater",
-  "status": "ROUND_TWO_LOCAL_HANDOFF_READY_WITH_LIMITATIONS",
-  "date_utc": "2026-10-21",
-  "source_runtime_commit": "725c4cac38fc071639d673f11ca37b1667c663ba",
+  "status": "ROUND_THREE_QUALIFIED_LOCAL_TEST_HANDOFF",
+  "date_utc": "2026-10-22",
+  "source_runtime_commit": "b71583c14a7fbaddb05f6faed5bd24cda970f8de",
   "android_apk": {
-    "file": "build/round-two-725c4cac-a1/android/beacon-breakwater-debug.apk",
-    "sha256": "C0DF2CED4DD0142B563527AF3D650A1BDFA95B96F19859176D32E54953D7809D",
-    "bytes": 194578012
+    "file": "build/round-three-b71583c1-a1/android/beacon-breakwater-debug.apk",
+    "sha256": "02EEFCE690AFD59F1A1614C91AEE97C05636F1951FF3AE96FE1BFFB3B9703C8F",
+    "bytes": 194578744
   },
   "web": {
-    "file": "build/round-two-725c4cac-a1/web/index.html",
+    "file": "build/round-three-b71583c1-a1/web/index.html",
+    "html_sha256": "28CEA5FF4B6FB2B6BB2AB0626119554869DD0E656241F494E7666AC94F2373EB",
+    "pck_sha256": "18265A8B636943F6FE064ADFD87D3EFFC8107466081A077B3FEA7D9B3BA4E16E",
     "export_accepted": true,
-    "strict_errors": 0,
     "complete_bundle_and_licenses_verified": true,
-    "files": {
-      "index.html": {
-        "bytes": 5492,
-        "sha256": "73338BBADE88A428278BD6AA3A79A8131CE6637683E5927644C7759DB81E27CF"
-      },
-      "index.js": {
-        "bytes": 305185,
-        "sha256": "8A7C7D57F7DA69BB71DA9DE302480B87E4C7ECB467CE643665B4A288683CD18F"
-      },
-      "index.pck": {
-        "bytes": 13099644,
-        "sha256": "CD81FC61F7FE6347965A0E162E48ADF4A3F5DE4F39A52EE1D1EFB56BF4C126D2"
-      },
-      "index.wasm": {
-        "bytes": 38034280,
-        "sha256": "6498359BA889796A0D95A2F71113AC184BADC0F2D84CF28F4103C7E399D2D547"
-      }
-    },
     "interactive_browser_verified": false
   },
   "export_binding": {
-    "android_and_web_runtime_inputs_stable": true,
-    "source_commit_binding_before_and_after_verified": true,
-    "complete_license_bundles_verified": true,
-    "original_apk_preserved": true,
+    "android_web_runtime_inputs_stable": true,
+    "frozen_committed_runtime_source_and_test_preset_verified": true,
+    "complete_matching_notices_verified": true,
+    "owner_working_tree_files_excluded": true,
+    "original_apks_and_archives_preserved": true,
     "reproducible_build_claim": false
   },
   "source_checks": {
+    "models_accounting_save": 235,
+    "round_three": 227,
     "round_two": 38,
-    "models": 235,
-    "baseline_solver_missions": 60,
-    "ui": 57,
-    "paired_touch_final": 113,
-    "mouse_dispatch_final": 106,
+    "scene_lifecycle": 66,
+    "touch_dispatch": 113,
     "notice_bounds": 90,
-    "service_smoke": "passed",
-    "strict_errors": 0,
-    "synthetic_gpu": "52 actual-player/render checks; isolated muted Windows process, separate from native evidence"
+    "total_assertions": 769,
+    "ordinary_baseline_campaign_solver": "60 of 60 with fleet conservation and no assistance; human balance unverified",
+    "service_smoke_and_import": "PASS strict isolated checks",
+    "strict_error_matches": 0
   },
-  "native_summary": "See NATIVE_QA.json for actual earned continue/endcard/explicit Resume, assisted and unassisted once-only banking, Focus/Lens, Back, offline/real banked retention and restoration scope.",
-  "capture_manifest": "../marketing/screenshots-round-two/capture-manifest.json",
-  "screenshot_count": 9,
-  "publication": {
-    "repository": "https://github.com/EthannYakabuski/beacon-breakwater",
-    "round_two_sync": "HELD_AFTER_APPROVAL_SYSTEM_DENIAL",
-    "round_two_hosted_ci": null,
-    "no_push_retried": true,
-    "pages_library_play": "No activation or publication performed."
+  "runtime_CI": {
+    "head": "b71583c14a7fbaddb05f6faed5bd24cda970f8de",
+    "url": "https://github.com/EthannYakabuski/beacon-breakwater/actions/runs/39795036517",
+    "conclusion": "SUCCESS"
+  },
+  "later_documentation_capture_CI": "Consult repository Actions for the exact later commit. Runtime CI and local native acceptance have separate scopes.",
+  "native_summary": "NATIVE_QA.json",
+  "capture_manifest": "../marketing/screenshots-round-three/capture-manifest.json",
+  "screenshot_count": 18,
+  "packages": {
+    "directory": "build/round-three-b71583c1-a1/packages",
+    "android_test": "beacon-breakwater-round-three-android-test-02eefce6.zip",
+    "complete": "beacon-breakwater-round-three-complete-02eefce6.zip",
+    "receipt": "PACKAGE-RECEIPT.json",
+    "scope": "Separately named local distributions; sibling receipt records final archive identity and pinned source-package commit."
   },
   "limits": [
-    "Physical devices and physical tablets were not tested; all layouts used one Android11/API30 emulator.",
-    "Audible Android output was not tested because emulator audio output was disabled.",
-    "Interactive Web, Web audio/WebGL, production PGS/AdMob, production signing/consent and human balance acceptance remain unverified. No supported browser tab was available for interactive Web QA.",
-    "Current-build unearned SDK dismissal and the daily-watch-specific victory/once-day bonus were not verified. Earlier gift/quest/Lens and unearned-ad observations retain their historical build scope.",
-    "Only banked progress persists; unfinished watches intentionally do not resume after process death.",
-    "Godot4.5.1 Compatibility exports use minAPI24/targetAPI35, an observed engine constraint that does not establish current Google Play eligibility."
+    "Actual disconnected networking remains UNVERIFIED. Emulator radio flags and a Wi-Fi switch change did not remove the validated active network; source fallback tests are separate evidence.",
+    "Current Round Three fullscreen rewarded/interstitial presentation and return were not exercised. Optional ad actions were unused, but native initialization/loading and visible test banners are distinct; no absence of SDK ad requests is claimed.",
+    "Ring states and an ordinary harbor arrival were observed. Exact ring-drain/speed values and the fully uncovered near-shore speed exception were not measured natively; source fixtures cover those numeric rules.",
+    "Human balance remains unverified. The ring-state check deliberately moved the beam away and produced a failed two-of-four watch; automated campaign solvability is separate.",
+    "Audible Android output was disabled. Physical phones/tablets, interactive Web/audio/WebGL, production services and long-session reliability remain unverified.",
+    "Only banked progress persists; unfinished watches intentionally do not resume after process death. Local clocks/profiles are not anti-cheat secure.",
+    "Godot 4.5.1 Compatibility minimum API 24 / target API 35 is the tested engine constraint, not current Google Play release eligibility."
   ],
-  "historical_original_package": {
-    "schema": 1,
-    "game": "Beacon Breakwater",
-    "status": "LOCAL_TEST_PACKAGE_COMPLETE_WITH_LIMITATIONS",
-    "scope": "Public source/build/native summary. Private test receipts and real profile records are deliberately not distributed.",
-    "current_main_sha256": "1543ECFB3E982CBD38785DB5FB911B8E8CE50382CA9E07E3768BC2B5FD744454",
-    "android_apk": {
-      "sha256": "82C96A5725B1BED9F341F42540F316587DD7FE9433937057424555F1A9C447E1",
-      "bytes": 183692140,
-      "filename": "game-debug.apk"
-    },
-    "web": {
-      "accepted": true,
-      "html_sha256": "CBADE2095ADCDCEA22A14305468ECED4D147DDE4D51971C861DADEE9AA0DEB92",
-      "html_bytes": 5491,
-      "pck_entries": 394,
-      "fresh_sidecar_count": 9,
-      "interactive_browser_verified": false
-    },
-    "source_checks": {
-      "ui_retirement_paired_assertions": 106,
-      "ui_retirement_mouse_assertions": 106,
-      "ui_retirement_gpu_assertions": 106,
-      "cold_notice_assertions": 90,
-      "recorded_failures": 0,
-      "scope": "Controlled desktop/headless/GPU checks of reviewed UI changes; separate native evidence is summarized in NATIVE_QA.json."
-    },
-    "runtime_input_freeze": {
-      "scoped_files": 11,
-      "byte_identical_before_after_android_web_exports": true,
-      "whole_project_or_reproducible_build_claim": false
-    },
-    "native_summary": "Current-build ordinary play, earned pause/Resume, once-only natural banking, Back, offline/cold banked retention, restored emulator-only settings and final safe stop were observed. Nine store roles were reviewed.",
-    "screenshot_count": 9,
-    "limits": [
-      "Physical devices and physical tablets were not tested; phone and logical-tablet layouts used one Android emulator.",
-      "Audible output was not tested; the emulator audio output was disabled.",
-      "Interactive Web, Web audio/WebGL, production services, signing/consent and human gameplay balance were not verified.",
-      "Daily-specific watch victory/once-day bonus and current-build unearned SDK dismissal were not verified. Historical gift/quest/upgrade and unearned-ad observations are separately qualified.",
-      "Godot 4.5.1 Compatibility exports used minimum API24/target API35; this does not establish current Google Play eligibility."
-    ],
-    "owner_work": [
-      "Real service IDs and PGS configuration",
-      "Production signing, privacy/contact/consent and store declarations",
-      "Google Play publication and human playtesting"
-    ],
-    "deployment": "Build/test/artifact CI is configured. No Pages deployment job exists and no live site is claimed. No remote publication is performed by this preparation."
-  }
+  "historical_round_two_summary": "history/round-two-c0df2ced/LOCAL_TEST_RESULTS.json"
 }

@@ -1,0 +1,302 @@
+{
+  "schema": "genuine-native-capture-manifest-v3",
+  "game": "Beacon Breakwater",
+  "date_utc": "2026-10-22",
+  "runtime_source_commit": "b71583c14a7fbaddb05f6faed5bd24cda970f8de",
+  "source_apk_sha256": "02EEFCE690AFD59F1A1614C91AEE97C05636F1951FF3AE96FE1BFFB3B9703C8F",
+  "source_apk_bytes": 194578744,
+  "capture_scope": "18 new genuine current-APK raw native screenshots, six per emulator profile. No resize, crop, rotation, overlay, restyling or old-build substitution.",
+  "operator_reviewed": true,
+  "coordinator_independently_reviewed_all18": true,
+  "profile_counts": {
+    "phone": 6,
+    "7-inch": 6,
+    "10-inch": 6
+  },
+  "display_profiles": {
+    "phone": {
+      "pixels": [
+        1080,
+        1920
+      ],
+      "density_dpi": 420,
+      "actual_display_readback_verified": true
+    },
+    "7-inch": {
+      "pixels": [
+        1200,
+        1920
+      ],
+      "density_dpi": 320,
+      "actual_display_readback_verified": true
+    },
+    "10-inch": {
+      "pixels": [
+        1600,
+        2560
+      ],
+      "density_dpi": 300,
+      "actual_display_readback_verified": true
+    }
+  },
+  "notes": [
+    "Logical tablet layouts are one emulator display overrides, not physical-device acceptance.",
+    "Banked progress legitimately differs across some frames; no purchases or claims were used to make screenshots.",
+    "Long lists intentionally scroll; screenshots show actual ordinary positions.",
+    "Current-build near-shore passage and visible ring states do not constitute numeric drain/speed measurements."
+  ],
+  "frames": [
+    {
+      "file": "phone/home.png",
+      "profile": "phone",
+      "scene": "home",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "density_dpi": 420,
+      "bytes": 1328747,
+      "sha256": "38A3CFA752560A27EB46B8A1A7B47E9CC207C1EAC73043137BC66CB3C0BC717C",
+      "actual_native_capture": true,
+      "pixels_modified": false
+    },
+    {
+      "file": "phone/workshop.png",
+      "profile": "phone",
+      "scene": "workshop",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "density_dpi": 420,
+      "bytes": 1110357,
+      "sha256": "B45B87C51F425CF09A6514779DBF239F686D00D0799FA36F510390AFD9CA64A8",
+      "actual_native_capture": true,
+      "pixels_modified": false
+    },
+    {
+      "file": "phone/coasts.png",
+      "profile": "phone",
+      "scene": "coasts",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "density_dpi": 420,
+      "bytes": 1105979,
+      "sha256": "ED928986E9DD0C0EBA8AFE0D80AA399813C4211F6FFE1A5C3383E0AD10EF6E4C",
+      "actual_native_capture": true,
+      "pixels_modified": false
+    },
+    {
+      "file": "phone/briefing.png",
+      "profile": "phone",
+      "scene": "briefing",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "density_dpi": 420,
+      "bytes": 1163513,
+      "sha256": "2F096BFDABEB9641FEF00CC1B5E01A86581F9C40FF61A78251BEBD1A4C6EBDEB",
+      "actual_native_capture": true,
+      "pixels_modified": false
+    },
+    {
+      "file": "phone/watch-ring-states.png",
+      "profile": "phone",
+      "scene": "watch-ring-states",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "density_dpi": 420,
+      "bytes": 1946665,
+      "sha256": "EA3210022314502F72B886B1068BD5B3CE92A3A6B89437218A0B44F77B93AD72",
+      "actual_native_capture": true,
+      "pixels_modified": false
+    },
+    {
+      "file": "phone/pause.png",
+      "profile": "phone",
+      "scene": "pause",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "density_dpi": 420,
+      "bytes": 1053504,
+      "sha256": "4E15828A7E146C1A5BBF56C390BDE436F74E3B0AF46BD2E72358DD40F6B2341C",
+      "actual_native_capture": true,
+      "pixels_modified": false
+    },
+    {
+      "file": "7inch/home.png",
+      "profile": "7-inch",
+      "scene": "home",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "density_dpi": 320,
+      "bytes": 1372958,
+      "sha256": "EC75A5DC42AEC028409644169B86FBEC812DD2ABDE9F3088F9E8DBF10F9B12C5",
+      "actual_native_capture": true,
+      "pixels_modified": false
+    },
+    {
+      "file": "7inch/workshop.png",
+      "profile": "7-inch",
+      "scene": "workshop",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "density_dpi": 320,
+      "bytes": 1069894,
+      "sha256": "A51BDEDF050C092B74881CD869B8F6E1BF8E4011E734CAA21EE4EE358DA1FEC1",
+      "actual_native_capture": true,
+      "pixels_modified": false
+    },
+    {
+      "file": "7inch/coasts.png",
+      "profile": "7-inch",
+      "scene": "coasts",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "density_dpi": 320,
+      "bytes": 1062854,
+      "sha256": "8CEFA82C01A21AFD0C28E5B106E7DEDED4047BF5B09CD43A4902AA16EB4F1CCD",
+      "actual_native_capture": true,
+      "pixels_modified": false
+    },
+    {
+      "file": "7inch/missions.png",
+      "profile": "7-inch",
+      "scene": "missions",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "density_dpi": 320,
+      "bytes": 1105927,
+      "sha256": "479B35E6BE80E0EE437E62865FBA71834CF3BA78790A9BAEE33036A62E8F0B13",
+      "actual_native_capture": true,
+      "pixels_modified": false
+    },
+    {
+      "file": "7inch/watch.png",
+      "profile": "7-inch",
+      "scene": "watch",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "density_dpi": 320,
+      "bytes": 2029133,
+      "sha256": "BBB22AEC5CC1BC620387940A10980B09FB6432DFA49666C9ADC1AF99D7E24B0F",
+      "actual_native_capture": true,
+      "pixels_modified": false
+    },
+    {
+      "file": "7inch/pause.png",
+      "profile": "7-inch",
+      "scene": "pause",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "density_dpi": 320,
+      "bytes": 1092801,
+      "sha256": "5D699BD3F72605218E0DC7C0279DB9AA74860057A5535BA4FB985E166EE032E5",
+      "actual_native_capture": true,
+      "pixels_modified": false
+    },
+    {
+      "file": "10inch/home.png",
+      "profile": "10-inch",
+      "scene": "home",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "density_dpi": 300,
+      "bytes": 2305858,
+      "sha256": "4D34B8FF7560FCF6283FE7E3C534564E85C32A338F8569BB0993C3706CAEE126",
+      "actual_native_capture": true,
+      "pixels_modified": false
+    },
+    {
+      "file": "10inch/workshop.png",
+      "profile": "10-inch",
+      "scene": "workshop",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "density_dpi": 300,
+      "bytes": 1731979,
+      "sha256": "FDAA0EFB30D9E51BFB8F1EFE782B99D31E8B8018C8020BF0067448345FF36379",
+      "actual_native_capture": true,
+      "pixels_modified": false
+    },
+    {
+      "file": "10inch/coasts.png",
+      "profile": "10-inch",
+      "scene": "coasts",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "density_dpi": 300,
+      "bytes": 1762166,
+      "sha256": "595792AF99D4F28F853562BF6329C4716B3BA6729E73C9A8E8C301860AE00281",
+      "actual_native_capture": true,
+      "pixels_modified": false
+    },
+    {
+      "file": "10inch/missions.png",
+      "profile": "10-inch",
+      "scene": "missions",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "density_dpi": 300,
+      "bytes": 1680290,
+      "sha256": "82E16F509A203F9B1C3CD287C6BC1D61D3A975165A72BD88F589C1DD02DAFDFA",
+      "actual_native_capture": true,
+      "pixels_modified": false
+    },
+    {
+      "file": "10inch/watch.png",
+      "profile": "10-inch",
+      "scene": "watch",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "density_dpi": 300,
+      "bytes": 3262398,
+      "sha256": "7DCECB699FC7154A2B8272CE4B6650279A0133208E5C609286A151513F1E25BA",
+      "actual_native_capture": true,
+      "pixels_modified": false
+    },
+    {
+      "file": "10inch/pause.png",
+      "profile": "10-inch",
+      "scene": "pause",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "density_dpi": 300,
+      "bytes": 1718773,
+      "sha256": "5409F4DDB2483D1D25B1B2CCC1625B70703405802480850ABCA5D3C7A5D3770B",
+      "actual_native_capture": true,
+      "pixels_modified": false
+    }
+  ]
+}
