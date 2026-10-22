@@ -41,9 +41,9 @@ and pause/endcard lifecycle. The 60 authored campaign watches must still pass th
 ordinary, unassisted baseline-gear solver with fleet conservation enforced.
 
 Source test results are not native gameplay acceptance. The existing `HANDOFF.txt`
-identifies the historical native-tested Round Two APK and captures. A separately
-named Android/Web build, affected native checks and fresh capture provenance are
-required before a Round Three package is described as verified.
+identifies the historical native-tested Round Two APK and captures. The separately named Android/Web exports below are now verified. Affected
+native checks and fresh capture provenance are still required before a Round Three
+package is described as natively accepted.
 
 ## Source validation, 2026-10-22
 
@@ -59,3 +59,16 @@ including shared headings for nearby hulls and protection-aware horn timing.
 No life, elapsed time, mission content, upgrade, win condition or conservation
 assertion was changed to obtain these results. Automated solvability does not
 establish human balance, physical-device performance or native ad acceptance.
+
+## Verified exports and exact-source CI, 2026-10-22
+
+Runtime/source commit: `b71583c14a7fbaddb05f6faed5bd24cda970f8de`.
+
+- Android: `build/round-three-b71583c1-a1/android/beacon-breakwater-debug.apk`; 194578744 bytes.
+  SHA256 `02EEFCE690AFD59F1A1614C91AEE97C05636F1951FF3AE96FE1BFFB3B9703C8F`.
+- Web: `build/round-three-b71583c1-a1/web/index.html` plus every sidecar and notice.
+- [Exact-runtime hosted build/test CI](https://github.com/EthannYakabuski/beacon-breakwater/actions/runs/39795036517): **SUCCESS**, with the same runtime commit.
+
+Both exports passed source/input binding, strict error checks and complete-notice verification. They were compiled from frozen committed export settings; unrelated owner working-tree files/settings remain preserved and were not build inputs. These are export-only candidates, distinct from hosted artifacts and historical native-tested binaries. Later documentation commits require their own CI result.
+
+**Native acceptance remains pending.** This Round Three APK has not yet received native testing. Native work is delayed by task-emulator System UI failure; no application defect is inferred and no Round Three screenshots are accepted. Affected native behavior and six genuine screenshots per phone/7-inch/10-inch profile are still required. See `../HANDOFF.txt` for complete artifact identities and dated Round Two qualifications. Interactive Web, audible output, physical devices and production backend/services remain unverified.

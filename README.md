@@ -5,6 +5,10 @@ one beam over drifting vessels, establish their guidance and bring a fleet home.
 Sixty watches across twelve coasts, an endless watch and a daily watch share the
 same deterministic rescue rules.
 
+## Round Three export candidate
+
+Runtime `b71583c14a7fbaddb05f6faed5bd24cda970f8de` has accepted local Android/Web test exports under `build/round-three-b71583c1-a1/` and [exact-source CI SUCCESS](https://github.com/EthannYakabuski/beacon-breakwater/actions/runs/39795036517). Artifact paths/full hashes are in `HANDOFF.txt`; [Round Three rules](docs/ROUND_THREE.md) explain the changed rings and harbor approach. Native testing and six screenshots per profile remain pending behind task-emulator System UI failure. These exports are not a completed Round Three native handoff. Historical Round Two evidence below retains its original scope.
+
 ## Play
 
 Drag anywhere over the water to aim the light. Keep a boat inside its beam until
@@ -104,13 +108,12 @@ pending service-store semantics survived the observed final checks. The initial
 missing AVD package was recovered from a verified genuine legacy backup before
 the tested updates; retention across that earlier session loss is not claimed.
 
-Current runtime commit: `725c4cac38fc071639d673f11ca37b1667c663ba`.
+Preserved Round Two runtime commit: `725c4cac38fc071639d673f11ca37b1667c663ba`.
 Local APK: `build/round-two-725c4cac-a1/android/beacon-breakwater-debug.apk`
 (194578012bytes), SHA256 `C0DF2CED4DD0142B563527AF3D650A1BDFA95B96F19859176D32E54953D7809D`.
 Web bundle: `build/round-two-725c4cac-a1/web/index.html` plus its sidecars/notices.
 Strict exports passed with stable inputs and verified source binding. Interactive
-Web remains unverified. Round Two public synchronization remains held after a
-push denial, so no new hosted CI result is claimed.
+Web remains unverified. The dated Round Two handoff recorded a push denial; the current Round Three exact-source CI result is linked above.
 
 `HANDOFF.txt`, `docs/NATIVE_QA.json` and `docs/LOCAL_TEST_RESULTS.json` distinguish
 this exact build from historical packages. The untouched original native-tested
