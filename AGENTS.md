@@ -1,5 +1,11 @@
 # Beacon Breakwater continuation
 
+## Round 4 continuation
+
+Work only on the requested Round 4 changes; do not start new games. The current Android default is Gradle **AAB**, min API **24** / target API **36**, with ARM64, x86 and x86_64. Follow the [Round 4 Android guide](docs/ROUND_FOUR_ANDROID.md) for current export instructions instead of older APK examples in historical guides.
+
+The 2026-10-24 continuation snapshot does not claim passing exact-current-source CI or native acceptance for rebuilt Round 4 binaries. Record later source-bound checks in `HANDOFF.txt`; keep all dated original APK evidence intact. Debug AABs are test-signed bundles, distinct from owner-signed releases. Preserve user configuration and untracked files.
+
 The folder containing this file is the active development working copy. Earlier
 staging copies and preserved originals are archives, not parallel edit locations.
 Start a focused task for this game; do not assume access to an earlier chat.
@@ -15,7 +21,7 @@ Start a focused task for this game; do not assume access to an earlier chat.
 
 Godot 4.5.1 Compatibility is the engine baseline. Android is primary; Web uses
 single-threaded export and native-service fallbacks. The observed export setup
-is minimum API 24 / target API 35, not a current Google Play eligibility claim.
+is minimum API 24 / target API 36, not a current Google Play eligibility claim.
 Use matching export templates and the existing Android preset.
 
 `game/watch.gd` owns deterministic play, `game/profile.gd` banked accounting and

@@ -1,5 +1,11 @@
 # Beacon Breakwater
 
+## Round 4 build continuation (2026-10-24)
+
+The Android preset now defaults to **AAB** with Gradle, minimum API **24** and target API **36**. ARM64, x86 and x86_64 are selected; the [Round 4 Android guide](docs/ROUND_FOUR_ANDROID.md) explains the native ABI-pair validator and release-owner steps. These are current preset choices, not permanent engine restrictions.
+
+Round 4 exact-source hosted CI and affected native acceptance are pending in this dated continuation snapshot; consult `HANDOFF.txt` for later source-bound results. An ABI-validated debug AAB is test-signed and does not establish Google Play acceptance. Dated APK hashes and screenshots below retain their original build provenance. This round does not start new games.
+
 ## Round Four source update
 
 Shoals now lose never-illuminated boats, slow all crossing boats by 25%, and living arrivals award a bonus proportional to their remaining outer ring. See [current gameplay rules](docs/ROUND_FOUR.md). New exports/native checks and exact-commit CI are separate gates; dated Round Three artifacts below retain their original scope.
@@ -53,8 +59,7 @@ commits. Live Pages deployment is absent and remains held.
 
 Open `project.godot` in Godot 4.5.1 and run `main.tscn`. Android and Web presets are
 included; Android requires matching templates, JDK 17 and the Android SDK.
-The current engine export configuration is min API 24 / target API 35. This is an
-observed engine constraint, not a claim of current Google Play release eligibility.
+The current engine export configuration is min API 24 / target API 36. This describes the current preset, not a permanent engine restriction or a claim of Google Play release eligibility.
 No Windows distribution build is included.
 
 ```sh
@@ -63,7 +68,7 @@ godot --headless --path . --script tests/test_round_two.gd
 godot --headless --path . --script tests/test_models.gd
 godot --headless --path . --script tests/test_ui.gd -- --qa-isolated
 godot --headless --path . --export-release Web build/web/index.html
-godot --headless --path . --install-android-build-template --export-debug Android build/android/game-debug.apk
+godot --headless --path . --install-android-build-template --export-debug Android build/android/game-debug.aab
 ```
 
 Run tests in isolated temporary user-data directories, including the shared
