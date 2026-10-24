@@ -287,7 +287,7 @@ func _show_brief(index: int, mode: String = "campaign") -> void:
 	var goal="Bring at least %d of %d boats home. Lose fewer than three." % [definition.target,definition.spawns.size()]
 	if not str(definition.required_kind).is_empty(): goal+=" Bring home a "+str(Watch.KINDS[definition.required_kind].label).to_lower()+" too."
 	_card(column,"Your watch",goal)
-	_card(column,"Sweep. Hold. Guide.",str(definition.briefing)+"\nDrag to aim. Fill the inner ring to steer home. The outer ring drains fastest before guidance, normally off-beam, slowly while green/lit. More hull in the beam means more speed; guided boats keep full speed near shore. Red means urgent. Foghorn slows danger.")
+	_card(column,"Sweep. Hold. Guide.",str(definition.briefing)+"\nDrag to aim; fill the inner ring to guide home. More hull lit means faster travel; green rings drain slower. Outer ring left at home earns points. Light boats before shoals: never-lit boats are lost; all slow 25%. Foghorn buys time.")
 	if bool(definition.tutorial): _card(column,"No rush to learn","The beam stays where you leave it. Hold it on a boat for a moment. You can pause at any time.")
 	column.add_child(_button("Begin the watch",func():_start_watch(index,mode),"BeginWatch"))
 	column.add_child(_label("Each boat earns 3 coins / 4 XP; first clear +25 coins / 20 XP.\nWins +10 XP; perfect watches +8 coins. Keeper level-ups +35 coins.",16,TEAL))

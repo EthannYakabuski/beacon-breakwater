@@ -20,6 +20,7 @@ const GUIDED_LIT_DRAIN = GUIDED_LIT_BASE_DRAIN * 1.25
 # 28px half-hull length plus the existing 20px harbor arrival radius. This is
 # only a speed exception for guided hulls clipping the narrowing cone apex.
 const NEAR_SHORE_RADIUS = 48.0
+const SHOAL_SPEED_SCALE = 0.75
 var config: Dictionary = {}
 var boats: Array = []
 var events: Array = []
@@ -105,6 +106,23 @@ func travel_speed(boat: Dictionary, coverage: float) -> float:
 	if near_shore_guidance(boat): return float(stats.lit_speed)
 	return lerpf(float(stats.speed),float(stats.lit_speed),clampf(coverage,0.0,1.0))
 
+func on_shoal(point: Vector2) -> bool:
+	for reef in config.get("reefs",[]):
+		if point.distance_to(Vector2(float(reef[0]),float(reef[1]))) < float(reef[2]): return true
+	return false
+
+func crosses_shoal(from: Vector2, to: Vector2) -> bool:
+	for reef in config.get("reefs",[]):
+		var center = Vector2(float(reef[0]),float(reef[1]))
+		var closest = Geometry2D.get_closest_point_to_segment(center,from,to)
+		if closest.distance_to(center) < float(reef[2]): return true
+	return false
+
+func ring_bonus(boat: Dictionary) -> int:
+	var maximum = float(boat.get("max_life",0.0))
+	if maximum <= 0.0: return 0
+	return int(floor(float(KINDS[boat.kind].value)*clampf(float(boat.life)/maximum,0.0,1.0)))
+
 func max_horn_charges() -> int:
 	return 3+int(upgrades.get("horn",0))/2
 
@@ -118,7 +136,7 @@ func spawn(kind: String, x: float, drift: float = 0.0) -> void:
 	var lifetime = float(stats.life)+float(upgrades.get("harbor",0))*1.35
 	boats.append({"id":serial,"kind":kind,"pos":Vector2(clampf(x,38,502),175),
 		"guidance":0.0,"guided":false,"life":lifetime,"max_life":lifetime,"drift":drift,
-		"rotation":0.0,"lit":false,"coverage":0.0})
+		"rotation":0.0,"lit":false,"coverage":0.0,"ever_illuminated":false})
 	if kind not in seen: seen.append(kind)
 	events.append({"event":"arrival","kind":kind})
 
@@ -158,6 +176,7 @@ func rescue_flare() -> bool:
 	for boat in boats:
 		boat.guidance = 1.0
 		boat.guided = true
+		boat.ever_illuminated = true
 	horn_effect = horn_duration()
 	events.append({"event":"flare"})
 	return true
@@ -200,6 +219,13 @@ func step(delta: float) -> void:
 		var coverage = beam_coverage(boat)
 		boat.coverage = coverage
 		boat.lit = coverage>0.001
+		# Any prior hull illumination counts, even before the guidance circle fills.
+		boat.ever_illuminated = bool(boat.get("ever_illuminated",false)) or boat.lit or bool(boat.guided)
+		var in_shoal = on_shoal(boat.pos)
+		if in_shoal and not boat.ever_illuminated:
+			_lose_boat(index)
+			continue
+		var shoal_scale = SHOAL_SPEED_SCALE if in_shoal else 1.0
 		if not bool(boat.guided) and bool(boat.lit):
 			var focus = (1.0+float(upgrades.get("focus",0))*0.13)/float(stats.focus)
 			boat.guidance = minf(1.0,float(boat.guidance)+dt*focus*coverage)
@@ -216,7 +242,7 @@ func step(delta: float) -> void:
 		if float(boat.life) <= 0.0:
 			_lose_boat(index)
 			continue
-		var speed = travel_speed(boat,coverage)
+		var speed = travel_speed(boat,coverage)*shoal_scale
 		if bool(boat.guided):
 			var toward = BEACON-boat.pos
 			boat.rotation = toward.angle()+PI/2.0
@@ -224,11 +250,16 @@ func step(delta: float) -> void:
 			if toward.length() <= 20.0:
 				rescued += 1; chain += 1; best_chain=maxi(chain,best_chain)
 				kind_rescues[boat.kind]=int(kind_rescues.get(boat.kind,0))+1
-				score += int(stats.value)+mini(chain,10)*10
+				score += int(stats.value)+ring_bonus(boat)+mini(chain,10)*10
 				events.append({"event":"rescue","kind":boat.kind,"pos":boat.pos})
 				boats.remove_at(index)
 			continue
-		boat.pos += Vector2(float(boat.drift)+tide*weather_pulse,speed) * dt*slow
+		var previous_position: Vector2 = boat.pos
+		boat.pos += Vector2((float(boat.drift)+tide*weather_pulse)*shoal_scale,speed) * dt*slow
+		# Resolve entry during this step too; a fast crossing cannot evade the shoal.
+		if not boat.ever_illuminated and crosses_shoal(previous_position,boat.pos):
+			_lose_boat(index)
+			continue
 		boat.pos.x = clampf(boat.pos.x,32,508)
 		boat.rotation = sin(time+float(boat.id))*0.05
 		if boat.pos.y > BEACON.y+15.0: _lose_boat(index)

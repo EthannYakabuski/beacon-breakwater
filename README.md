@@ -1,5 +1,9 @@
 # Beacon Breakwater
 
+## Round Four source update
+
+Shoals now lose never-illuminated boats, slow all crossing boats by 25%, and living arrivals award a bonus proportional to their remaining outer ring. See [current gameplay rules](docs/ROUND_FOUR.md). New exports/native checks and exact-commit CI are separate gates; dated Round Three artifacts below retain their original scope.
+
 A portrait lighthouse rescue arcade built with Godot 4.5.1 Compatibility. Sweep
 one beam over drifting vessels, establish their guidance and bring a fleet home.
 Sixty watches across twelve coasts, an endless watch and a daily watch share the

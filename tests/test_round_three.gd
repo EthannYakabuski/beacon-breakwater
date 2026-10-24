@@ -52,7 +52,7 @@ func _initialize() -> void:
 		# Each phase retains storm, reef, breakwater and free horn protection.
 		for phase in ["never","dark","lit"]:
 			w=world({"breakwater":3},{"storm":.4,"reefs":[[270,350,120]]});w.time=10.5;w.horn_effect=1.0
-			boat=vessel(w,kind,phase!="never",phase=="lit");before=float(boat.life);w.step(.02)
+			boat=vessel(w,kind,phase!="never",phase=="lit");boat.ever_illuminated=true;before=float(boat.life);w.step(.02)
 			var rate=1.33 if phase=="never" else .3125 if phase=="lit" else 1.0
 			var expected=.02*1.4*(1.0+1.5/1.6)*.25*rate
 			check(is_equal_approx(before-float(boat.life),expected),"weather/reef/horn combine in every ring phase %s %s"%[kind,phase])
@@ -78,7 +78,7 @@ func _initialize() -> void:
 		w.step(.05);var result=w.result();w.step(.05)
 		check(w.lost==1 and w.rescued==0 and w.score==0 and w.boats.is_empty() and w.lost_boats.size()==1 and event_count(w,"lost")==1 and w.result()==result,"expired guided ship loses exactly once before harbor rescue "+kind)
 		w=world();boat=vessel(w,kind,true,true,Watch.BEACON+Vector2(0,-15));w.step(.01);result=w.result();w.step(.05)
-		check(w.rescued==1 and w.lost==0 and w.score==Watch.KINDS[kind].value+10 and w.boats.is_empty() and event_count(w,"rescue")==1 and w.result()==result,"living harbor arrival scores exactly once "+kind)
+		check(w.rescued==1 and w.lost==0 and w.score==Watch.KINDS[kind].value+int(floor(Watch.KINDS[kind].value*(boat.max_life-.003125)/boat.max_life))+10 and w.boats.is_empty() and event_count(w,"rescue")==1 and w.result()==result,"living harbor arrival scores exactly once "+kind)
 	# Partial hull coverage still increases acquisition and speed gradually.
 	var w=world();var boat=vessel(w,"skiff",false,true)
 	w.angle=(boat.pos-Watch.BEACON).angle()+w.beam_half_width()
