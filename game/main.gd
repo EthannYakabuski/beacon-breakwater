@@ -125,7 +125,10 @@ func _sync_audio_state() -> void:
 	if not is_instance_valid(music): return
 	if not bool(profile.data.settings.music): music.stop();return
 	if music.stream!=null and not music.playing: music.play()
-	music.stream_paused=application_suspended or _ads_active()
+	var pause_music: bool = application_suspended or _ads_active()
+	# Web samples restart their buffer on redundant unpause calls.
+	if music.stream_paused != pause_music:
+		music.stream_paused = pause_music
 
 func _exit_tree() -> void:
 	for player in audio.values():
