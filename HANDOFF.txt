@@ -1,3 +1,29 @@
+ROUND FOUR - QUALIFIED SOURCE / EXPORT HANDOFF
+Current Round Four features: Never-lit boats lose immediately in shoals; shoal-crossing boats move 25% slower, and arrivals earn remaining-outer-ring bonuses.
+The focused music pause-state follow-up leaves music enabled and avoids redundant pause-state updates.
+Current focused source: 3778721a06453ec4626804681efdff3e121eb7ec
+Exact post-audio source CI: SUCCESS - https://github.com/EthannYakabuski/beacon-breakwater/actions/runs/40146765415
+Latest validated Android AAB: build/round-four-music-aab-003/beacon-breakwater-debug.aab
+AAB SHA256: CAF102359942F84528E3B3976A8C5F91097E593BBCDD8BFFACC9F52691701668
+AAB as-built source: 3778721a06453ec4626804681efdff3e121eb7ec
+Latest validated Web entry: build/round-four-web-003/index.html
+Web HTML SHA256: C8EA7CFDF46DE8149BF3700A2C283D386B1F844575E8F847B4F004E1576352C9
+Web as-built source: 3778721a06453ec4626804681efdff3e121eb7ec
+Corrected Web runtime scope and remaining diagnostics: Bounded isolated Chrome Web003 observations: Home, campaign/coast selection, the Round Four briefing and the live first-watch interface opened through ordinary controls. The briefing displayed the new shoal and outer-ring scoring rules. A natural result recorded two boats home and two lost; Return to harbor added 6 coins and 8 XP, showing 146 coins and 8 XP. No createBuffer recurrence was recorded during the 266-second check. Full original audio and project playback configuration were retained.
+Remaining browser and platform limits: The four-boat target was not met and the first watch remained uncleared. No beam-aim input, shoal collision, 25% speed comparison or remaining-ring scoring measurement was verified; losses are not attributed to shoals. Startup index.pck and index.wasm requests reported net::ERR_ABORTED before the first ready frame; the game subsequently loaded and reached the reported result. Both aborts remain in the evidence; no error-free browser claim is made. Headless tab changes kept both pages visible and focused; actual hidden/focus-loss and music pause/resume transitions remain unverified. These are bounded Chrome Web003 observations, not Android screenshots or native/device, audible-output, SDK/ad, production-service or release acceptance. No cold browser restart was tested.
+Qualified Android/Web test package: build/round-four-music-3778721a-aab003-web003/packages/beacon-breakwater-round-four-audio-export-test.zip
+Package SHA256: EAE08F8E10B8A6FFCB886ACBAB1A26D5A9EF8D13C29827936A1E229B28E9DD73
+The AAB and Web exports above passed their recorded export checks. Bounded Web observations and outstanding owner checks remain separate. Source CI above validates the as-built code; later documentation/UID-only commits require their own hosted run.
+RECORDED PRIOR ROUND FOUR EXPORT CANDIDATE - PRE-AUDIO SOURCE
+AAB: build/round-four-ci-4864591b-run40125513481/game-debug.aab; SHA256 355A861DBAE57B9C36F395F9AF699F612C65B47959A2DC234D87D1ADF4B2D367; as-built source 4864591b45da05e64ace3069acb8c7a6637b4deb.
+Web: build/round-four-web-002/index.html; HTML SHA256 589D7F83C642829D42E8C5922FCA2929550BF37B6F7E353E2CEAA1ED34CB50ED; as-built source 4864591b45da05e64ace3069acb8c7a6637b4deb.
+Recorded export-only ZIP: build/round-four-export-only-355a861d-web002/packages/beacon-breakwater-round-four-export-test.zip; SHA256 A31270950E44AFD48765BFD993789B6F510748167CDC08952D8D15F27480B12C. These frozen pre-audio component identities are preserved as dated evidence, not validation of the newer source or a promise that an archive remains selected for distribution.
+NATIVE / OWNER QUALIFICATION
+Affected Round Four Android/native behavior and current-build Android screenshots remain unverified. Browser frames are not Android/store screenshots. Physical-device, audible-output, real SDK/production-service and store-release acceptance remain separate; a debug AAB is test-signed, not a release submission.
+Only materially changed visuals require refreshed genuine captures. Unchanged older screenshots retain their named original APK/source provenance and are not relabelled as current-build evidence.
+Remaining owner checks: affected Android/native gameplay and real SDK/ad callback/save/offline flows on the new binary, materially changed genuine current-build Android captures, intended physical devices, audible output and production services. The specific unverified gameplay/control paths in the browser limits above remain open; no all-native-ready claim is made.
+
+PRESERVED EARLIER HANDOFF / DATED EVIDENCE — each passage retains its named source/build scope; current qualification above supersedes earlier readiness statements.
 ROUND FOUR GAMEPLAY SOURCE UPDATE - 2026-10-24
 Scoped rules and isolated source verification: docs/ROUND_FOUR.md.
 New runtime export/native acceptance and exact-commit CI remain coordinator gates.

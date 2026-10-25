@@ -46,3 +46,12 @@ no matched script/parse/assertion, resource-in-use or ObjectDB leak errors.
 The first expanded briefing pushed BeginWatch beyond the initial touch viewport;
 concise replacement wording restores real touch launch and the full scene suites.
 The required isolated-QA argument is used by all three Beacon scene suites.
+
+## Focused music pause-state follow-up / qualified verification
+
+Music remains enabled. The focused follow-up avoids redundant pause-state assignments while leaving the gameplay and service rules above intact. Its source is `3778721a06453ec4626804681efdff3e121eb7ec`; its [exact hosted CI](https://github.com/EthannYakabuski/beacon-breakwater/actions/runs/40146765415) passed. The actual accepted AAB/Web003 components and qualified test package are recorded in `../HANDOFF.txt`. Earlier named-source tests and frozen exports do not establish this follow-up's runtime acceptance.
+
+Corrected Web runtime findings: Bounded isolated Chrome Web003 observations: Home, campaign/coast selection, the Round Four briefing and the live first-watch interface opened through ordinary controls. The briefing displayed the new shoal and outer-ring scoring rules. A natural result recorded two boats home and two lost; Return to harbor added 6 coins and 8 XP, showing 146 coins and 8 XP. No createBuffer recurrence was recorded during the 266-second check. Full original audio and project playback configuration were retained.
+Remaining browser and platform limits: The four-boat target was not met and the first watch remained uncleared. No beam-aim input, shoal collision, 25% speed comparison or remaining-ring scoring measurement was verified; losses are not attributed to shoals. Startup index.pck and index.wasm requests reported net::ERR_ABORTED before the first ready frame; the game subsequently loaded and reached the reported result. Both aborts remain in the evidence; no error-free browser claim is made. Headless tab changes kept both pages visible and focused; actual hidden/focus-loss and music pause/resume transitions remain unverified. These are bounded Chrome Web003 observations, not Android screenshots or native/device, audible-output, SDK/ad, production-service or release acceptance. No cold browser restart was tested.
+
+Affected Android/native checks, real SDK callbacks and current-build Android screenshots remain unverified. Physical-device play, audible-output and production services are separate acceptance work. Preserve all old APK/capture provenance and full third-party notices.

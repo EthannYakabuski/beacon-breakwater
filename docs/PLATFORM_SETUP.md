@@ -4,7 +4,7 @@
 
 The preset currently uses minimum API **24** / target API **36**, Gradle **AAB**, and ARM64, x86 and x86_64. These settings are configurable choices, not a fixed Godot target-SDK limit. Follow the [Round 4 Android guide](ROUND_FOUR_ANDROID.md); create a new unused output directory, export a debug `.aab`, then run `tools/verify_android_bundle.py` on the actual bundle.
 
-The debug AAB is test-signed; release signing stays with the owner outside Git. ABI validation alone does not establish native gameplay, production services or Google Play acceptance. Exact Round 4 source CI and affected native checks are pending in this dated 2026-10-24 snapshot unless later source-bound handoff records establish them. Preserve historical APK/native QA identities; no new-game work is authorized by this continuation.
+The debug AAB is test-signed; release signing stays with the owner outside Git. ABI validation alone does not establish native gameplay, production services or Google Play acceptance. Focused music pause-state source `3778721a06453ec4626804681efdff3e121eb7ec` has [passing exact-commit hosted CI](https://github.com/EthannYakabuski/beacon-breakwater/actions/runs/40146765415). Local Android bundle acceptance and bounded Web003 behavior are separate; see `../HANDOFF.txt` for the actual component identities and qualified test package. Affected native acceptance remains unverified. Preserve historical APK/native QA identities; no new-game work is authorized by this continuation.
 
 Godot 4.5.1 Compatibility, matching templates, JDK 17 and the Android SDK are the
 baseline. Android is primary; Web runs without simulated native rewards. Current
