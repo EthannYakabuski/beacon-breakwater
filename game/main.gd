@@ -258,11 +258,11 @@ func _show_home() -> void:
 	screen="home";profile.roll_day(_today())
 	var column=_page("BEACON BREAKWATER","A small lighthouse. A coast worth keeping.",false)
 	var metrics="Keeper %d   |   %d coins   |   %d XP" % [profile.level(),profile.data.coins,profile.data.xp]
-	_card(column,metrics,"%d boats home  Â·  %d perfect watches\nNext: %s" % [profile.data.rescued,profile.data.perfect_watches,missions.missions[profile.unlocked_mission()].name],"Keep the light",_show_coasts,"Campaign")
+	_card(column,metrics,"%d boats home  \u00b7  %d perfect watches\nNext: %s" % [profile.data.rescued,profile.data.perfect_watches,missions.missions[profile.unlocked_mission()].name],"Keep the light",_show_coasts,"Campaign")
 	var row=HBoxContainer.new();row.add_theme_constant_override("separation",12);column.add_child(row)
 	for entry in [["Endless watch",_start_endless,"Endless"],["Daily watch",_show_daily,"Daily"]]:
 		var b=_button(entry[0],entry[1],entry[2]);b.size_flags_horizontal=Control.SIZE_EXPAND_FILL;row.add_child(b)
-	column.add_child(_button("The workshop  Â·  improve your beacon",_show_workshop,"Workshop"))
+	column.add_child(_button("The workshop  \u00b7  improve your beacon",_show_workshop,"Workshop"))
 	column.add_child(_button("Boat log & records",_show_log,"BoatLog"))
 	column.add_child(_button("Settings, privacy & Play Games",_show_settings,"Settings"))
 	column.add_child(_label("Drag the light, hold a boat in its beam, bring it home.\nLocal play works offline. Optional Android test ads need a connection.",16,TEAL))
@@ -327,7 +327,7 @@ func _build_watch_ui() -> void:
 	ui.add_child(life_icons)
 	horn_button=_button("Foghorn",_horn,"Foghorn");horn_button.position=Vector2(24,808);horn_button.size=Vector2(240,62);ui.add_child(horn_button)
 	var pause=_button("Pause / assistance",_pause,"PauseWatch");pause.position=Vector2(276,808);pause.size=Vector2(240,62);ui.add_child(pause)
-	var hint=_label("DRAG THE LIGHT  Â·  HOLD UNTIL THE RING FILLS",15,TEAL)
+	var hint=_label("DRAG THE LIGHT  \u00b7  HOLD UNTIL THE RING FILLS",15,TEAL)
 	hint.position=Vector2(24,892);hint.size=Vector2(492,35);hint.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER;ui.add_child(hint)
 	_refresh_hud()
 
@@ -344,7 +344,7 @@ func _refresh_hud() -> void:
 			slot.get_node("Boat").modulate=TEAL if available else Color(.30,.40,.47,.60)
 			slot.get_node("Spent").visible=not available
 	if is_instance_valid(horn_button):
-		horn_button.text="Foghorn  Â·  %d / %d" % [watch.horn_charges,watch.max_horn_charges()]
+		horn_button.text="Foghorn  \u00b7  %d / %d" % [watch.horn_charges,watch.max_horn_charges()]
 		horn_button.disabled=watch.horn_charges<=0
 
 func _horn() -> void:
@@ -354,13 +354,13 @@ func _horn() -> void:
 func _pause() -> void:
 	if screen != "watch": return
 	screen="pause"
-	var column=_page("A quiet moment","Watch paused at %02d:%02d  Â·  %d boats home" % [int(watch.time)/60,int(watch.time)%60,watch.rescued],false)
+	var column=_page("A quiet moment","Watch paused at %02d:%02d  \u00b7  %d boats home" % [int(watch.time)/60,int(watch.time)%60,watch.rescued],false)
 	_card(column,"The light will wait","Your watch stays frozen while this page or a fullscreen ad is open. Returning from an ad never resumes the watch automatically.","Resume the watch",_resume,"ResumeWatch")
 	var available=is_instance_valid(services) and services.has_method("can_reward") and bool(services.can_reward())
 	var explanation="Guide every boat currently on the water. Once per watch; marks this watch assisted, so it cannot replace your unassisted endless best."
 	if not available: explanation+="\nNo optional ad is ready. Ordinary play and the free foghorn remain available."
 	if not watch.can_flare(): explanation+="\nNo endangered boat needs a flare right now, or this watch's flare is already used."
-	_card(column,"Rescue flare  Â·  optional ad",explanation,"Request rescue flare" if available and watch.can_flare() else "Flare not needed" if not watch.can_flare() else "Ad unavailable",_request_flare,"RewardFlare",not available or not watch.can_flare())
+	_card(column,"Rescue flare  \u00b7  optional ad",explanation,"Request rescue flare" if available and watch.can_flare() else "Flare not needed" if not watch.can_flare() else "Ad unavailable",_request_flare,"RewardFlare",not available or not watch.can_flare())
 	_card(column,"Return to harbor","This unfinished watch is not a resumable save. Leaving discards its unbanked boats and points; your existing harbor progress is kept.","Leave this watch",_abandon,"AbandonWatch")
 	_menu(false)
 
@@ -407,15 +407,15 @@ func _finish_watch() -> void:
 
 func _show_results() -> void:
 	screen="results"
-	var column=_page("A coast kept warm" if watch.won else "A second light?","Watch complete  Â·  %d boats home  Â·  %d lost"%[watch.rescued,watch.lost],false)
+	var column=_page("A coast kept warm" if watch.won else "A second light?","Watch complete  \u00b7  %d boats home  \u00b7  %d lost"%[watch.rescued,watch.lost],false)
 	if banked:
-		_card(column,"%d points  Â·  best chain %d"%[watch.score,watch.best_chain],"Banked +%d coins / +%d XP\nLevel bonus %d coins  Â·  daily bonus %d coins"%[bank_receipt.coins,bank_receipt.xp,bank_receipt.level_bonus,bank_receipt.daily_bonus])
+		_card(column,"%d points  \u00b7  best chain %d"%[watch.score,watch.best_chain],"Banked +%d coins / +%d XP\nLevel bonus %d coins  \u00b7  daily bonus %d coins"%[bank_receipt.coins,bank_receipt.xp,bank_receipt.level_bonus,bank_receipt.daily_bonus])
 		_star_row(column,int(bank_receipt.stars))
 	else:
 		_card(column,"Your rescue crew is standing by","One optional earned ad recovers lost vessels and extends this same watch. Nothing is banked until you finish or leave this result.")
 	if watch.can_continue() and not banked:
 		var ready=is_instance_valid(services) and services.has_method("can_reward") and bool(services.can_reward())
-		column.add_child(_button("Continue this watch Â· optional ad" if ready else "Continue ad unavailable",_request_continue,"RewardContinue",not ready))
+		column.add_child(_button("Continue this watch \u00b7 optional ad" if ready else "Continue ad unavailable",_request_continue,"RewardContinue",not ready))
 	if watch.assisted: column.add_child(_label("This watch is assisted. Unassisted endless records are preserved; a second chance cannot earn a perfect-watch record.",16,TEAL))
 	if watch.mode=="campaign" and watch.won and watch.mission<missions.missions.size()-1:
 		column.add_child(_button("Follow the next light",func():_leave_results(func():_start_watch(watch.mission+1)),"NextWatch"))
@@ -453,11 +453,11 @@ func _sync_progress() -> void:
 
 func _show_workshop() -> void:
 	screen="workshop"
-	var column=_page("The workshop","%d coins  Â·  equipment stays with your keeper" % profile.data.coins)
+	var column=_page("The workshop","%d coins  \u00b7  equipment stays with your keeper" % profile.data.coins)
 	var descriptions={"lens":"A wider beam can guide neighboring boats together. +0.024 radians total width per level.","focus":"A steady light establishes guidance 13% faster per level.","harbor":"Clearer navigation buys each boat 1.35 extra seconds per level.","horn":"Longer foghorn protection, faster recharge, and another charge every two levels.","breakwater":"Better coastal markers reduce extra danger close to shoals."}
 	for key in Profile.UPGRADE_KEYS:
 		var upgrade=key;var level=int(profile.data.upgrades[key]);var cost=profile.upgrade_cost(key)
-		_card(column,str(key).capitalize()+"  %d / 6" % level,descriptions[key],"Maximum reached" if level>=6 else "Upgrade  Â·  %d coins" % cost,func():
+		_card(column,str(key).capitalize()+"  %d / 6" % level,descriptions[key],"Maximum reached" if level>=6 else "Upgrade  \u00b7  %d coins" % cost,func():
 			if profile.buy_upgrade(upgrade):
 				_sound("upgrade");_sync_progress();_save();_show_workshop()
 			else: _toast("Keep a few more watches to afford that upgrade."),"Upgrade_"+key,level>=6 or int(profile.data.coins)<cost)
@@ -479,10 +479,10 @@ func _show_daily() -> void:
 
 func _show_log() -> void:
 	screen="log"
-	var column=_page("The boat log","%d boats home Â· endless best %d Â· %d / %d local achievements"%[profile.data.rescued,profile.data.best_endless,profile.data.unlocked.size(),catalog.achievements.size()])
+	var column=_page("The boat log","%d boats home \u00b7 endless best %d \u00b7 %d / %d local achievements"%[profile.data.rescued,profile.data.best_endless,profile.data.unlocked.size(),catalog.achievements.size()])
 	for key in Watch.KINDS:
 		var stats=Watch.KINDS[key]
-		_card(column,str(stats.label),"Normal %.0f Â· full light %.0f speed\n%.0f points Â· ring budget %.2f Â· focus %.2fs"%[stats.speed,stats.lit_speed,stats.value,stats.life,stats.focus] if key in profile.data.seen else "A silhouette on the horizon. Follow the coasts to meet this vessel.")
+		_card(column,str(stats.label),"Normal %.0f \u00b7 full light %.0f speed\n%.0f points \u00b7 ring budget %.2f \u00b7 focus %.2fs"%[stats.speed,stats.lit_speed,stats.value,stats.life,stats.focus] if key in profile.data.seen else "A silhouette on the horizon. Follow the coasts to meet this vessel.")
 	for achievement in catalog.achievements:
 		_card(column,("âœ“  " if achievement.key in profile.data.unlocked else "â€¢  ")+str(achievement.title),str(achievement.description))
 

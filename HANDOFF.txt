@@ -1,3 +1,7 @@
+ROUND FIVE DISPLAY FOLLOW-UP - 2026-10-29
+Repaired the 18 double-decoded middle-dot separator literals in Home, live HUD, pause, results, workshop and boat log. The source was valid UTF-8 but contained an extra U+00C2 before U+00B7; ASCII GDScript Unicode escapes now produce the intended single middle dot. Existing font, gameplay, save accounting, service behavior and configuration are preserved.
+Godot 4.5.1 isolated import and focused checks passed with strict clean diagnostics: display 23, UI 83, actual Viewport dispatch 105 and notice bounds 90. The new display fixture checks rendered page text and existing-font support. Browser verification and hosted CI must be tied to the new source commit. Historical native evidence below retains its original binary scope; native/device/audio/production acceptance is separate.
+
 BEACON BREAKWATER - ROUND FIVE SOURCE UPDATE
 Updated 2026-10-29. Runtime changes: boat/chance icons with spent-slot feedback, direct campaign/daily/next watch launch, and independent staged endless difficulty. Exact behavior and acceptance cases: docs/ROUND_FIVE.md.
 
