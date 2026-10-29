@@ -1,0 +1,78 @@
+{
+  "date_utc": "2026-10-29",
+  "engine": "Godot4.5.1 Compatibility",
+  "environment": "Windows headless, fresh per-process APPDATA/LOCALAPPDATA/XDG storage; no real profile used",
+  "checks": [
+    {
+      "script": "IMPORT",
+      "exit_code": 0,
+      "strict_errors": [],
+      "result": "PASS"
+    },
+    {
+      "script": "tests/test_round_five.gd",
+      "exit_code": 0,
+      "strict_errors": [],
+      "result": "PASS"
+    },
+    {
+      "script": "tests/test_ui.gd",
+      "exit_code": 0,
+      "strict_errors": [],
+      "result": "PASS"
+    },
+    {
+      "script": "tests/test_ui_dispatch.gd",
+      "exit_code": 0,
+      "strict_errors": [],
+      "result": "PASS"
+    },
+    {
+      "script": "tests/test_models.gd",
+      "exit_code": 0,
+      "strict_errors": [],
+      "result": "PASS"
+    },
+    {
+      "script": "tests/test_round_two.gd",
+      "exit_code": 0,
+      "strict_errors": [],
+      "result": "PASS"
+    },
+    {
+      "script": "tests/test_round_three.gd",
+      "exit_code": 0,
+      "strict_errors": [],
+      "result": "PASS"
+    },
+    {
+      "script": "tests/test_round_four.gd",
+      "exit_code": 0,
+      "strict_errors": [],
+      "result": "PASS"
+    },
+    {
+      "script": "tests/test_notice_bounds.gd",
+      "exit_code": 0,
+      "strict_errors": [],
+      "result": "PASS"
+    },
+    {
+      "script": "platform/tests/services_smoke.gd",
+      "exit_code": 0,
+      "strict_errors": [],
+      "result": "PASS"
+    }
+  ],
+  "acceptance": {
+    "A_chance_icons": "PASS source/real engine UI fixture; visual/native review separate",
+    "B_direct_launch": "PASS actual Viewport GUI dispatch; native input review separate",
+    "C_gradual_endless": "PASS deterministic model; human balance/native review separate"
+  },
+  "owner_untracked_art_and_services_preserved": true,
+  "current_binary_native_QA": false,
+  "runtime_SHA256": {
+    "game/main.gd": "16857AA8249EB661B6A55BC9DCD86EB74DB8133993F5B2E175CABEFC31D408EA",
+    "game/watch.gd": "CC5521DE7ADE927EE7E47BBCEBF7291092E41F38BE5C741A754BF5F0DF005F74"
+  }
+}

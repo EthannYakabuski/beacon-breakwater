@@ -37,9 +37,9 @@ func run_render() -> void:
 	var stub=Harness.FakeServices.new();stub.available=false;stub.name="Services";root.add_child(stub)
 	scene=Main.new();root.add_child(scene);await frames(6)
 	if not await capture("home-phone"): quit(1);return
-	await click("Campaign");await click("Coast0");await click("Mission0")
-	if not await capture("briefing"): quit(1);return
-	await click("BeginWatch");await frames(250)
+	await click("Campaign");await click("Coast0")
+	if not await capture("mission-cards"): quit(1);return
+	await click("Mission0");await frames(250)
 	var aim=InputEventScreenTouch.new();aim.index=1;aim.pressed=true
 	aim.position=scene.get_global_transform_with_canvas()*Vector2(140,250)
 	root.push_input(aim,true);await frames(35)

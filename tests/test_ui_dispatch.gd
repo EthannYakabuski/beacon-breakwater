@@ -74,26 +74,25 @@ func run_tests() -> void:
 		await press("BoatLog","log");await press("BackHome","home")
 		await press("Settings","settings");await press("BackHome","home")
 	await press("Campaign","coasts");await press("Coast0","missions")
-	await press("Mission0","brief")
-	var start_activations={"count":0}
 	if paired:
-		# This process-only engine switch enables touchscreen availability in a
-		# headless fixture; no project, host setting or real userdata is changed.
 		Input.set_emulate_touch_from_mouse(true)
 		stub.reserve=180.0;stub.menu_bottom_reserve_changed.emit();await frames(4)
-		var begin=scene.find_child("BeginWatch",true,false)
-		begin.pressed.connect(func():start_activations.count+=1)
+		var last=scene.find_child("Mission4",true,false)
 		var old_ui=scene.ui;var before=scene.page_scroll.scroll_vertical
-		check(begin.get_global_rect().end.y>scene.page_scroll.get_global_rect().end.y,"fixture Begin is genuinely clipped before body drag")
-		await drag_body(scene.get_global_transform_with_canvas()*Vector2(425,600),scene.get_global_transform_with_canvas()*Vector2(425,325))
-		check(scene.page_scroll.scroll_vertical>before,"ordinary card-body touch drag scrolls actual ScrollContainer")
-		check(begin.get_global_rect().end.y<=scene.page_scroll.get_global_rect().end.y+.1,"body drag reveals the complete Begin control")
-		check(scene.screen=="brief" and scene.ui==old_ui,"drag does not activate or replace the page")
-		check(start_activations.count==0,"body drag never fires the action button")
+		check(last.get_global_rect().end.y>scene.page_scroll.get_global_rect().end.y,"last mission card is genuinely clipped before body drag")
+		for drag in range(4):
+			if last.get_global_rect().end.y<=scene.page_scroll.get_global_rect().end.y+.1: break
+			await drag_body(scene.get_global_transform_with_canvas()*Vector2(425,600),scene.get_global_transform_with_canvas()*Vector2(425,325))
+		check(scene.page_scroll.scroll_vertical>before,"ordinary card-body touch drag scrolls actual mission list")
+		check(last.get_global_rect().end.y<=scene.page_scroll.get_global_rect().end.y+.1,"body drag reveals the complete last mission control")
+		check(scene.screen=="missions" and scene.ui==old_ui,"drag never activates a watch or replaces the page")
 		check(scene.profile.data==banked,"body drag does not mutate banked player progress")
-	await press("BeginWatch","watch")
+		# Only fixture preparation returns to the first card; actual dispatch below
+		# proves a single ordinary paired release directly launches the watch.
+		scene.page_scroll.scroll_vertical=0;await frames(3)
+	await press("Mission0","watch")
+	check(scene.find_child("BeginWatch",true,false)==null,"ordinary mission release skips the removed briefing")
 	if paired:
-		check(start_activations.count==1,"ordinary paired release after scroll activates Begin exactly once")
 		Input.set_emulate_touch_from_mouse(false)
 		stub.reserve=90.0;stub.menu_bottom_reserve_changed.emit()
 	await press("PauseWatch","pause");await press("ResumeWatch","watch")

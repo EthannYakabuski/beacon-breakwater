@@ -1,3 +1,13 @@
+BEACON BREAKWATER - ROUND FIVE SOURCE UPDATE
+Updated 2026-10-29. Runtime changes: boat/chance icons with spent-slot feedback, direct campaign/daily/next watch launch, and independent staged endless difficulty. Exact behavior and acceptance cases: docs/ROUND_FIVE.md.
+
+LOCAL VERIFICATION
+Godot 4.5.1 isolated local import and all nine source/engine scripts passed with strict clean diagnostics: Round Five model111, UI83, actual Viewport dispatch105, baseline model235 (60/60 campaign watches), Round Two38, Round Three227, Round Four123, notice90 and service smoke PASS.
+Hosted Android/Web export checks must match the containing commit. Fresh visual/native checks and human balance remain separate coordinator/owner gates. No new native-ready binary or real-service acceptance is claimed.
+
+The owner feature JPEG/import, platform configuration and export settings are preserved. No genuine profile was used as a fixture. Previous APK/AAB packages, accepted screenshots and all dated evidence below remain unchanged and do not contain Round Five code. No new store/device screenshot claim is made.
+
+PRESERVED PRE-ROUND-FIVE HANDOFFS
 ROUND FOUR - QUALIFIED SOURCE / EXPORT HANDOFF
 Current Round Four features: Never-lit boats lose immediately in shoals; shoal-crossing boats move 25% slower, and arrivals earn remaining-outer-ring bonuses.
 The focused music pause-state follow-up leaves music enabled and avoids redundant pause-state updates.

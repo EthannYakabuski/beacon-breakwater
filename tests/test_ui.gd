@@ -56,8 +56,20 @@ func run_tests() -> void:
 	check(scene.screen=="home","actual main scene home")
 	await touch("Campaign");check(scene.screen=="coasts","touch opens coast list")
 	await touch("Coast0");check(scene.screen=="missions","touch opens first coast")
-	await touch("Mission0");check(scene.screen=="brief","touch opens real briefing")
-	await touch("BeginWatch");check(scene.screen=="watch","touch launches actual scene watch")
+	await touch("Mission0");check(scene.screen=="watch","mission card launches actual watch without a second briefing")
+	check(scene.find_child("BeginWatch",true,false)==null,"no redundant Begin watch screen remains")
+	check(is_instance_valid(scene.life_icons) and scene.life_icons.get_child_count()==4,"HUD shows caption plus three boat chance icons")
+	for lost in range(4):
+		scene.watch.lost=lost;scene._refresh_hud()
+		var available=0
+		for index in range(3):
+			var slot=scene.life_icons.get_node("Chance%d"%index)
+			if slot.get_meta("available"): available+=1
+			check(slot.get_node("Spent").visible==(index<lost),"spent chance has a visible cross %d/%d"%[lost,index])
+		check(available==3-lost and scene.life_icons.tooltip_text.begins_with("%d chances"%(3-lost)),"icons/accessibility show actual remaining allowance %d"%lost)
+	scene.watch.lost=0;scene._refresh_hud()
+	await frames()
+	check(scene.life_icons.get_rect().end.x<=516.1 and scene.life_icons.get_rect().end.y<=114.1,"all chance artwork fits the reserved HUD area")
 	if scene.screen!="watch": quit(1);return
 	var aim_before=scene.watch.angle
 	var aim_touch=InputEventScreenTouch.new();aim_touch.index=1;aim_touch.pressed=true

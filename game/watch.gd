@@ -21,6 +21,9 @@ const GUIDED_LIT_DRAIN = GUIDED_LIT_BASE_DRAIN * 1.25
 # only a speed exception for guided hulls clipping the narrowing cone apex.
 const NEAR_SHORE_RADIUS = 48.0
 const SHOAL_SPEED_SCALE = 0.75
+# Fixed landmarks appear only when their water is clear of existing hulls.
+const ENDLESS_SHOALS = [[112,390,28],[430,475,30],[205,540,25],[352,310,24]]
+const ENDLESS_KIND_ORDER = ["skiff","sailor","cargo","rescue","cutter","barge"]
 var config: Dictionary = {}
 var boats: Array = []
 var events: Array = []
@@ -58,6 +61,37 @@ func start(definition: Dictionary, levels: Dictionary, selected_mode: String = "
 	time=0.0;angle=-PI/2.0;rescued=0;lost=0;score=0;chain=0;best_chain=0
 	next_spawn=0;endless_spawn=0.5;done=false;won=false;assisted=false
 	horn_charges=max_horn_charges();horn_refill=0.0;horn_effect=0.0;horn_uses=0;serial=0;continued=false
+	if mode == "endless":
+		config.reefs=[]
+		_update_endless_progression()
+
+func endless_kinds() -> Array:
+	# A whole first minute with basic skiffs, then one new demand per minute.
+	var count=mini(ENDLESS_KIND_ORDER.size(),1+int(time/60.0))
+	return ENDLESS_KIND_ORDER.slice(0,count)
+
+func endless_interval() -> float:
+	if time <= 180.0: return lerpf(7.0,4.0,clampf(time/180.0,0.0,1.0))
+	return maxf(2.0,4.0-(time-180.0)/150.0)
+
+func _update_endless_progression() -> void:
+	if mode != "endless": return
+	var weather=clampf((time-60.0)/240.0,0.0,1.0)
+	config.fog=weather*0.30
+	config.tide=weather*8.0
+	config.storm=maxf(0.0,weather-.25)*0.40
+	var desired=mini(ENDLESS_SHOALS.size(),1+int(time/60.0))
+	while config.reefs.size()<desired:
+		var candidate=ENDLESS_SHOALS[config.reefs.size()]
+		var center=Vector2(float(candidate[0]),float(candidate[1]))
+		var clear=true
+		for boat in boats:
+			# 36x56 hulls fit inside33px;42px adds visible clearance.
+			if center.distance_to(boat.pos)<float(candidate[2])+42.0:
+				clear=false;break
+		if not clear: break
+		config.reefs.append(candidate.duplicate())
+		events.append({"event":"shoal_added","count":config.reefs.size(),"pos":center})
 
 func beam_half_width() -> float:
 	return (0.11 + float(upgrades.get("lens",0))*0.012) * (1.0-float(config.get("fog",0.0))*.25)
@@ -201,10 +235,12 @@ func step(delta: float) -> void:
 	else: horn_refill = 0.0
 	var schedule = config.get("spawns",[])
 	if mode == "endless":
+		_update_endless_progression()
 		if time >= endless_spawn:
-			var kinds = KINDS.keys()
-			spawn(kinds[serial%kinds.size()],65.0+float((serial*137)%410),sin(float(serial)*2.1)*18.0)
-			endless_spawn += maxf(1.45,4.0-time/70.0)
+			var kinds = endless_kinds()
+			var drift=sin(float(serial)*2.1)*18.0*clampf((time-60.0)/180.0,0.0,1.0)
+			spawn(kinds[serial%kinds.size()],85.0+float((serial*137+185)%370),drift)
+			endless_spawn += endless_interval()
 	else:
 		while next_spawn < schedule.size() and time >= float(schedule[next_spawn].time):
 			var arrival = schedule[next_spawn]

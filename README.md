@@ -1,5 +1,19 @@
 # Beacon Breakwater
 
+## Round Five gameplay update (2026-10-29)
+
+The watch HUD uses three boat/chance icons, with spent slots dimmed and crossed.
+Campaign cards show their rescue target and required ship goals, then launch
+immediately; daily and next-watch actions also skip the former briefing screen.
+Endless opens with one shoal, basic skiffs and wider traffic spacing, adding
+hazards, hull types and weather gradually as the watch continues. See
+[Round Five rules and acceptance](docs/ROUND_FIVE.md).
+
+Source tests and hosted exports are separate from real native/device acceptance.
+Older binaries and screenshot provenance below remain unchanged; no older QA is
+transferred to this changed source. Service IDs and owner feature artwork are
+preserved.
+
 ## Round 4 build continuation (2026-10-24)
 
 The Android preset now defaults to **AAB** with Gradle, minimum API **24** and target API **36**. ARM64, x86 and x86_64 are selected; the [Round 4 Android guide](docs/ROUND_FOUR_ANDROID.md) explains the native ABI-pair validator and release-owner steps. These are current preset choices, not permanent engine restrictions.
