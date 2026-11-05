@@ -58,3 +58,7 @@ audible testing, interactive Web and human balance acceptance remain follow-up
 work. No Google Play publication, live Pages activation or Library operation is
 part of an ordinary source update. Do not start another application from this
 game's task. Report exact commits, tests and remaining limits when handing off.
+
+## Authorized Web Pages continuation (2026-11-05)
+
+The owner explicitly requested this game's public GitHub Pages deployment. Read docs/WEB_PAGES.md. Preserve strict source and Android/Web gates; publish only build/web with notices and the whitelisted build identity. Pages permission is scoped to this repository, not a website change, new game, Android store release or credential/security change. Existing historical Pages-held statements describe earlier tasks. Verify exact remote SHA, terminal Actions/deployment, served build-info identity and actual browser/iframe scope before reporting a revision ready. Preserve owner edits and genuine saves.

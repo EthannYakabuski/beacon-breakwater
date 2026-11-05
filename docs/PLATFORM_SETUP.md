@@ -84,3 +84,7 @@ limits. After ID changes, produce a separately named build and test actual nativ
 flows; do not relabel the preserved sample-configured APK as production-tested.
 Google Play submission, live Pages activation and Library actions are separate
 owner-authorized work, not part of ordinary ID editing.
+
+## Authorized Web hosting
+
+See [Web Pages deployment and iframe guidance](WEB_PAGES.md). The 2026-11-05 request separately authorizes this game's public Pages workflow and main-branch publication; the website and Android production release are unchanged. Historical Pages-held notes retain their dated scope. Deployment success does not establish device/native services or human gameplay acceptance.

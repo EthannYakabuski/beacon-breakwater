@@ -1,5 +1,10 @@
 # Beacon Breakwater
 
+## Play on the Web
+
+Stable URL: [https://ethannyakabuski.github.io/beacon-breakwater/](https://ethannyakabuski.github.io/beacon-breakwater/). Main-branch CI now has the requested Pages deployment path after all existing validation/build gates. Confirm the exact Actions deployment and `build-info.json` source commit before claiming a revision live. See [Web and iframe integration](docs/WEB_PAGES.md) for browser/service/save limitations. The website itself is unchanged.
+
+
 ## Round Five gameplay update (2026-10-29)
 
 The watch HUD uses three boat/chance icons, with spent slots dimmed and crossed.
@@ -67,7 +72,7 @@ Before this continuation-documentation update, source commit
 `ed10494e9c61bd3330b5fbd062adc97d5befe177` passed
 [hosted build/test CI](https://github.com/EthannYakabuski/beacon-breakwater/actions/runs/39527175172),
 including Android and Web exports. That dated result does not certify later
-commits. Live Pages deployment is absent and remains held.
+commits. The separately authorized Pages workflow is documented in docs/WEB_PAGES.md; its exact deployment result must be verified in Actions.
 
 ## Run and build
 

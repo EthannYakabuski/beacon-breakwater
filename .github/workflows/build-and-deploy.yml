@@ -1,4 +1,4 @@
-name: Build and test
+name: Build, test and deploy Web
 
 on:
   push:
@@ -75,6 +75,16 @@ jobs:
           if grep -Eq 'SCRIPT ERROR|Parse Error|ERROR:' /tmp/web-export.log; then
             exit 1
           fi
+      - name: Record public Web build identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          public = {"source_commit": os.environ["GITHUB_SHA"], "repository": os.environ["GITHUB_REPOSITORY"]}
+          Path("build/web/build-info.json").write_text(json.dumps(public, indent=2) + "\n", encoding="utf-8")
+          PY
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -121,3 +131,23 @@ jobs:
           name: web-test-configured
           path: build/web
           retention-days: 7
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/web
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: validate-and-build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy playable Web build
+        id: deployment
+        uses: actions/deploy-pages@v4
